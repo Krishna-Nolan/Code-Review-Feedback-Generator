@@ -1,0 +1,2165 @@
+task,upload,correct,new_upload,score,while,for,if,elif,else,return,break,continue,pass,assign,arith,comp,log,bit,iden,mem,#fun,#fcall,globals,#list,#tuple,cond,loop,#lst,#lines,avg_lines_per_func,#class,#var_uses,#con_uses,#var,#emptylines,#comments
+ex2-first-negative.py,"#!usr/bin/python
+
+
+r = []
+
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r.append(a[i])
+   i = i + 1
+
+if len(r) >= 1:
+   print r[0]
+",True,"#!usr/bin/python
+
+
+r = []
+
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r.append(a[i])
+   i = i + 1
+
+if len(r) >= 1:
+   print(r[0])
+",10,1,0,2,0,0,0,0,0,0,4,2,3,0,0,0,0,0,0,2,1,0,2,1,1,13,0,0,13,5,3,4,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i]<0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+",True,"i = 0
+while i < len(a) and not a[i]<0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+
+while i < len(a) and int(a[i]) >= 0:
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+",True,"#!/usr/bin/env python
+
+i = 0
+
+while i < len(a) and int(a[i]) >= 0:
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,9,0,0,11,3,2,3,0
+ex2-first-negative.py,"a=[]
+
+line=raw_input()
+while line != ""end"":
+   a.append(int(line))
+   line=raw_input()
+
+i=0
+while i < len(a):
+   if a[i]<0:
+      print a[i]
+      i= i+8
+   else:
+      i +=1
+",True,"a=[]
+
+line=input()
+while line != ""end"":
+   a.append(int(line))
+   line=input()
+
+i=0
+while i < len(a):
+   if a[i]<0:
+      print(a[i])
+      i= i+8
+   else:
+      i +=1
+",10,2,0,1,0,1,0,0,0,0,7,2,3,0,0,0,0,0,0,3,1,0,2,2,1,14,0,0,16,5,3,2,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print a[i]
+",True,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,2,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,10,3,2,2,0
+ex2-first-negative.py,"i = 0
+
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+",True,"i = 0
+
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,3,2,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] >= 0:
+    i = i + 1
+
+if i < len(a):
+    print a[i]
+",True,"i = 0
+while i < len(a) and a[i] >= 0:
+    i = i + 1
+
+if i < len(a):
+    print(a[i])
+",10,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"a = []
+
+line = raw_input()
+while line != ""end"":
+  a.append(int(line))
+  line = raw_input()
+
+i = 0
+while i < len(a):
+  if a[i] < 0:
+   negative = i
+   print a[negative]
+   break
+  i += 1
+  
+",True,"a = []
+
+line = input()
+while line != ""end"":
+  a.append(int(line))
+  line = input()
+
+i = 0
+while i < len(a):
+  if a[i] < 0:
+   negative = i
+   print(a[negative])
+   break
+  i += 1
+  
+",10,2,0,1,0,0,0,1,0,0,7,2,3,0,0,0,0,0,0,3,1,0,1,2,1,15,0,0,16,4,4,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print a[i]
+",True,"i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,2,3,2,0,0,0,0,0,1,0,0,1,1,0,6,0,0,10,3,2,1,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print a[i]
+",True,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+	print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,2,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,10,3,2,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i]<0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+",True,"i = 0
+while i < len(a) and not a[i]<0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"i = 0
+while i < len(a):
+	if a[i] < 0:
+		print a[i]
+		i = len(a)
+	i = i + 1
+",True,"i = 0
+while i < len(a):
+	if a[i] < 0:
+		print(a[i])
+		i = len(a)
+	i = i + 1
+",10,1,0,1,0,0,0,0,0,0,3,1,2,0,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,0,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and -1 < int(a[i]):
+   i = i + 1
+
+
+if i < len(a):
+   print a[i]
+",True,"i = 0
+while i < len(a) and -1 < int(a[i]):
+   i = i + 1
+
+
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,2,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,3,2,2,0
+ex2-first-negative.py,"lst = []
+line = raw_input()
+while line != ""end"":
+   lst.append(int(line))
+   line = raw_input()
+
+lst2 = []
+i = 0
+while i < len(lst):
+   if lst[i] < 0:
+      lst2.append(lst[i])
+   i = i + 1
+
+i = 0
+while i < len(lst2):
+   print lst2[i]
+   i = 1
+   if i == 1:
+      i = len(lst2) + 1 
+",True,"lst = []
+line = input()
+while line != ""end"":
+   lst.append(int(line))
+   line = input()
+
+lst2 = []
+i = 0
+while i < len(lst):
+   if lst[i] < 0:
+      lst2.append(lst[i])
+   i = i + 1
+
+i = 0
+while i < len(lst2):
+   print(lst2[i])
+   i = 1
+   if i == 1:
+      i = len(lst2) + 1 
+",10,3,0,2,0,0,0,0,0,0,11,2,5,0,0,0,0,0,0,5,2,0,2,3,2,19,0,0,26,8,4,2,0
+ex2-first-negative.py,"i=0
+while i<len(a) and a[i]>=0:
+	i=i+1
+if i<len(a):
+	print a[i]
+",True,"i=0
+while i<len(a) and a[i]>=0:
+	i=i+1
+if i<len(a):
+	print(a[i])
+",10,1,0,1,0,0,0,0,0,0,1,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"n = raw_input()
+
+a = []
+
+while n != ""end"":
+  a.append(int(n))
+  n = raw_input()
+
+i = 0
+
+while i < len(a) and a[i] == abs(a[i]):
+    i += 1
+
+if i < len(a):
+  print a[i]
+",True,"n = input()
+
+a = []
+
+while n != ""end"":
+  a.append(int(n))
+  n = input()
+
+i = 0
+
+while i < len(a) and a[i] == abs(a[i]):
+    i += 1
+
+if i < len(a):
+  print(a[i])
+",10,2,0,1,0,0,0,0,0,0,7,2,4,1,0,0,0,0,0,3,1,0,1,2,1,15,0,0,18,3,3,5,0
+ex2-first-negative.py,"#linear search
+i = 0
+while i < len(a) and not  a[i] < 0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+",True,"#linear search
+i = 0
+while i < len(a) and not  a[i] < 0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+",10,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,0,1
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] >= 0:
+  i = i + 1
+if i < len(a):
+  print a[i]
+",True,"i = 0
+while i < len(a) and a[i] >= 0:
+  i = i + 1
+if i < len(a):
+  print(a[i])
+",10,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"num = raw_input()
+l = []
+
+while num != ""end"":
+	l.append(int(num))
+	num = raw_input()
+
+i = 0
+while i < len(l):
+	if l[i] < 0:
+		print(l[i])
+		i += 20
+	i +=1
+",True,"num = input()
+l = []
+
+while num != ""end"":
+	l.append(int(num))
+	num = input()
+
+i = 0
+while i < len(l):
+	if l[i] < 0:
+		print((l[i]))
+		i += 20
+	i +=1
+",10,2,0,1,0,0,0,0,0,0,7,3,3,0,0,0,0,0,0,3,1,0,1,2,1,13,0,0,15,5,3,2,0
+ex2-first-negative.py,"i = 0
+while i <len(a) and a[i]>=0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"i = 0
+while i <len(a) and a[i]>=0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,2,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"a = []
+
+line = raw_input()
+
+while line != ""end"":
+
+	a.append(int(line))
+	line = raw_input()
+
+# Linear Search
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i += 1
+
+# Negative number found
+if i < len(a):
+	print a[i]
+
+",True,"a = []
+
+line = input()
+
+while line != ""end"":
+
+	a.append(int(line))
+	line = input()
+
+# Linear Search
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i += 1
+
+# Negative number found
+if i < len(a):
+	print(a[i])
+
+",9,2,0,1,0,0,0,0,0,0,7,2,4,1,0,0,0,0,0,3,1,0,1,2,1,18,0,0,16,4,3,6,2
+ex2-first-negative.py,"i = 0 
+while i < len(a) and int(a[i]) >= 0:
+      i = i + 1
+if i < len(a):
+    print a[i]
+",True,"i = 0 
+while i < len(a) and int(a[i]) >= 0:
+      i = i + 1
+if i < len(a):
+    print(a[i])
+",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"#a = [2, 10, 0, 1, -4, 2, -5, 9 ]
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+if i < len(a):
+   print a[i]
+",True,"#a = [2, 10, 0, 1, -4, 2, -5, 9 ]
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+",9,1,0,1,0,0,0,0,0,0,4,3,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,3,2,1,1
+ex2-first-negative.py,"
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,3,2,2,0
+ex2-first-negative.py,"i = 0
+
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"i = 0
+
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+  print a[i]",True,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+
+if i < len(a):
+  print(a[i])",9,1,0,1,0,0,0,0,0,0,2,2,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,10,3,2,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+  i = i + 1
+
+if i < len(a):
+  print a[i]
+",True,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+  i = i + 1
+
+if i < len(a):
+  print(a[i])
+",9,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i] < 0:
+     i = i + 1
+
+if i < len(a):
+   print a[i]
+
+",True,"i = 0
+while i < len(a) and not a[i] < 0:
+     i = i + 1
+
+if i < len(a):
+   print(a[i])
+
+",9,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,3,2,2,0
+ex2-first-negative.py,"i = 0
+b = 0
+while i < len(a) and not b < 0:
+	if int(a[i]) < 0:
+		print a[i]
+		b = a[i]
+	i += 1",True,"i = 0
+b = 0
+while i < len(a) and not b < 0:
+	if int(a[i]) < 0:
+		print(a[i])
+		b = a[i]
+	i += 1",9,1,0,1,0,0,0,0,0,0,4,2,3,2,0,0,0,0,0,2,0,0,1,1,0,7,0,0,13,5,3,0,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+",True,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+",9,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"a = []
+
+lines = raw_input()
+while lines != 'end':
+   a.append(int(lines))
+   lines = raw_input()
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1 
+if i < len(a):
+   print a[i]",True,"a = []
+
+lines = input()
+while lines != 'end':
+   a.append(int(lines))
+   lines = input()
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1 
+if i < len(a):
+   print(a[i])",9,2,0,1,0,0,0,0,0,0,7,1,4,1,0,0,0,0,0,3,1,0,1,2,1,12,0,0,17,4,3,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i] < 0:
+	i = i + 1
+
+if i < len(a):
+	print a[i]",True,"i = 0
+while i < len(a) and not a[i] < 0:
+	i = i + 1
+
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"n = 0
+
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		print a[i]
+		i = i + 10
+	else:
+		i = i + 1
+
+",True,"n = 0
+
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		print(a[i])
+		i = i + 10
+	else:
+		i = i + 1
+
+",9,1,0,1,0,1,0,0,0,0,4,2,2,0,0,0,0,0,0,2,0,0,2,1,0,10,0,0,12,5,3,2,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) :
+   if a[i] < 0:
+      print a[i]
+      i = i + 10
+   i = i + 1
+
+
+
+
+
+",True,"
+i = 0
+while i < len(a) :
+   if a[i] < 0:
+      print(a[i])
+      i = i + 10
+   i = i + 1
+
+
+
+
+
+",9,1,0,1,0,0,0,0,0,0,3,2,2,0,0,0,0,0,0,1,0,0,1,1,0,12,0,0,11,4,2,6,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+
+",True,"i = 0
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+
+",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"s = raw_input()
+a = []
+b = []
+
+while s != ""end"":
+   if int(s) < 0:
+      a.append(s)
+   s = raw_input()
+
+if len(a) != 0:
+   print a[0]",True,"s = input()
+a = []
+b = []
+
+while s != ""end"":
+   if int(s) < 0:
+      a.append(s)
+   s = input()
+
+if len(a) != 0:
+   print(a[0])",9,1,0,2,0,0,0,0,0,0,6,0,3,0,0,0,0,0,0,3,2,0,2,1,2,11,0,0,10,4,3,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+i = 0
+while i < len(a) and a[i] >= 0:
+	i += 1
+
+if i < len(a):
+	print a[i]",True,"#!/usr/bin/env python
+i = 0
+while i < len(a) and a[i] >= 0:
+	i += 1
+
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,3,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,10,3,2,1,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and int(a[i]) > (1 * -1):
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+   
+",True,"i = 0
+while i < len(a) and int(a[i]) > (1 * -1):
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+   
+",9,1,0,1,0,0,0,0,0,0,2,3,3,1,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,4,2,1,0
+ex2-first-negative.py,"a = a
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+while i < len(a) and a[i] < 0:
+   print a[i]
+   i = i + 1
+   
+",True,"a = a
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+while i < len(a) and a[i] < 0:
+   print(a[i])
+   i = i + 1
+   
+",9,2,0,0,0,0,0,0,0,0,4,2,4,3,0,0,0,0,0,2,0,0,0,2,0,8,0,0,17,5,2,0,0
+ex2-first-negative.py,"s = raw_input()
+a = []
+
+while s != ""end"":
+   a.append(s)
+   s = raw_input()
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+
+if i < len(a):
+   print a[i]",True,"s = input()
+a = []
+
+while s != ""end"":
+   a.append(s)
+   s = input()
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+
+if i < len(a):
+   print(a[i])",9,2,0,1,0,0,0,0,0,0,7,1,4,1,0,0,0,0,0,3,1,0,1,2,1,13,0,0,17,4,3,3,0
+ex2-first-negative.py,"i = 0
+
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"i = 0
+
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"#!usr/bin/env python
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+
+if i < len(a):
+	print a[i]",True,"#!usr/bin/env python
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+if i < len(a):
+	print a[i]",True,"
+i = 0
+while i < len(a) and not a[i] < 0:
+	i += 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,2,2,3,2,0,0,0,0,0,1,0,0,1,1,0,6,0,0,10,3,2,1,0
+ex2-first-negative.py,"n = 1
+i = 0
+while i < len(a) and n > 0:
+   if a[i] < 0:
+      n = a[i]
+   i = i + 1
+if n < 0:
+   print n
+
+",True,"n = 1
+i = 0
+while i < len(a) and n > 0:
+   if a[i] < 0:
+      n = a[i]
+   i = i + 1
+if n < 0:
+   print(n)
+
+",9,1,0,2,0,0,0,0,0,0,4,1,4,1,0,0,0,0,0,2,0,0,2,1,0,9,0,0,14,6,3,1,0
+ex2-first-negative.py,"i = 0
+while i <len(a) and a[i]>=0:
+	i = i + 1
+if i < len(a):
+	print a[i]",True,"i = 0
+while i <len(a) and a[i]>=0:
+	i = i + 1
+if i < len(a):
+	print(a[i])",9,1,0,1,0,0,0,0,0,0,2,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"i = 0
+n = []
+
+while i < len(a):
+	if int(a[i]) < 0 and len(n) < 1:
+		n.append(a[i])
+	i += 1
+
+if len(n) != 0:
+	print n[0]",True,"i = 0
+n = []
+
+while i < len(a):
+	if int(a[i]) < 0 and len(n) < 1:
+		n.append(a[i])
+	i += 1
+
+if len(n) != 0:
+	print(n[0])",9,1,0,2,0,0,0,0,0,0,4,2,4,1,0,0,0,0,0,2,1,0,2,1,1,10,0,0,13,6,3,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+  i = i + 1
+
+if i < len(a):
+  print a[i]
+",True,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+  i = i + 1
+
+if i < len(a):
+  print(a[i])
+",9,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"a = []
+line = raw_input()
+while line != ""end"":
+	a.append(int(line))
+	line = raw_input()
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i = i + 1
+if i < len(a):
+	print a[i]
+
+",True,"a = []
+line = input()
+while line != ""end"":
+	a.append(int(line))
+	line = input()
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i = i + 1
+if i < len(a):
+	print(a[i])
+
+",9,2,0,1,0,0,0,0,0,0,7,1,4,1,0,0,0,0,0,3,1,0,1,2,1,11,0,0,17,4,3,1,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+",True,"i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+   
+",True,"i = 0
+while i < len(a) and a[i] >= 0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+   
+",9,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,0,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print a[i]",True,"i = 0
+while i < len(a) and 0 <= a[i]:
+   i = i + 1
+
+if i < len(a):
+   print(a[i])",8,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,3,2,1,0
+ex2-first-negative.py,"
+
+n = raw_input()
+
+l = []
+while n != ""end"":
+   if int(n) < 0: 
+      l.append(n)
+   
+   n = raw_input()
+if l != []:
+   print l[0]
+else:
+   l
+   
+",True,"
+
+n = input()
+
+l = []
+while n != ""end"":
+   if int(n) < 0: 
+      l.append(n)
+   
+   n = input()
+if l != []:
+   print(l[0])
+else:
+   l
+   
+",8,1,0,2,0,1,0,0,0,0,5,0,3,0,0,0,0,0,0,2,2,0,3,1,2,15,0,0,10,3,2,3,0
+ex2-first-negative.py,"
+
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i != len(a):
+   print a[i]
+ 
+
+",True,"
+
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i != len(a):
+   print(a[i])
+ 
+
+",8,1,0,1,0,0,0,0,0,0,3,1,3,2,0,0,0,0,0,1,0,0,1,1,0,10,0,0,11,3,2,4,0
+ex2-first-negative.py,"#!usr/bin/env python 
+
+i = 0 
+check = True
+while i < len(a):
+	if a[i] < 0 and check:
+		print a[i]
+		check = False
+	i = i + 1",True,"#!usr/bin/env python 
+
+i = 0 
+check = True
+while i < len(a):
+	if a[i] < 0 and check:
+		print(a[i])
+		check = False
+	i = i + 1",8,1,0,1,0,0,0,0,0,0,4,2,2,1,0,0,0,0,0,2,0,0,1,1,0,9,0,0,12,5,3,1,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and a[i] >= 0:	
+   i = i + 1
+if i < len(a) and a[i] < 0:
+	print a[i]
+
+
+
+
+
+",True,"
+i = 0
+while i < len(a) and a[i] >= 0:	
+   i = i + 1
+if i < len(a) and a[i] < 0:
+	print(a[i])
+
+
+
+
+
+",8,1,0,1,0,0,0,0,0,0,3,1,4,2,0,0,0,0,0,1,0,0,1,1,0,11,0,0,13,4,2,6,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i = i + 1
+
+if i < len(a):
+	print a[i]",True,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and 0 <= a[i]:
+	i = i + 1
+
+if i < len(a):
+	print(a[i])",8,1,0,1,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"
+
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i != len(a):
+   print a[i]
+ 
+
+",True,"
+
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i != len(a):
+   print(a[i])
+ 
+
+",8,1,0,1,0,0,0,0,0,0,3,1,3,2,0,0,0,0,0,1,0,0,1,1,0,10,0,0,11,3,2,4,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and 0 <= a[i]:	
+   i = i + 1
+if i < len(a) and a[i] < 0:
+	print a[i]
+
+
+
+
+
+",True,"i = 0
+while i < len(a) and 0 <= a[i]:	
+   i = i + 1
+if i < len(a) and a[i] < 0:
+	print(a[i])
+
+
+
+
+
+",7,1,0,1,0,0,0,0,0,0,3,1,4,2,0,0,0,0,0,1,0,0,1,1,0,10,0,0,13,4,2,5,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and 0 <= a[i]:
+    i = i + 1
+
+if i < len(a):
+    print a[i]
+    
+
+",True,"i = 0
+while i < len(a) and 0 <= a[i]:
+    i = i + 1
+
+if i < len(a):
+    print(a[i])
+    
+
+",7,1,0,1,0,0,0,0,0,0,3,1,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,3,2,2,0
+ex2-first-negative.py,"i = 0
+n = 0
+while i < len(a) and a[i] < 0:
+   n = a[i]
+   i = i + 1
+if n < 0:
+   print n
+",False,"i = 0
+n = 0
+while i < len(a) and a[i] < 0:
+   n = a[i]
+   i = i + 1
+if n < 0:
+   print(n)
+",5,1,0,1,0,0,0,0,0,0,4,1,3,1,0,0,0,0,0,2,0,0,1,1,0,7,0,0,13,5,3,0,0
+ex2-first-negative.py,"#!usr/bin/python
+
+a = [2, 10, 0, 1, -4, 2, -5, 9, -3]
+
+r = 0
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r = a[i]
+
+   i = i + 1
+
+print r
+",False,"#!usr/bin/python
+
+a = [2, 10, 0, 1, -4, 2, -5, 9, -3]
+
+r = 0
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r = a[i]
+
+   i = i + 1
+
+print(r)
+",5,1,0,1,0,0,0,0,0,0,5,5,2,0,0,0,0,0,0,3,1,0,1,1,1,13,0,0,13,13,3,4,0
+ex2-first-negative.py,"
+i=0
+while i<len(a) and a[i]>=0:
+	i=i+1
+print a[i]
+",False,"
+i=0
+while i<len(a) and a[i]>=0:
+	i=i+1
+print(a[i])
+",5,1,0,0,0,0,0,0,0,0,1,1,2,1,0,0,0,0,0,1,0,0,0,1,0,5,0,0,9,3,2,1,0
+ex2-first-negative.py,"i=0
+if a!=[]:
+	while i<len(a) and a[i]>=0:
+		i+=1
+	print a[i]
+",False,"i=0
+if a!=[]:
+	while i<len(a) and a[i]>=0:
+		i+=1
+	print(a[i])
+",5,1,0,1,0,0,0,0,0,0,2,1,3,1,0,0,0,0,0,1,1,0,1,1,1,5,0,0,9,3,2,0,0
+ex2-first-negative.py,"i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      i = i + 1
+
+print i
+",False,"i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      i = i + 1
+
+print(i)
+",5,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,6,0,0,8,3,2,1,0
+ex2-first-negative.py,"line = raw_input()
+
+while line != ""end"":
+   i = 0
+   if i < 0:
+     print i
+   i += 1
+",False,"line = input()
+
+while line != ""end"":
+   i = 0
+   if i < 0:
+     print(i)
+   i += 1
+",5,1,0,1,0,0,0,0,0,0,4,2,2,0,0,0,0,0,0,1,0,0,1,1,0,7,0,0,6,4,2,1,0
+ex2-first-negative.py,"i = 0
+while i < len(a):
+	if a[i] < 0:
+		print a[i]
+i = i + 1
+",False,"i = 0
+while i < len(a):
+	if a[i] < 0:
+		print(a[i])
+i = i + 1
+",5,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,2,0,0,1,1,0,5,0,0,9,3,2,0,0
+ex2-first-negative.py,"#!usr/bin/python
+
+
+
+r = """"
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r = r + str(a[i])
+   i = i + 1
+
+if i < 0:
+   print r[0:2]
+",False,"#!usr/bin/python
+
+
+
+r = """"
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r = r + str(a[i])
+   i = i + 1
+
+if i < 0:
+   print(r[0:2])
+",5,1,0,2,0,0,0,0,0,0,4,3,3,0,0,0,0,0,0,2,0,0,2,1,0,13,0,0,14,7,3,4,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and str(a[i][0]) != ""-"":
+   i = i + 1
+
+if i < len(a):
+   print a[i]
+",False,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and str(a[i][0]) != ""-"":
+   i = i + 1
+
+if i < len(a):
+   print(a[i])
+",5,1,0,1,0,0,0,0,0,0,3,3,3,1,0,0,0,0,0,1,0,0,1,1,0,8,0,0,11,4,2,2,0
+ex2-first-negative.py,"
+i=0
+while i<len(a)-1 and a[i]>0 or a[i]==0:
+   i=i+1
+
+if i<len(a):
+   print a[i]
+",False,"
+i=0
+while i<len(a)-1 and a[i]>0 or a[i]==0:
+   i=i+1
+
+if i<len(a):
+   print(a[i])
+",5,1,0,1,0,0,0,0,0,0,1,2,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,13,5,2,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+first_neg = 0
+second_neg = 0
+i = 1
+while i < len(a):
+	if a[i] < 0:
+		first_neg = a[i]
+		j = i
+		if a[j] < 0:
+			second_neg = a[j]
+	i = i + 1
+print first_neg",False,"#!/usr/bin/env python
+first_neg = 0
+second_neg = 0
+i = 1
+while i < len(a):
+	if a[i] < 0:
+		first_neg = a[i]
+		j = i
+		if a[j] < 0:
+			second_neg = a[j]
+	i = i + 1
+print(first_neg)",5,1,0,2,0,0,0,0,0,0,7,2,3,0,0,0,0,0,0,3,0,0,2,1,0,12,0,0,20,6,5,0,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+
+a = []      #list of integers
+i = 0
+
+while i < len(a) and i < 0:
+   print i
+i = i + 1
+",False,"#!/usr/bin/env/python
+
+
+a = []      #list of integers
+i = 0
+
+while i < len(a) and i < 0:
+   print(i)
+i = i + 1
+",5,1,0,0,0,0,0,0,0,0,3,2,2,1,0,0,0,0,0,3,1,0,0,1,1,9,0,0,8,3,2,3,1
+ex2-first-negative.py,"#!usr/bin/python
+
+a = [2, 10, 0, 1, -4, 2, -5, 9, -3]
+r = []
+
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r.append(a[i])
+   i = i + 1
+
+print r[0]
+",False,"#!usr/bin/python
+
+a = [2, 10, 0, 1, -4, 2, -5, 9, -3]
+r = []
+
+i = 0
+while i < len(a):
+   if int(a[i]) < 0:
+      r.append(a[i])
+   i = i + 1
+
+print(r[0])
+",5,1,0,1,0,0,0,0,0,0,4,5,2,0,0,0,0,0,0,3,2,0,1,1,2,12,0,0,13,13,3,3,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+
+i = 0
+while i < len(a):
+   print a[i]
+   i = i + 1
+",False,"#!/usr/bin/env python
+
+i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+
+i = 0
+while i < len(a):
+   print(a[i])
+   i = i + 1
+",5,2,0,0,0,0,0,0,0,0,4,3,3,1,0,0,0,0,0,2,0,0,0,2,0,10,0,0,14,5,2,2,0
+ex2-first-negative.py,"i = 0
+
+t = 0
+while i < len(a) and not a[i] < 0:
+	if a[i] < 0:
+		t = a[i]
+		print t
+	i = i + 1
+",False,"i = 0
+
+t = 0
+while i < len(a) and not a[i] < 0:
+	if a[i] < 0:
+		t = a[i]
+		print(t)
+	i = i + 1
+",5,1,0,1,0,0,0,0,0,0,4,1,3,2,0,0,0,0,0,2,0,0,1,1,0,8,0,0,14,5,3,1,0
+ex2-first-negative.py,"n = raw_input()
+a = []
+
+while n != ""end"":
+   a.append(int(n))
+   n = raw_input()
+
+i = 0
+b = []
+
+while i < len(a):
+   if a[i] < 0:
+      b.append(int(a[i]))
+      print b[0]
+   elif b[0] == []:
+      print """"
+   i = i + 1
+   
+",False,"n = input()
+a = []
+
+while n != ""end"":
+   a.append(int(n))
+   n = input()
+
+i = 0
+b = []
+
+while i < len(a):
+   if a[i] < 0:
+      b.append(int(a[i]))
+      print(b[0])
+   elif b[0] == []:
+      print("""")
+   i = i + 1
+   
+",5,2,0,1,1,0,0,0,0,0,8,1,4,0,0,0,0,0,0,4,3,0,2,2,3,18,0,0,19,7,4,3,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+if i < len(a):
+   print a[i]
+",False,"i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+if i < len(a):
+   print(a[i])
+",5,1,0,1,0,0,0,0,0,0,2,1,3,1,0,0,0,0,0,1,0,0,1,1,0,5,0,0,11,3,2,0,0
+ex2-first-negative.py,"a = []
+
+i = 0
+while i < len(a):
+	if i < 0:
+		print i
+i = i + 1
+",False,"a = []
+
+i = 0
+while i < len(a):
+	if i < 0:
+		print(i)
+i = i + 1
+",5,1,0,1,0,0,0,0,0,0,3,1,2,0,0,0,0,0,0,3,1,0,1,1,1,7,0,0,8,3,2,1,0
+ex2-first-negative.py,"
+
+
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		print a[i]
+	i = i + 1",False,"
+
+
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		print(a[i])
+	i = i + 1",4,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,8,0,0,9,3,2,3,0
+ex2-first-negative.py,"i = 0
+
+while i < len(a):
+	i = i + 1
+	if a[i] < 0:
+		print a[i]
+
+
+
+
+
+
+
+",False,"i = 0
+
+while i < len(a):
+	i = i + 1
+	if a[i] < 0:
+		print(a[i])
+
+
+
+
+
+
+
+",4,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,13,0,0,9,3,2,8,0
+ex2-first-negative.py,"a = []
+s = raw_input()
+a.append(int(s))
+i = 0
+while i < len(a) and a[i] > 0:
+	i = i + 1
+	if a[i] < 0:
+		print a[i]
+	
+		",False,"a = []
+s = input()
+a.append(int(s))
+i = 0
+while i < len(a) and a[i] > 0:
+	i = i + 1
+	if a[i] < 0:
+		print(a[i])
+	
+		",4,1,0,1,0,0,0,0,0,0,4,1,3,1,0,0,0,0,0,3,1,0,1,1,1,10,0,0,15,4,3,0,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+a = []
+i = 0
+
+while i < len(a):
+    if a[i] < 0:
+        print a[i]
+    i = i + 1",False,"#!/usr/bin/env python
+
+a = []
+i = 0
+
+while i < len(a):
+    if a[i] < 0:
+        print(a[i])
+    i = i + 1",4,1,0,1,0,0,0,0,0,0,3,2,2,0,0,0,0,0,0,2,1,0,1,1,1,9,0,0,10,3,2,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i]<0:
+	i = i + 1
+
+if a[i]<0:
+	print a[i]
+elif a[i]>=0:
+	print None	",False,"i = 0
+while i < len(a) and not a[i]<0:
+	i = i + 1
+
+if a[i]<0:
+	print(a[i])
+elif a[i]>=0:
+	print(None)	",4,1,0,1,1,0,0,0,0,0,2,1,4,2,0,0,0,0,0,1,0,0,2,1,0,8,0,0,13,6,2,1,0
+ex2-first-negative.py,"
+
+i = 0
+while i < len(a) and not a.isdigit(a) == 0:
+	if a[i] < 0:
+		print a[i]
+	i = i + 1",False,"
+
+i = 0
+while i < len(a) and not a.isdigit(a) == 0:
+	if a[i] < 0:
+		print(a[i])
+	i = i + 1",4,1,0,1,0,0,0,0,0,0,3,1,3,2,0,0,0,0,0,1,0,0,1,1,0,7,0,0,11,4,2,2,0
+ex2-first-negative.py,"
+a = [1, 2, 3, 4, 0]
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i == len(a):
+   print 0
+else:
+   print a[i]
+
+",False,"
+a = [1, 2, 3, 4, 0]
+i = 0
+while i < len(a) and not a[i] < 0:
+   i = i + 1
+
+if i == len(a):
+   print(0)
+else:
+   print(a[i])
+
+",4,1,0,1,0,1,0,0,0,0,4,1,3,2,0,0,0,0,0,2,1,0,2,1,1,11,0,0,12,9,2,3,0
+ex2-first-negative.py,"a = []
+s = raw_input()
+
+while s != ""end"":
+  a.append(int(s))
+  s = raw_input()
+
+i = 0
+while i < len(a):  
+   if a[i] < 0:
+     print a[i]
+   i = i+len(a)   
+i = i + 1
+",False,"a = []
+s = input()
+
+while s != ""end"":
+  a.append(int(s))
+  s = input()
+
+i = 0
+while i < len(a):  
+   if a[i] < 0:
+     print(a[i])
+   i = i+len(a)   
+i = i + 1
+",4,2,0,1,0,0,0,0,0,0,7,2,3,0,0,0,0,0,0,4,1,0,1,2,1,13,0,0,18,4,3,2,0
+ex2-first-negative.py,"a = []
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print a[i:0]
+	i = i + 1",False,"a = []
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print(a[i:0])
+	i = i + 1",4,1,0,1,0,0,0,0,0,0,3,1,2,0,0,0,0,0,0,2,1,0,1,1,1,7,0,0,10,4,2,1,0
+ex2-first-negative.py,"a = []
+
+i = 0
+
+while i < len(a) and i >= 0:
+
+   i = i + 1
+
+if i < len(a):
+
+   print a[i:i-1]
+",False,"a = []
+
+i = 0
+
+while i < len(a) and i >= 0:
+
+   i = i + 1
+
+if i < len(a):
+
+   print(a[i:i-1])
+",4,1,0,1,0,0,0,0,0,0,4,2,3,1,0,0,0,0,0,2,1,0,1,1,1,11,0,0,12,4,2,5,0
+ex2-first-negative.py,"
+
+
+i = 0
+while i < len(a) and not a.isalpha():
+	if a[i] < 0:
+		print a[i]
+	i = i + 1",False,"
+
+
+i = 0
+while i < len(a) and not a.isalpha():
+	if a[i] < 0:
+		print(a[i])
+	i = i + 1",4,1,0,1,0,0,0,0,0,0,2,1,2,2,0,0,0,0,0,1,0,0,1,1,0,8,0,0,10,3,2,3,0
+ex2-first-negative.py,"i = 0
+while i < len(a) and not a[i]<0:
+	i = i + 1
+
+if a[i]<0:
+	print a[i]",False,"i = 0
+while i < len(a) and not a[i]<0:
+	i = i + 1
+
+if a[i]<0:
+	print(a[i])",4,1,0,1,0,0,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,1,1,0,6,0,0,11,4,2,1,0
+ex2-first-negative.py,"#!/usr/bin/env python
+first_neg = 0
+second_neg = 0
+
+i = 0
+while i < len(a):
+	if a[i] <= -1:
+		first_neg = a[i]
+		j = i
+		while j < a[j]:		
+			second_neg = a[j]
+			j = j + 1
+	i = i + 1
+print first_neg",False,"#!/usr/bin/env python
+first_neg = 0
+second_neg = 0
+
+i = 0
+while i < len(a):
+	if a[i] <= -1:
+		first_neg = a[i]
+		j = i
+		while j < a[j]:		
+			second_neg = a[j]
+			j = j + 1
+	i = i + 1
+print(first_neg)",4,2,0,1,0,0,0,0,0,0,9,4,3,0,0,0,0,0,0,3,0,0,1,2,0,14,0,0,23,6,5,1,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+
+i = 0
+while i < len(a) and 0 < int(a[i]):
+   i = i + 1
+
+print int(a[i])
+",False,"#!/usr/bin/env/python
+
+
+i = 0
+while i < len(a) and 0 < int(a[i]):
+   i = i + 1
+
+print(int(a[i]))
+",4,1,0,0,0,0,0,0,0,0,2,2,2,1,0,0,0,0,0,1,0,0,0,1,0,8,0,0,9,3,2,3,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+
+a = []      #list of integers
+i = 0
+
+while i < len(a) and i < 0:
+   i = i - 1
+
+",False,"#!/usr/bin/env/python
+
+
+a = []      #list of integers
+i = 0
+
+while i < len(a) and i < 0:
+   i = i - 1
+
+",4,1,0,0,0,0,0,0,0,0,3,2,2,1,0,0,0,0,0,2,1,0,0,1,1,9,0,0,7,3,2,4,1
+ex2-first-negative.py,"
+i = 0
+while i < len(a):
+  if a[i] < 0:
+    print a[i]
+    i = i + 1
+
+",False,"
+i = 0
+while i < len(a):
+  if a[i] < 0:
+    print(a[i])
+    i = i + 1
+
+",4,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,7,0,0,9,3,2,2,0
+ex2-first-negative.py,"
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print a[i:0]
+	i = i + 1",False,"
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print(a[i:0])
+	i = i + 1",4,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,7,0,0,9,4,2,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+first_neg = 0
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		first_neg = a[i]
+		if a[i] > a[i:i+1]:
+			first_neg = a[i]
+	i = i + 1
+print first_neg",False,"#!/usr/bin/env python
+first_neg = 0
+i = 0
+while i < len(a):
+	if a[i] < 0:
+		first_neg = a[i]
+		if a[i] > a[i:i+1]:
+			first_neg = a[i]
+	i = i + 1
+print(first_neg)",4,1,0,2,0,0,0,0,0,0,5,3,3,0,0,0,0,0,0,2,0,0,2,1,0,10,0,0,20,5,3,0,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+
+print int(a[i])
+
+",False,"#!/usr/bin/env/python
+
+i = 0
+while i < len(a) and a[i] > 0:
+   i = i + 1
+
+print(int(a[i]))
+
+",4,1,0,0,0,0,0,0,0,0,2,2,2,1,0,0,0,0,0,1,0,0,0,1,0,8,0,0,9,3,2,3,0
+ex2-first-negative.py,"
+i = 0
+while i < len(a) and not a[i] < 0:
+   i += 1
+
+print a[i]",False,"
+i = 0
+while i < len(a) and not a[i] < 0:
+   i += 1
+
+print(a[i])",4,1,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,1,0,0,0,1,0,6,0,0,8,3,2,2,0
+ex2-first-negative.py,"a = [-2, 10, 0, 1, 4, 2, 5, -9]
+
+i = 0
+
+while i < len(a) and a[i] >= 0:
+	i =  i + 1
+	
+	if a[i] < 0 :
+		print a[i]
+",False,"a = [-2, 10, 0, 1, 4, 2, 5, -9]
+
+i = 0
+
+while i < len(a) and a[i] >= 0:
+	i =  i + 1
+	
+	if a[i] < 0 :
+		print(a[i])
+",4,1,0,1,0,0,0,0,0,0,4,3,3,1,0,0,0,0,0,2,1,0,1,1,1,9,0,0,12,12,2,2,0
+ex2-first-negative.py,"i = 0
+while i < len(a):
+	if int(a[i]) < 0:
+		print a[i]
+	i += 1
+
+",False,"i = 0
+while i < len(a):
+	if int(a[i]) < 0:
+		print(a[i])
+	i += 1
+
+",4,1,0,1,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,1,0,0,1,1,0,6,0,0,8,3,2,1,0
+ex2-first-negative.py,"a = []
+
+i = 0
+print int(a)
+
+while i < len(a) and int(a[i]) >= 0:
+	i =  i + 1
+	
+	",False,"a = []
+
+i = 0
+print(int(a))
+
+while i < len(a) and int(a[i]) >= 0:
+	i =  i + 1
+	
+	",4,1,0,0,0,0,0,0,0,0,4,1,2,1,0,0,0,0,0,2,1,0,0,1,1,9,0,0,9,3,2,2,0
+ex2-first-negative.py,"a = []
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+	if a[i] < 0 :
+	   print a[i],i ",False,"a = []
+
+i = 0
+while i < len(a) and a[i] >= 0:
+	i = i + 1
+	if a[i] < 0 :
+	   print(a[i],i) ",4,1,0,1,0,0,0,0,0,0,4,1,3,1,0,0,0,0,0,2,1,0,1,1,1,7,0,0,13,4,2,1,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+i = 0
+while i < len(a) and 0 < a[i]:
+   i = i + 1
+
+i = 0
+while i < len(a):
+
+   print a[i]
+   i = i + 1
+",False,"#!/usr/bin/env/python
+
+i = 0
+while i < len(a) and 0 < a[i]:
+   i = i + 1
+
+i = 0
+while i < len(a):
+
+   print(a[i])
+   i = i + 1
+",4,2,0,0,0,0,0,0,0,0,4,3,3,1,0,0,0,0,0,2,0,0,0,2,0,11,0,0,14,5,2,3,0
+ex2-first-negative.py,"i = 0
+
+while i < len(a)-1 and 0 <= a[i]:
+   i = i + 1
+print a[i]
+",False,"i = 0
+
+while i < len(a)-1 and 0 <= a[i]:
+   i = i + 1
+print(a[i])
+",4,1,0,0,0,0,0,0,0,0,3,2,2,1,0,0,0,0,0,1,0,0,0,1,0,5,0,0,9,4,2,1,0
+ex2-first-negative.py,"i = 0 
+while i < len(a) and a[i] < 0:
+   i = i + 1
+
+
+print a[i]
+   
+",False,"i = 0 
+while i < len(a) and a[i] < 0:
+   i = i + 1
+
+
+print(a[i])
+   
+",3,1,0,0,0,0,0,0,0,0,2,1,2,1,0,0,0,0,0,1,0,0,0,1,0,7,0,0,9,3,2,2,0
+ex2-first-negative.py,"#!usr/bin/env python
+
+i=0
+a=[]
+t=""""
+
+while i<len(a) and i>=0:
+   if i<0:
+      t=a[i]
+   else:
+      """"
+   i=i+1
+print t
+      
+   
+",False,"#!usr/bin/env python
+
+i=0
+a=[]
+t=""""
+
+while i<len(a) and i>=0:
+   if i<0:
+      t=a[i]
+   else:
+      """"
+   i=i+1
+print(t)
+      
+   
+",3,1,0,1,0,1,0,0,0,0,4,2,3,1,0,0,0,0,0,3,1,0,2,1,1,15,0,0,13,6,3,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+a = []
+
+i = 0
+while a[i] > 0 and a[i] == 0:
+  i = i + 1
+  
+while a[i] < 0:
+   print i
+   
+",False,"#!/usr/bin/env python
+
+a = []
+
+i = 0
+while a[i] > 0 and a[i] == 0:
+  i = i + 1
+  
+while a[i] < 0:
+   print(i)
+   
+",3,2,0,0,0,0,0,0,0,0,4,2,3,1,0,0,0,0,0,2,1,0,0,2,1,11,0,0,11,5,2,2,0
+ex2-first-negative.py,"#!/usr/bin/env python
+
+a = []
+
+i = 0
+while i > 0 and i == 0:
+  i = i + 1
+  
+while i < 0:
+   print i
+   
+",False,"#!/usr/bin/env python
+
+a = []
+
+i = 0
+while i > 0 and i == 0:
+  i = i + 1
+  
+while i < 0:
+   print(i)
+   
+",3,2,0,0,0,0,0,0,0,0,4,2,3,1,0,0,0,0,0,2,1,0,0,2,1,11,0,0,8,5,2,2,0
+ex2-first-negative.py,"a = [2, 10, 0, 1, -4, 2, -5, 9]
+
+i = 0
+while i < len(a) and not a[i] < 0:
+	i = i + 1
+
+print a[i]",False,"a = [2, 10, 0, 1, -4, 2, -5, 9]
+
+i = 0
+while i < len(a) and not a[i] < 0:
+	i = i + 1
+
+print(a[i])",3,1,0,0,0,0,0,0,0,0,3,3,2,2,0,0,0,0,0,2,1,0,0,1,1,7,0,0,10,11,2,2,0
+ex2-first-negative.py,"import sys
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+print a[i]
+
+",False,"import sys
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+print(a[i])
+
+",2,1,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,1,0,0,0,1,0,7,0,0,9,3,2,2,0
+ex2-first-negative.py,"import sys
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+print a[i]
+
+",False,"import sys
+
+i = 0
+while i < len(a) and 0 <= int(a[i]):
+   i = i + 1
+print(a[i])
+
+",2,1,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,1,0,0,0,1,0,7,0,0,9,3,2,2,0
+ex2-first-negative.py,"#!/usr/bin/env/python
+
+
+a = []
+i = 0
+
+#while i < len(a) and i < 0:
+#   i = i - 1
+#print i 
+   
+i = 0 
+if i < 0:
+   print i
+",False,"#!/usr/bin/env/python
+
+
+a = []
+i = 0
+
+#while i < len(a) and i < 0:
+#   i = i - 1
+#print i 
+   
+i = 0 
+if i < 0:
+   print(i)
+",2,0,0,1,0,0,0,0,0,0,4,2,3,1,0,0,0,0,0,3,1,0,1,0,1,13,0,0,5,3,2,3,3
+ex2-first-negative.py,"
+a = []
+i = 0
+
+while i < len(a) and a[i] > 0:
+    if i < len(a): 
+      print a[i]
+    i = i + 1
+else:
+      print a
+
+
+      
+   
+",False,"
+a = []
+i = 0
+
+while i < len(a) and a[i] > 0:
+    if i < len(a): 
+      print(a[i])
+    i = i + 1
+else:
+      print(a)
+
+
+      
+   
+",2,1,0,1,0,1,0,0,0,0,3,1,3,1,0,0,0,0,0,2,1,0,2,1,1,14,0,0,13,3,2,4,0
+ex2-first-negative.py,"i = 1
+
+while i < len(a):
+	while a[i] < 0:
+		print a[i]
+	if a[i] > 0:	
+		i = i + 1		
+	i = i + 1	
+
+
+
+
+
+
+",False,"i = 1
+
+while i < len(a):
+	while a[i] < 0:
+		print(a[i])
+	if a[i] > 0:	
+		i = i + 1		
+	i = i + 1	
+
+
+
+
+
+
+",2,2,0,1,0,0,0,0,0,0,3,2,3,0,0,0,0,0,0,1,0,0,1,2,0,14,0,0,13,5,2,7,0
+ex2-first-negative.py,"i = 0
+s = """"
+while i < len(a):
+	if a[i] < 0:
+		s = int(a[i])
+		print int(s[:1])
+	i = i + 1",False,"i = 0
+s = """"
+while i < len(a):
+	if a[i] < 0:
+		s = int(a[i])
+		print(int(s[:1]))
+	i = i + 1",1,1,0,1,0,0,0,0,0,0,4,1,2,0,0,0,0,0,0,2,0,0,1,1,0,7,0,0,12,5,3,0,0
+ex2-first-negative.py,"i = 0 
+while i < len(a) and int(a[i]) < 0:
+    
+
+   print a[i]
+
+   i = i + 1
+
+
+",False,"i = 0 
+while i < len(a) and int(a[i]) < 0:
+    
+
+   print(a[i])
+
+   i = i + 1
+
+
+",1,1,0,0,0,0,0,0,0,0,2,1,2,1,0,0,0,0,0,1,0,0,0,1,0,9,0,0,9,3,2,4,0
+ex2-first-negative.py,"i = 0 
+while i < len(a) and a[i] <= 0: 
+  
+   print a[i]
+
+
+
+
+   i = i + 1
+   
+
+
+",False,"i = 0 
+while i < len(a) and a[i] <= 0: 
+  
+   print(a[i])
+
+
+
+
+   i = i + 1
+   
+
+
+",0,1,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,1,0,0,0,1,0,12,0,0,9,3,2,6,0
+ex2-first-negative.py,"
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print a[i[0]]
+	i = i + 1",False,"
+i = 0
+
+while i < len(a):
+	if a[i] < 0:
+		print(a[i[0]])
+	i = i + 1",0,1,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,1,1,0,7,0,0,9,4,2,2,0
+ex2-first-negative.py,"a = []
+i = 0
+
+while i < len(a) and not a(i) > 0:
+   if a(i) < 0:
+    print a , a[i]
+   i = i + 1
+
+else:
+      print a
+",False,"a = []
+i = 0
+
+while i < len(a) and not a(i) > 0:
+   if a(i) < 0:
+    print(a , a[i])
+   i = i + 1
+
+else:
+      print(a)
+",0,1,0,1,0,1,0,0,0,0,3,1,3,2,0,0,0,0,0,2,1,0,2,1,1,10,0,0,7,4,1,2,0
+ex2-first-negative.py,"i = 0 
+while i < len(a) and not a[i] < 0: 
+   if a[i] < 0:
+      print a[i]
+   i = i + 1
+   
+else: 
+   print a
+
+
+",False,"i = 0 
+while i < len(a) and not a[i] < 0: 
+   if a[i] < 0:
+      print(a[i])
+   i = i + 1
+   
+else: 
+   print(a)
+
+
+",0,1,0,1,0,1,0,0,0,0,2,1,3,2,0,0,0,0,0,1,0,0,2,1,0,10,0,0,12,4,2,2,0

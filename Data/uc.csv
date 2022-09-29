@@ -1,0 +1,5587 @@
+task,upload,correct,new_upload,score,while,for,if,elif,else,return,break,continue,pass,assign,arith,comp,log,bit,iden,mem,#fun,#fcall,globals,#list,#tuple,cond,loop,#lst,#lines,avg_lines_per_func,#class,#var_uses,#con_uses,#var,#emptylines,#comments
+unique_count_021.py,"import sys
+
+def main():
+    unique = []
+    for line in sys.stdin:
+        line = line.lower().split()
+        for word in line:
+             word = replace_punc(word)
+             if word not in unique and word:
+                 unique.append(word)
+    print(count(unique))
+
+def count(tokens):
+    count = len(tokens)
+    return count
+
+def replace_punc(word):
+    for ch in word:
+        if not ch.isalnum():
+            word = word.replace(ch, """")
+    return word
+
+if __name__ == ""__main__"":
+    main()
+",True,"import sys
+
+def main():
+    unique = []
+    for line in sys.stdin:
+        line = line.lower().split()
+        for word in line:
+             word = replace_punc(word)
+             if word not in unique and word:
+                 unique.append(word)
+    print((count(unique)))
+
+def count(tokens):
+    count = len(tokens)
+    return count
+
+def replace_punc(word):
+    for ch in word:
+        if not ch.isalnum():
+            word = word.replace(ch, """")
+    return word
+
+if __name__ == ""__main__"":
+    main()
+",10,0,3,3,0,0,2,0,0,0,6,0,1,2,0,0,4,3,3,0,1,0,3,3,1,24,5.666666666666668,0,24,2,7,4,0
+unique_count_021.py,"#!/usr/bin/env python
+
+import sys
+import string
+
+def removepunctuation(s):
+	stripped_word = """"
+	for c in s:
+		if c not in string.punctuation:
+			stripped_word += c
+	if stripped_word:
+		return stripped_word.lower()
+
+def unique_count():
+	total = 0
+	unique_words = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = removepunctuation(word)
+			if word not in unique_words and word:
+				unique_words.append(word)
+	total += len(unique_words)
+	print(total)
+
+if __name__ == ""__main__"":
+	unique_count()
+",True,"#!/usr/bin/env python
+
+import sys
+import string
+
+def removepunctuation(s):
+	stripped_word = """"
+	for c in s:
+		if c not in string.punctuation:
+			stripped_word += c
+	if stripped_word:
+		return stripped_word.lower()
+
+def unique_count():
+	total = 0
+	unique_words = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = removepunctuation(word)
+			if word not in unique_words and word:
+				unique_words.append(word)
+	total += len(unique_words)
+	print(total)
+
+if __name__ == ""__main__"":
+	unique_count()
+",10,0,3,4,0,0,1,0,0,0,8,5,1,1,0,0,5,2,2,0,1,0,4,3,1,27,9.0,0,28,3,10,4,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def lower(s):
+    return s.lower()
+
+def main():
+    nl =[]
+    for line in sys.stdin:
+
+        line = line.strip()
+        line = lower(line)
+        line = line.split()
+        for word in line:
+            for ch in word:
+                if ch in punctuation:
+                    word = word.replace(ch, """")
+            nl.append(word)
+    nl = set(nl)
+    print(len(nl) - 1)
+
+if __name__==""__main__"":
+   main()
+",True,"import sys
+from string import punctuation
+
+def lower(s):
+    return s.lower()
+
+def main():
+    nl =[]
+    for line in sys.stdin:
+
+        line = line.strip()
+        line = lower(line)
+        line = line.split()
+        for word in line:
+            for ch in word:
+                if ch in punctuation:
+                    word = word.replace(ch, """")
+            nl.append(word)
+    nl = set(nl)
+    print((len(nl) - 1))
+
+if __name__==""__main__"":
+   main()
+",10,0,3,2,0,0,1,0,0,0,6,1,1,0,0,0,4,2,2,0,1,0,2,3,1,23,8.0,0,25,3,8,4,0
+unique_count_021.py,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            b = [char for char in check if char.isalnum()]
+            a[i] = """".join(b)
+            i += 1
+        a = "" "".join(a)
+        lines.append(a)
+    lines = "" "".join(lines)
+    n = unique(lines.lower().split())
+    print(n)
+
+if __name__==""__main__"":
+    main()",True,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            b = [char for char in check if char.isalnum()]
+            a[i] = """".join(b)
+            i += 1
+        a = "" "".join(a)
+        lines.append(a)
+    lines = "" "".join(lines)
+    n = unique(lines.lower().split())
+    print(n)
+
+if __name__==""__main__"":
+    main()",10,1,3,3,0,0,1,0,0,0,14,4,2,0,0,0,4,2,2,0,2,0,3,4,2,28,11.5,0,40,9,13,2,0
+unique_count_021.py,"import sys
+
+
+def main():
+    unique_words = []
+    text = sys.stdin.read()
+    tokens = text.strip().split()
+
+    for word in tokens:
+        s = ''
+        word = word.lower()
+        for c in word:
+            if c.isalpha() or c.isdigit():
+                s = s + c
+        if s not in unique_words and s != '':
+            unique_words.append(s)
+
+    print(len(unique_words))
+
+
+if __name__ == '__main__':
+    main()
+",True,"import sys
+
+
+def main():
+    unique_words = []
+    text = sys.stdin.read()
+    tokens = text.strip().split()
+
+    for word in tokens:
+        s = ''
+        word = word.lower()
+        for c in word:
+            if c.isalpha() or c.isdigit():
+                s = s + c
+        if s not in unique_words and s != '':
+            unique_words.append(s)
+
+    print((len(unique_words)))
+
+
+if __name__ == '__main__':
+    main()
+",10,0,2,3,0,0,0,0,0,0,8,1,2,2,0,0,3,1,1,0,1,0,3,2,1,22,15.0,0,24,3,8,6,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    unique_words = []
+    for word in words:
+        if word not in unique_words:
+            unique_words.append(word)
+    print(len(unique_words))
+
+if __name__ == '__main__':
+    main()
+",True,"#!/usr/bin/env python3
+
+import sys
+
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    unique_words = []
+    for word in words:
+        if word not in unique_words:
+            unique_words.append(word)
+    print((len(unique_words)))
+
+if __name__ == '__main__':
+    main()
+",10,0,2,3,0,0,0,0,0,0,5,1,1,3,0,0,3,1,1,0,1,0,3,2,1,19,11.0,0,20,2,7,4,0
+unique_count_021.py,"import sys
+
+def main():
+    unique = []
+    for line in sys.stdin:
+        line = line.lower().split()
+        for word in line:
+             word = replace_punc(word)
+             if word not in unique and word:
+                 unique.append(word)
+    print(count(unique))
+
+def count(tokens):
+    count = len(tokens)
+    return count
+
+def replace_punc(word):
+    for ch in word:
+        if not ch.isalnum():
+            word = word.replace(ch, """")
+    return word
+
+if __name__ == ""__main__"":
+    main()
+",True,"import sys
+
+def main():
+    unique = []
+    for line in sys.stdin:
+        line = line.lower().split()
+        for word in line:
+             word = replace_punc(word)
+             if word not in unique and word:
+                 unique.append(word)
+    print((count(unique)))
+
+def count(tokens):
+    count = len(tokens)
+    return count
+
+def replace_punc(word):
+    for ch in word:
+        if not ch.isalnum():
+            word = word.replace(ch, """")
+    return word
+
+if __name__ == ""__main__"":
+    main()
+",10,0,3,3,0,0,2,0,0,0,6,0,1,2,0,0,4,3,3,0,1,0,3,3,1,24,5.666666666666668,0,24,2,7,4,0
+unique_count_021.py,"import sys
+import string
+
+def uniquecount(l):
+    return len(set(l))
+
+def main():
+    lines = []
+    newlist = []
+    for line in sys.stdin:
+        for c in string.punctuation:
+            line = line.replace(c,"""")
+        line = line.lower().split()
+        lines.append(line)
+        newlist = sum(lines, [])
+        unique = uniquecount(newlist)
+    print(unique)
+
+if __name__ == '__main__':
+    main()
+",True,"import sys
+import string
+
+def uniquecount(l):
+    return len(set(l))
+
+def main():
+    lines = []
+    newlist = []
+    for line in sys.stdin:
+        for c in string.punctuation:
+            line = line.replace(c,"""")
+        line = line.lower().split()
+        lines.append(line)
+        newlist = sum(lines, [])
+        unique = uniquecount(newlist)
+    print(unique)
+
+if __name__ == '__main__':
+    main()
+",10,0,2,1,0,0,1,0,0,0,7,0,1,0,0,0,2,2,2,0,3,0,1,2,3,20,6.5,0,20,2,9,3,0
+unique_count_021.py,"import sys
+def main():
+	text = []
+	for lines in sys.stdin:
+		lines = text.append(lines.strip().lower())
+		all_words = punc_removal(text)
+	print(get_unique_tokens(all_words))
+def punc_removal(s):
+	j =  "" "".join(s)
+	for letter in j:
+		if letter.isalnum() or letter.isspace():
+			pass
+		else:
+			j = j.replace(letter,"""")
+	return j
+def get_unique_tokens(tab):
+	unique_words = []
+	a = tab.split()
+	for word in a:
+		if word not in unique_words:
+			unique_words.append(word)
+	return len(unique_words)
+
+if __name__ == '__main__':
+	main()",True,"import sys
+def main():
+	text = []
+	for lines in sys.stdin:
+		lines = text.append(lines.strip().lower())
+		all_words = punc_removal(text)
+	print((get_unique_tokens(all_words)))
+def punc_removal(s):
+	j =  "" "".join(s)
+	for letter in j:
+		if letter.isalnum() or letter.isspace():
+			pass
+		else:
+			j = j.replace(letter,"""")
+	return j
+def get_unique_tokens(tab):
+	unique_words = []
+	a = tab.split()
+	for word in a:
+		if word not in unique_words:
+			unique_words.append(word)
+	return len(unique_words)
+
+if __name__ == '__main__':
+	main()",10,0,3,3,0,1,2,0,0,1,8,0,1,1,0,0,4,3,3,0,2,0,4,3,2,25,7.0,0,30,3,12,1,0
+unique_count_021.py,"import sys
+
+count = []
+punctuation = "".,?!""
+
+def main():
+	for line in sys.stdin:
+		a = line.strip().split()
+		for w in a:
+			if w[-1] in punctuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w.lower())
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w.lower())
+	print(len(count)+1)
+
+if __name__ == '__main__':
+	main()
+",True,"import sys
+
+count = []
+punctuation = "".,?!""
+
+def main():
+	for line in sys.stdin:
+		a = line.strip().split()
+		for w in a:
+			if w[-1] in punctuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w.lower())
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w.lower())
+	print((len(count)+1))
+
+if __name__ == '__main__':
+	main()
+",10,0,2,3,1,0,0,0,0,0,5,3,1,2,0,0,5,1,1,2,1,0,4,2,1,19,11.0,0,24,5,7,3,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print(unique_words(words))
+
+if __name__ == '__main__':
+    main()
+",True,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print((unique_words(words)))
+
+if __name__ == '__main__':
+    main()
+",9,0,2,3,0,0,1,0,0,0,5,1,1,3,0,0,3,2,2,0,1,0,3,2,1,22,6.5,0,17,2,7,5,0
+unique_count_021.py,"import sys
+import string
+
+def check(line):
+   new = """"
+   for ch in line:
+      if ch not in string.punctuation:
+         new += ch
+   if new:
+      return new.lower()
+
+def main():
+   words = []
+   total = 0
+   for line in sys.stdin:
+      line = line.split()
+      for word in line:
+         word = check(word)
+         if word not in words and word:
+            words.append(word)
+   total += len(words)
+   #return total
+   print(total)
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+
+def check(line):
+   new = """"
+   for ch in line:
+      if ch not in string.punctuation:
+         new += ch
+   if new:
+      return new.lower()
+
+def main():
+   words = []
+   total = 0
+   for line in sys.stdin:
+      line = line.split()
+      for word in line:
+         word = check(word)
+         if word not in words and word:
+            words.append(word)
+   total += len(words)
+   #return total
+   print(total)
+
+
+if __name__ == '__main__':
+	main()",9,0,3,4,0,0,1,0,0,0,8,4,1,1,0,0,5,2,2,0,1,0,4,3,1,27,9.5,0,28,3,9,4,1
+unique_count_021.py,"import sys
+tokens=[]
+new_tokens=[]
+unique=[]
+def unique_count(s):
+	tokens.append(s)
+	new_tokens=tokens[0]
+	i=0
+	while i<len(new_tokens):
+		j=0
+		while j<len(new_tokens[i]) and new_tokens[i][j].isalnum():
+			j=j+1
+		if j==len(new_tokens[i]) and new_tokens[i] not in unique:
+			unique.append(new_tokens[i])
+		elif j!=len(new_tokens[i]) and new_tokens[i][:-1] not in unique and new_tokens[i][:-1].isalnum():
+			unique.append(new_tokens[i][:-1])
+		i=i+1
+	print (len(unique)+1)
+
+
+def main():
+	unique_count(sys.stdin.read().lower().strip().split())
+if __name__ == '__main__':
+	main()",True,"import sys
+tokens=[]
+new_tokens=[]
+unique=[]
+def unique_count(s):
+	tokens.append(s)
+	new_tokens=tokens[0]
+	i=0
+	while i<len(new_tokens):
+		j=0
+		while j<len(new_tokens[i]) and new_tokens[i][j].isalnum():
+			j=j+1
+		if j==len(new_tokens[i]) and new_tokens[i] not in unique:
+			unique.append(new_tokens[i])
+		elif j!=len(new_tokens[i]) and new_tokens[i][:-1] not in unique and new_tokens[i][:-1].isalnum():
+			unique.append(new_tokens[i][:-1])
+		i=i+1
+	print((len(unique)+1))
+
+
+def main():
+	unique_count(sys.stdin.read().lower().strip().split())
+if __name__ == '__main__':
+	main()",9,2,0,2,1,0,0,0,0,0,7,6,5,4,0,0,2,2,2,3,3,0,3,2,3,24,8.0,0,44,10,8,2,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print(unique_words(words))
+
+if __name__ == '__main__':
+    main()",True,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print((unique_words(words)))
+
+if __name__ == '__main__':
+    main()",9,0,2,3,0,0,1,0,0,0,5,1,1,3,0,0,3,2,2,0,1,0,3,2,1,22,6.5,0,17,2,7,5,0
+unique_count_021.py,"import sys, string
+
+def unique(file):
+	a = []
+	uniquewords = []
+
+	file = file.lower()
+	for letter in file:
+		if letter not in string.punctuation:
+			a.append(letter)
+	
+	file = """".join(a)
+
+	file = file.split()
+	for word in file:
+		if not word in uniquewords:
+			uniquewords.append(word)
+
+	return(len(uniquewords))
+
+def main():
+	file = sys.stdin.read()
+	print(unique(file))
+
+
+if __name__ == '__main__':
+	main()",True,"import sys, string
+
+def unique(file):
+	a = []
+	uniquewords = []
+
+	file = file.lower()
+	for letter in file:
+		if letter not in string.punctuation:
+			a.append(letter)
+	
+	file = """".join(a)
+
+	file = file.split()
+	for word in file:
+		if not word in uniquewords:
+			uniquewords.append(word)
+
+	return(len(uniquewords))
+
+def main():
+	file = sys.stdin.read()
+	print((unique(file)))
+
+
+if __name__ == '__main__':
+	main()",9,0,2,3,0,0,0,0,0,0,7,0,1,1,0,0,4,2,2,0,2,0,3,2,2,27,10.0,0,25,2,8,7,0
+unique_count_021.py,"import sys
+import string
+
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	x = str.maketrans(""!?.-_,'"" , 7*"" "")
+	s.translate(x)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print(len(a)-13)
+
+	#i have no idea where the other 13 are coming from
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",True,"import sys
+import string
+
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	x = str.maketrans(""!?.-_,'"" , 7*"" "")
+	s.translate(x)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print((len(a)-13))
+
+	#i have no idea where the other 13 are coming from
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",9,0,1,2,0,1,0,0,0,1,5,3,1,0,0,0,2,1,1,0,1,0,3,1,1,30,12.0,0,17,5,7,11,1
+unique_count_021.py,"import sys
+
+
+count = []
+punctuation = "".,?!""
+
+def main():
+
+	for line in sys.stdin:
+		a = line.strip().split()
+		for w in a:
+			if w[-1] in punctuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w.lower())
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w.lower())
+	print(len(count)+1)
+
+
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+
+
+count = []
+punctuation = "".,?!""
+
+def main():
+
+	for line in sys.stdin:
+		a = line.strip().split()
+		for w in a:
+			if w[-1] in punctuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w.lower())
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w.lower())
+	print((len(count)+1))
+
+
+
+
+if __name__ == '__main__':
+	main()",9,0,2,3,1,0,0,0,0,0,5,3,1,2,0,0,5,1,1,2,1,0,4,2,1,24,12.0,0,24,5,7,8,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print(unique_words(words))
+
+if __name__ == '__main__':
+    main()",True,"#!/usr/bin/env python3
+
+import sys
+
+
+def unique_words(l):
+    unique_words = []
+    for word in l:
+        if word not in unique_words:
+            unique_words.append(word)
+    return len(unique_words)
+
+def main():
+    text = sys.stdin.read().strip().casefold()
+    for c in text:
+        if not c.isalnum() and not c.isspace():
+            text = text.replace(c, '')
+    words = text.split()
+    print((unique_words(words)))
+
+if __name__ == '__main__':
+    main()",9,0,2,3,0,0,1,0,0,0,5,1,1,3,0,0,3,2,2,0,1,0,3,2,1,22,6.5,0,17,2,7,5,0
+unique_count_021.py,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char, '')
+	return unique
+
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print(len(new))
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char, '')
+	return unique
+
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print((len(new)))
+
+
+if __name__ == '__main__':
+	main()",9,0,3,3,0,0,1,0,0,0,5,0,1,1,0,0,5,2,2,1,1,0,3,3,1,24,6.5,0,24,2,8,6,0
+unique_count_021.py,"import sys
+import string
+def main():
+	punc_rock = str.maketrans("""","""", string.punctuation)
+	a = []
+	s = sys.stdin.read().casefold().strip().split()
+	for word in s:
+		word = word.translate(punc_rock)
+		if (word.isalpha() or word.isdigit()) and word not in a:
+			a.append(word)
+	print(len(a))
+
+if __name__ == '__main__':
+	main()
+
+
+",True,"import sys
+import string
+def main():
+	punc_rock = str.maketrans("""","""", string.punctuation)
+	a = []
+	s = sys.stdin.read().casefold().strip().split()
+	for word in s:
+		word = word.translate(punc_rock)
+		if (word.isalpha() or word.isdigit()) and word not in a:
+			a.append(word)
+	print((len(a)))
+
+if __name__ == '__main__':
+	main()
+
+
+",9,0,1,2,0,0,0,0,0,0,5,0,1,2,0,0,2,1,1,0,1,0,2,1,1,16,9.0,0,19,3,8,3,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+def main():
+	d = {}
+	a = []
+	unique = []
+	for line in sys.stdin:
+		a = line.lower().strip().split()
+		for x in a:
+			s = """"
+			for c in x:
+				if c.isalnum():
+					s += c
+			if s not in d and len(s) > 0:
+				unique.append(s)
+				d[s] = 1
+				
+#	print (sorted(unique))
+	print (len(unique))
+
+if __name__ == ""__main__"":
+	main()
+",True,"#!/usr/bin/env python3
+
+import sys
+
+def main():
+	d = {}
+	a = []
+	unique = []
+	for line in sys.stdin:
+		a = line.lower().strip().split()
+		for x in a:
+			s = """"
+			for c in x:
+				if c.isalnum():
+					s += c
+			if s not in d and len(s) > 0:
+				unique.append(s)
+				d[s] = 1
+				
+#	print (sorted(unique))
+	print((len(unique)))
+
+if __name__ == ""__main__"":
+	main()
+",9,0,3,3,0,0,0,0,0,0,8,3,2,1,0,0,4,1,1,0,2,0,3,3,2,24,17.0,0,24,4,9,3,1
+unique_count_021.py,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+   for char in unique:
+      if char in string.punctuation:
+         unique = unique.replace(char,'')
+   return unique
+
+def main():
+   new = []
+   for line in unique:
+      line = prepstring(line.lower().strip())
+      for token in line.strip().split():
+         if token not in new and token.isalnum():
+            new.append(token)
+   print(len(new))
+
+
+if __name__ == ""__main__"":
+   main()",True,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+   for char in unique:
+      if char in string.punctuation:
+         unique = unique.replace(char,'')
+   return unique
+
+def main():
+   new = []
+   for line in unique:
+      line = prepstring(line.lower().strip())
+      for token in line.strip().split():
+         if token not in new and token.isalnum():
+            new.append(token)
+   print((len(new)))
+
+
+if __name__ == ""__main__"":
+   main()",9,0,3,3,0,0,1,0,0,0,5,0,1,1,0,0,5,2,2,1,1,0,3,3,1,23,6.5,0,24,2,8,5,0
+unique_count_021.py,"import sys
+tokens=[]
+new_tokens=[]
+unique=[]
+def unique_count(s):
+	tokens.append(s)
+	new_tokens=tokens[0]
+	i=0
+	while i<len(new_tokens):
+		j=0
+		while j<len(new_tokens[i]) and new_tokens[i][j].isalnum():
+			j=j+1
+		if j==len(new_tokens[i]) and new_tokens[i] not in unique:
+			unique.append(new_tokens[i])
+		elif j!=len(new_tokens[i]) and new_tokens[i][:-1] not in unique and new_tokens[i][:-1].isalnum():
+			unique.append(new_tokens[i][:-1])
+		i=i+1
+	print (len(unique)+1)
+
+
+def main():
+	unique_count(sys.stdin.read().lower().strip().split())
+if __name__ == '__main__':
+	main()",True,"import sys
+tokens=[]
+new_tokens=[]
+unique=[]
+def unique_count(s):
+	tokens.append(s)
+	new_tokens=tokens[0]
+	i=0
+	while i<len(new_tokens):
+		j=0
+		while j<len(new_tokens[i]) and new_tokens[i][j].isalnum():
+			j=j+1
+		if j==len(new_tokens[i]) and new_tokens[i] not in unique:
+			unique.append(new_tokens[i])
+		elif j!=len(new_tokens[i]) and new_tokens[i][:-1] not in unique and new_tokens[i][:-1].isalnum():
+			unique.append(new_tokens[i][:-1])
+		i=i+1
+	print((len(unique)+1))
+
+
+def main():
+	unique_count(sys.stdin.read().lower().strip().split())
+if __name__ == '__main__':
+	main()",9,2,0,2,1,0,0,0,0,0,7,6,5,4,0,0,2,2,2,3,3,0,3,2,3,24,8.0,0,44,10,8,2,0
+unique_count_021.py,"from sys import stdin
+
+def tokenise_input():
+    words = []
+    for line in stdin:
+        for word in line.split():
+            words.append("""".join([c.lower() for c in word if c.isalnum()])) 
+    words = filter(lambda word: word != """", words)
+    print(len(set(words)))
+
+def main():
+    tokenise_input()
+
+if __name__ == '__main__':
+    main()",True,"from sys import stdin
+
+def tokenise_input():
+    words = []
+    for line in stdin:
+        for word in line.split():
+            words.append("""".join([c.lower() for c in word if c.isalnum()])) 
+    words = [word for word in words if word != """"]
+    print((len(set(words))))
+
+def main():
+    tokenise_input()
+
+if __name__ == '__main__':
+    main()",9,0,4,3,0,0,0,0,0,0,4,0,2,0,0,0,4,2,2,0,3,0,3,4,3,15,4.5,0,17,3,6,3,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def main():
+	unique = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for char in word:
+				if char in punctuation:
+					word = word.replace(char, """")
+			unique.append(word)
+	unique = set(unique)
+	unique = (len(unique) - 1)
+	print(unique)
+
+if __name__ == '__main__':
+	main()",True,"import sys
+from string import punctuation
+
+def main():
+	unique = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for char in word:
+				if char in punctuation:
+					word = word.replace(char, """")
+			unique.append(word)
+	unique = set(unique)
+	unique = (len(unique) - 1)
+	print(unique)
+
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,0,0,0,0,6,1,1,0,0,0,4,1,1,0,1,0,2,3,1,18,12.0,0,22,3,7,2,0
+unique_count_021.py,"import sys
+import string
+
+a = []
+
+def depunctify(line):
+	line = line.lower()
+	for char in line:
+		if char in string.punctuation:
+			line = line.replace(char, """")
+	for word in line.split():
+		if word not in a:
+			a.append(word)
+
+def main():
+	for line in sys.stdin:
+		depunctify(line.rstrip())
+	print(len(a))
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+
+a = []
+
+def depunctify(line):
+	line = line.lower()
+	for char in line:
+		if char in string.punctuation:
+			line = line.replace(char, """")
+	for word in line.split():
+		if word not in a:
+			a.append(word)
+
+def main():
+	for line in sys.stdin:
+		depunctify(line.rstrip())
+	print((len(a)))
+
+if __name__ == '__main__':
+	main()",9,0,3,3,0,0,0,0,0,0,4,0,1,0,0,0,5,2,2,1,1,0,3,3,1,21,6.0,0,21,2,7,4,0
+unique_count_021.py,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	total = total - 16
+	print(total)
+
+if __name__ == '__main__':
+	main()",True,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	total = total - 16
+	print(total)
+
+if __name__ == '__main__':
+	main()",9,0,2,2,0,0,1,0,0,0,7,2,1,1,0,0,3,2,2,0,1,0,2,2,1,20,7.0,0,23,3,6,3,0
+unique_count_021.py,"import sys
+import string
+
+def remove(a):
+   punctuations = '''!()-[]{};:'""\,<>./?@#$%^&*_~'''
+   no_punc = """"
+   for char in a:
+      if char not in punctuations:
+         no_punc += char
+   return no_punc
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().lower().split()
+      i = 0
+      while i < len(line):
+         if line[i] not in unique:
+            unique.append(line[i])
+         i = i + 1
+   
+   total = len(unique)
+   print (total)
+
+if __name__ == ""__main__"":
+   main()
+",True,"import sys
+import string
+
+def remove(a):
+   punctuations = '''!()-[]{};:'""\,<>./?@#$%^&*_~'''
+   no_punc = """"
+   for char in a:
+      if char not in punctuations:
+         no_punc += char
+   return no_punc
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().lower().split()
+      i = 0
+      while i < len(line):
+         if line[i] not in unique:
+            unique.append(line[i])
+         i = i + 1
+   
+   total = len(unique)
+   print (total)
+
+if __name__ == ""__main__"":
+   main()
+",9,1,2,3,0,0,1,0,0,0,11,4,2,0,0,0,4,2,2,0,1,0,3,3,1,28,10.5,0,32,6,10,3,1
+unique_count_021.py,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print(len(a))
+
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print((len(a)))
+
+if __name__ == ""__main__"":
+    main()",9,0,2,5,0,1,2,0,0,0,7,3,2,3,0,0,3,2,2,0,1,0,6,2,1,31,12.5,0,22,7,7,10,0
+unique_count_021.py,"import sys
+import string
+
+def remove(s):
+	word = ''
+	for c in s:
+		if c not in string.punctuation:
+			word = word + c
+	if word:
+		return word.lower()
+
+def main():
+	unique = []
+	count = 0
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove(word)
+			if word not in unique and word:
+				unique.append(word)
+	count = count + len(unique)
+	print(count)
+
+if __name__ == '__main__':
+	main()					",True,"import sys
+import string
+
+def remove(s):
+	word = ''
+	for c in s:
+		if c not in string.punctuation:
+			word = word + c
+	if word:
+		return word.lower()
+
+def main():
+	unique = []
+	count = 0
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove(word)
+			if word not in unique and word:
+				unique.append(word)
+	count = count + len(unique)
+	print(count)
+
+if __name__ == '__main__':
+	main()					",9,0,3,4,0,0,1,0,0,0,8,2,1,1,0,0,5,2,2,0,1,0,4,3,1,25,9.0,0,30,3,9,3,0
+unique_count_021.py,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print(len(a))
+
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print((len(a)))
+
+if __name__ == ""__main__"":
+    main()",9,0,2,5,0,1,2,0,0,0,7,3,2,3,0,0,3,2,2,0,1,0,6,2,1,31,12.5,0,22,7,7,10,0
+unique_count_021.py,"from string import punctuation
+import sys
+
+s = sys.stdin
+
+def main():
+	count = []
+	for line in s:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c in punctuation:
+					word = word.replace(c, """")
+			count.append(word)
+	count = set(count)
+	print(len(count)-1)
+if __name__ == '__main__':
+	main()",True,"from string import punctuation
+import sys
+
+s = sys.stdin
+
+def main():
+	count = []
+	for line in s:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c in punctuation:
+					word = word.replace(c, """")
+			count.append(word)
+	count = set(count)
+	print((len(count)-1))
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,0,0,0,0,6,1,1,0,0,0,4,1,1,1,1,0,2,3,1,18,11.0,0,22,3,8,2,0
+unique_count_021.py,"import sys
+import string
+
+liste = []
+
+for line in sys.stdin:
+	for char in line:
+		if char in string.punctuation:
+			line = line.replace(char, """")
+	line = line.lower().split()
+	for word in line:
+		if word not in liste:
+			liste.append(word)
+
+
+print (len(liste))",True,"import sys
+import string
+
+liste = []
+
+for line in sys.stdin:
+	for char in line:
+		if char in string.punctuation:
+			line = line.replace(char, """")
+	line = line.lower().split()
+	for word in line:
+		if word not in liste:
+			liste.append(word)
+
+
+print((len(liste)))",9,0,3,2,0,0,0,0,0,0,3,0,0,0,0,0,5,0,0,1,1,0,2,3,1,16,0.0,0,19,1,6,4,0
+unique_count_021.py,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char,'')
+	return unique
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print(len(new))
+
+
+if __name__ == ""__main__"":
+	main()",True,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char,'')
+	return unique
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print((len(new)))
+
+
+if __name__ == ""__main__"":
+	main()",9,0,3,3,0,0,1,0,0,0,5,0,1,1,0,0,5,2,2,1,1,0,3,3,1,23,6.5,0,24,2,8,5,0
+unique_count_021.py,"import sys
+
+
+
+
+
+def main():
+  s = sys.stdin.read()
+  s = s.lower().strip().strip(""-"").strip(""."").split()
+  words = []
+  for word in s:
+  	if word not in words:
+  		words.append(word)
+  print(len(words) -13)
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+
+
+
+
+
+def main():
+  s = sys.stdin.read()
+  s = s.lower().strip().strip(""-"").strip(""."").split()
+  words = []
+  for word in s:
+  	if word not in words:
+  		words.append(word)
+  print((len(words) -13))
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()",9,0,1,2,0,0,0,0,0,0,4,2,1,0,0,0,2,1,1,0,1,0,2,1,1,27,8.0,0,13,4,5,16,0
+unique_count_021.py,"import sys
+import string
+
+def remove_punc(s):
+    stripped = ''
+    for c in s:
+        if c not in string.punctuation:
+            stripped += c
+    if stripped:
+        return stripped.lower()
+
+def word_count():
+    total = 0
+    unique = []
+    for line in sys.stdin:
+        line = line.split()
+        for word in line:
+            word = remove_punc(word)
+            if word not in unique and word:
+                unique.append(word)
+    total += len(unique)
+    return total
+
+def main():
+    print(word_count())
+
+if __name__ == '__main__':
+    main()",True,"import sys
+import string
+
+def remove_punc(s):
+    stripped = ''
+    for c in s:
+        if c not in string.punctuation:
+            stripped += c
+    if stripped:
+        return stripped.lower()
+
+def word_count():
+    total = 0
+    unique = []
+    for line in sys.stdin:
+        line = line.split()
+        for word in line:
+            word = remove_punc(word)
+            if word not in unique and word:
+                unique.append(word)
+    total += len(unique)
+    return total
+
+def main():
+    print((word_count()))
+
+if __name__ == '__main__':
+    main()",9,0,3,4,0,0,2,0,0,0,8,4,1,1,0,0,5,3,3,0,1,0,4,3,1,28,6.666666666666668,0,28,3,10,4,0
+unique_count_021.py,"import sys
+import string
+def unique(a):
+	i = 0
+	b = []
+	for item in a:
+		for char in item:
+			if char in string.punctuation:
+				item = item.replace(char, """", 1)
+		item = item.lower()
+		b.append(item)
+	b = set(b)
+	return len(b) - 1
+
+	return a
+
+def main():
+	a = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		a.extend(line)
+	print(unique(a))
+		
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+def unique(a):
+	i = 0
+	b = []
+	for item in a:
+		for char in item:
+			if char in string.punctuation:
+				item = item.replace(char, """", 1)
+		item = item.lower()
+		b.append(item)
+	b = set(b)
+	return len(b) - 1
+
+	return a
+
+def main():
+	a = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		a.extend(line)
+	print((unique(a)))
+		
+
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,2,0,0,0,8,1,1,0,0,0,4,2,2,0,2,0,2,3,2,26,9.5,0,28,5,9,3,0
+unique_count_021.py,"import sys,string
+
+def unique_count(words, dict):
+	i = 0
+	while i < len(words):
+		if words[i] not in dict:
+			dict[words[i]] = 1
+		i += 1
+	return len(dict)
+
+def strip_punctuation(s):
+   for c in s:
+      if c in  string.punctuation:
+         s = s.replace(c, """")
+   return s.casefold()
+
+
+def main():
+	dict = {}
+	total = 0
+	for line in sys.stdin:
+		line =  strip_punctuation(line.strip())
+		total = unique_count(line.split(), dict)
+	print(total)
+
+if __name__ == '__main__':
+	main()",True,"import sys,string
+
+def unique_count(words, dict):
+	i = 0
+	while i < len(words):
+		if words[i] not in dict:
+			dict[words[i]] = 1
+		i += 1
+	return len(dict)
+
+def strip_punctuation(s):
+   for c in s:
+      if c in  string.punctuation:
+         s = s.replace(c, """")
+   return s.casefold()
+
+
+def main():
+	dict = {}
+	total = 0
+	for line in sys.stdin:
+		line =  strip_punctuation(line.strip())
+		total = unique_count(line.split(), dict)
+	print(total)
+
+if __name__ == '__main__':
+	main()",9,1,2,3,0,0,2,0,0,0,9,2,2,0,0,0,4,3,3,0,0,0,3,3,0,27,6.333333333333332,0,30,6,10,5,0
+unique_count_021.py,"import sys
+import string
+
+def unique_word_count(n):
+   a = []
+   s = n.lower()
+   for character in s:
+      if character in string.punctuation:
+         s = s.replace(character, '')
+
+   s = s.split()
+
+   for token in s:
+      if token not in a:
+         a.append(token)
+   return len(a)
+
+
+def main():
+   txt = sys.stdin.read()
+   print(unique_word_count(txt.strip()))
+
+if __name__ == ""__main__"":
+   main()",True,"import sys
+import string
+
+def unique_word_count(n):
+   a = []
+   s = n.lower()
+   for character in s:
+      if character in string.punctuation:
+         s = s.replace(character, '')
+
+   s = s.split()
+
+   for token in s:
+      if token not in a:
+         a.append(token)
+   return len(a)
+
+
+def main():
+   txt = sys.stdin.read()
+   print((unique_word_count(txt.strip())))
+
+if __name__ == ""__main__"":
+   main()",9,0,2,3,0,0,1,0,0,0,6,0,1,0,0,0,4,2,2,0,1,0,3,2,1,24,8.0,0,23,2,9,6,0
+unique_count_021.py,"import sys
+import string
+translator = str.maketrans('', '', string.punctuation)
+
+def main():
+	a = []
+	i = 0
+	for line in sys.stdin:
+		line = line.strip().lower().translate(translator).split()
+		for token in line:
+			if token not in a:
+				a.append(token)
+				i = i + 1
+	print(i)	
+if __name__ == ""__main__"":
+	main()",True,"import sys
+import string
+translator = str.maketrans('', '', string.punctuation)
+
+def main():
+	a = []
+	i = 0
+	for line in sys.stdin:
+		line = line.strip().lower().translate(translator).split()
+		for token in line:
+			if token not in a:
+				a.append(token)
+				i = i + 1
+	print(i)	
+if __name__ == ""__main__"":
+	main()",9,0,2,2,0,0,0,0,0,0,6,1,1,0,0,0,3,1,1,1,1,0,2,2,1,16,10.0,0,20,5,9,1,0
+unique_count_021.py,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char, '')
+	return unique
+
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print(len(new))
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+
+unique = sys.stdin.readlines()
+
+def prepstring(unique):
+	for char in unique:
+		if char in string.punctuation:
+			unique = unique.replace(char, '')
+	return unique
+
+
+def main():
+	new = []
+	for line in unique:
+		line = prepstring(line.lower().strip())
+		for token in line.strip().split():
+			if token not in new and token.isalnum():
+				new.append(token)
+	print((len(new)))
+
+
+if __name__ == '__main__':
+	main()",9,0,3,3,0,0,1,0,0,0,5,0,1,1,0,0,5,2,2,1,1,0,3,3,1,24,6.5,0,24,2,8,6,0
+unique_count_021.py,"#!/usr/bin/env python
+
+import sys
+
+def strip_non_alnum(s):
+   for c in s:
+      if not c.isalnum() and not c.isspace():
+         s = s.replace(c,"""",1)
+   return s
+
+def main():
+   tokens = [] 
+   for line in sys.stdin:
+      tokens += strip_non_alnum(line.strip()).lower().split()
+   unique_tokens = list(set(tokens))
+   print(len(unique_tokens))
+
+if __name__ == ""__main__"":
+   main()
+",True,"#!/usr/bin/env python
+
+import sys
+
+def strip_non_alnum(s):
+   for c in s:
+      if not c.isalnum() and not c.isspace():
+         s = s.replace(c,"""",1)
+   return s
+
+def main():
+   tokens = [] 
+   for line in sys.stdin:
+      tokens += strip_non_alnum(line.strip()).lower().split()
+   unique_tokens = list(set(tokens))
+   print((len(unique_tokens)))
+
+if __name__ == ""__main__"":
+   main()
+",9,0,2,2,0,0,1,0,0,0,5,3,1,3,0,0,2,2,2,0,1,0,2,2,1,19,5.5,0,17,3,7,4,0
+unique_count_021.py,"import sys
+import string
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	s = s.strip(string.punctuation)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print(len(a)-13)
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",True,"import sys
+import string
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	s = s.strip(string.punctuation)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print((len(a)-13))
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",9,0,1,2,0,1,0,0,0,1,5,1,1,0,0,0,2,1,1,0,1,0,3,1,1,26,11.0,0,16,2,6,9,0
+unique_count_021.py,"import sys
+import string
+def main():
+	punc_rock = str.maketrans("""","""", string.punctuation)
+	a = []
+	s = sys.stdin.read().casefold().strip().split()
+	for word in s:
+		word = word.translate(punc_rock)
+		if (word.isalpha() or word.isdigit()) and word not in a:
+			a.append(word)
+	print(len(a))
+
+if __name__ == '__main__':
+	main()",True,"import sys
+import string
+def main():
+	punc_rock = str.maketrans("""","""", string.punctuation)
+	a = []
+	s = sys.stdin.read().casefold().strip().split()
+	for word in s:
+		word = word.translate(punc_rock)
+		if (word.isalpha() or word.isdigit()) and word not in a:
+			a.append(word)
+	print((len(a)))
+
+if __name__ == '__main__':
+	main()",9,0,1,2,0,0,0,0,0,0,5,0,1,2,0,0,2,1,1,0,1,0,2,1,1,14,9.0,0,19,3,8,1,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def main():
+	check = []
+	for line in sys.stdin:
+		line = line.strip()
+		line = line.lower()
+		line = line.split()
+		for word in line:
+			for let in word:
+				if let in punctuation:
+					word = word.replace(let, """")
+			check.append(word)
+	check = set(check)
+	print(len(check)-1)
+
+
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+from string import punctuation
+
+def main():
+	check = []
+	for line in sys.stdin:
+		line = line.strip()
+		line = line.lower()
+		line = line.split()
+		for word in line:
+			for let in word:
+				if let in punctuation:
+					word = word.replace(let, """")
+			check.append(word)
+	check = set(check)
+	print((len(check)-1))
+
+
+
+
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,0,0,0,0,7,1,1,0,0,0,4,1,1,0,1,0,2,3,1,22,13.0,0,24,3,7,5,0
+unique_count_021.py,"import sys
+import string
+
+def count(l):
+	unique_tokens = []
+	for word in l:
+		if word.isalnum() and word.lower() not in unique_tokens:
+			unique_tokens.append(word.lower())
+	return len(unique_tokens)
+
+
+
+
+def main():
+	tr = str.maketrans('', '', string.punctuation)
+	words = sys.stdin.read()
+	words = words.translate(tr)
+	tokens = words.split()
+	print(count(tokens))
+
+if __name__ == '__main__':
+	main()
+
+",True,"import sys
+import string
+
+def count(l):
+	unique_tokens = []
+	for word in l:
+		if word.isalnum() and word.lower() not in unique_tokens:
+			unique_tokens.append(word.lower())
+	return len(unique_tokens)
+
+
+
+
+def main():
+	tr = str.maketrans('', '', string.punctuation)
+	words = sys.stdin.read()
+	words = words.translate(tr)
+	tokens = words.split()
+	print((count(tokens)))
+
+if __name__ == '__main__':
+	main()
+
+",9,0,1,2,0,0,1,0,0,0,6,0,1,1,0,0,2,2,2,0,1,0,2,1,1,23,6.0,0,21,3,10,7,0
+unique_count_021.py,"import sys
+
+
+import string
+
+def remove_p(s):
+	stripp = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripp += c
+	if stripp:
+		return stripp.lower()
+
+def main():
+	total = -1
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_p(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	print(total)
+
+
+if __name__ == '__main__':
+	main()",True,"import sys
+
+
+import string
+
+def remove_p(s):
+	stripp = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripp += c
+	if stripp:
+		return stripp.lower()
+
+def main():
+	total = -1
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_p(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	print(total)
+
+
+if __name__ == '__main__':
+	main()",9,0,3,4,0,0,1,0,0,0,8,5,1,1,0,0,5,2,2,0,1,0,4,3,1,28,9.0,0,28,3,10,6,0
+unique_count_021.py,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print(len(a))
+
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def all_alnum(w):
+
+    i = 1
+    for ch in w:
+        if not ch.isalnum():
+            i+=1
+    if i == len(w):
+        return False
+
+    else:
+        return True
+
+def main():
+
+    s = sys.stdin.read().lower().split()
+    a = []
+
+    for w in s:
+
+        if not w[-1].isalnum():
+            w = w[:-1]
+
+        if w not in a and all_alnum(w):
+            a.append(w)
+
+    print((len(a)))
+
+if __name__ == ""__main__"":
+    main()",9,0,2,5,0,1,2,0,0,0,7,3,2,3,0,0,3,2,2,0,1,0,6,2,1,31,12.5,0,22,7,7,10,0
+unique_count_021.py,"#!/usr/bin/env python
+import sys
+import string
+seen = []
+
+def uniquewords(line):
+    unique = 0
+    words = line.split()
+    for word in words:
+        if word not in seen:
+            unique = unique + 1
+            seen.append(word)
+    return unique
+	
+def main():
+    total = 0
+    for line in sys.stdin:
+        line = line.strip().lower()
+        new = line
+        for c in line:
+            if c in string.punctuation:
+                new = new.replace(c, '')
+        total = total + uniquewords(new)
+    print(total)
+
+if __name__ == '__main__':
+    main()",True,"#!/usr/bin/env python
+import sys
+import string
+seen = []
+
+def uniquewords(line):
+    unique = 0
+    words = line.split()
+    for word in words:
+        if word not in seen:
+            unique = unique + 1
+            seen.append(word)
+    return unique
+	
+def main():
+    total = 0
+    for line in sys.stdin:
+        line = line.strip().lower()
+        new = line
+        for c in line:
+            if c in string.punctuation:
+                new = new.replace(c, '')
+        total = total + uniquewords(new)
+    print(total)
+
+if __name__ == '__main__':
+    main()",9,0,3,3,0,0,1,0,0,0,10,3,1,0,0,0,5,2,2,1,1,0,3,3,1,27,9.0,0,32,5,11,2,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def lower(s):
+	return s.lower()
+
+def main():
+	original = []	
+	for line in sys.stdin:
+		
+		line = line.strip()
+		line = lower(line)
+		line = line.split()
+
+		for word in line:
+			for char in word: 
+				if char in punctuation:
+					word = word.replace(char, """")
+			original.append(word)
+	original = set(original)
+	print(len(original)-1)
+
+if __name__ == '__main__':
+	main()",True,"import sys
+from string import punctuation
+
+def lower(s):
+	return s.lower()
+
+def main():
+	original = []	
+	for line in sys.stdin:
+		
+		line = line.strip()
+		line = lower(line)
+		line = line.split()
+
+		for word in line:
+			for char in word: 
+				if char in punctuation:
+					word = word.replace(char, """")
+			original.append(word)
+	original = set(original)
+	print((len(original)-1))
+
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,1,0,0,0,7,1,1,0,0,0,4,2,2,0,1,0,2,3,1,24,8.5,0,25,3,8,4,0
+unique_count_021.py,"from string import punctuation
+import sys
+
+s = sys.stdin
+
+def main():
+	count = []
+	for line in s:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c in punctuation:
+					word = word.replace(c, """")
+			count.append(word)
+	count = set(count)
+	print(len(count)-1)
+if __name__ == '__main__':
+	main()",True,"from string import punctuation
+import sys
+
+s = sys.stdin
+
+def main():
+	count = []
+	for line in s:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c in punctuation:
+					word = word.replace(c, """")
+			count.append(word)
+	count = set(count)
+	print((len(count)-1))
+if __name__ == '__main__':
+	main()",9,0,3,2,0,0,0,0,0,0,6,1,1,0,0,0,4,1,1,1,1,0,2,3,1,18,11.0,0,22,3,8,2,0
+unique_count_021.py,"import sys
+
+def main():
+    unique = {}
+    words = sys.stdin.read().lower().strip().split()
+
+    for word in words:
+        if word.isdigit() or word.isalpha():
+            unique[word] = True
+
+        else:
+            cleaned_word = """"
+            for c in word:
+                if c.isalpha() or c.isdigit():
+                    cleaned_word += c
+            if len(cleaned_word) > 0:
+
+                unique[cleaned_word] = True
+
+    print (len(unique))
+
+
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def main():
+    unique = {}
+    words = sys.stdin.read().lower().strip().split()
+
+    for word in words:
+        if word.isdigit() or word.isalpha():
+            unique[word] = True
+
+        else:
+            cleaned_word = """"
+            for c in word:
+                if c.isalpha() or c.isdigit():
+                    cleaned_word += c
+            if len(cleaned_word) > 0:
+
+                unique[cleaned_word] = True
+
+    print((len(unique)))
+
+
+if __name__ == ""__main__"":
+    main()",9,0,2,4,0,1,0,0,0,0,7,2,2,2,0,0,2,1,1,0,0,0,5,2,0,24,18.0,0,21,5,7,7,0
+unique_count_021.py,"#!/usr/bin/env python3
+
+import sys
+
+b = []
+
+def main():
+    a = []
+    for line in sys.stdin:
+        for letter in line:
+            if not(letter.isalpha() or letter.isdigit() or letter.isspace()):
+                line = line.replace(letter, """")
+        b = line.strip().split()
+        for c in b:
+            a.append(c.lower())
+    j = []
+    
+    for letter in a:
+        if letter not in j and(letter.isalpha() or letter.isdigit()):
+            j.append(letter)
+
+    print (len(j))
+
+def count(a):
+    a.append(b)
+    return 
+
+  
+
+if __name__ == '__main__':
+	main()
+",True,"#!/usr/bin/env python3
+
+import sys
+
+b = []
+
+def main():
+    a = []
+    for line in sys.stdin:
+        for letter in line:
+            if not(letter.isalpha() or letter.isdigit() or letter.isspace()):
+                line = line.replace(letter, """")
+        b = line.strip().split()
+        for c in b:
+            a.append(c.lower())
+    j = []
+    
+    for letter in a:
+        if letter not in j and(letter.isalpha() or letter.isdigit()):
+            j.append(letter)
+
+    print((len(j)))
+
+def count(a):
+    a.append(b)
+    return 
+
+  
+
+if __name__ == '__main__':
+	main()
+",9,0,4,3,0,0,1,0,0,0,6,1,1,3,0,0,5,2,1,1,3,0,3,4,3,31,9.5,0,31,2,8,7,0
+unique_count_021.py,"import sys
+def main():
+	a = []
+	for line in sys.stdin:
+		for word in line:
+			if not(word.isalpha() or word.isdigit() or word.isspace()):
+				line = line.replace(word,"""")
+		b = line.strip().split()
+		for c in b:
+			a.append(c.lower())
+
+	r = []
+	for word in a:
+		if word not in r and (word.isalpha() or word.isdigit()):
+			r.append(word)
+	print(len(r))
+
+
+
+
+if __name__ == ""__main__"":
+	main()",True,"import sys
+def main():
+	a = []
+	for line in sys.stdin:
+		for word in line:
+			if not(word.isalpha() or word.isdigit() or word.isspace()):
+				line = line.replace(word,"""")
+		b = line.strip().split()
+		for c in b:
+			a.append(c.lower())
+
+	r = []
+	for word in a:
+		if word not in r and (word.isalpha() or word.isdigit()):
+			r.append(word)
+	print((len(r)))
+
+
+
+
+if __name__ == ""__main__"":
+	main()",9,0,4,3,0,0,0,0,0,0,5,0,1,4,0,0,5,1,1,0,2,0,3,4,2,22,15.0,0,28,2,8,5,0
+unique_count_021.py,"import sys
+import string
+ 
+def main():
+    s = sys.stdin.read().strip().lower()
+    s = s.split()
+    a = []
+    for c in s:
+        if c not in a:
+            a.append(c)
+    print(len(a)-13)
+ 
+
+if __name__ in ""__main__"":
+    main()",True,"import sys
+import string
+ 
+def main():
+    s = sys.stdin.read().strip().lower()
+    s = s.split()
+    a = []
+    for c in s:
+        if c not in a:
+            a.append(c)
+    print((len(a)-13))
+ 
+
+if __name__ in ""__main__"":
+    main()",8,0,1,2,0,0,0,0,0,0,3,1,0,0,0,0,3,1,1,0,1,0,2,1,1,15,8.0,0,13,2,5,1,0
+unique_count_021.py,"import sys
+
+def main():
+	unique = {}
+	words = sys.stdin.read().lower().strip().split()
+	for word in words:
+		if word.isdigit() or word.isalpha():
+			unique[word] = True
+			
+		else:
+			cleaned_word = """"
+			for c in word:
+				if c.isalpha() or c.isdigit():
+					cleaned_word += c
+			if len(cleaned_word) > 0:
+ 
+				unique[cleaned_word] = True
+
+	print (len(unique))
+ 
+ 
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def main():
+	unique = {}
+	words = sys.stdin.read().lower().strip().split()
+	for word in words:
+		if word.isdigit() or word.isalpha():
+			unique[word] = True
+			
+		else:
+			cleaned_word = """"
+			for c in word:
+				if c.isalpha() or c.isdigit():
+					cleaned_word += c
+			if len(cleaned_word) > 0:
+ 
+				unique[cleaned_word] = True
+
+	print((len(unique)))
+ 
+ 
+if __name__ == ""__main__"":
+    main()",8,0,2,4,0,1,0,0,0,0,7,2,2,2,0,0,2,1,1,0,0,0,5,2,0,23,17.0,0,21,5,7,2,0
+unique_count_021.py,"#!/usr/bin/env python 
+
+import sys
+import string
+
+def unique(s):
+    for x in string.punctuation:
+        s = s.replace(x, """")
+    a = s.lower().split()
+    a = set(a)
+    return(len(a))
+
+
+
+def main():
+    print(unique(sys.stdin.read()))
+
+if __name__ == '__main__':
+    main()",True,"#!/usr/bin/env python 
+
+import sys
+import string
+
+def unique(s):
+    for x in string.punctuation:
+        s = s.replace(x, """")
+    a = s.lower().split()
+    a = set(a)
+    return(len(a))
+
+
+
+def main():
+    print((unique(sys.stdin.read())))
+
+if __name__ == '__main__':
+    main()",8,0,1,1,0,0,0,0,0,0,4,1,1,0,0,0,1,2,2,0,0,0,1,1,0,19,4.0,0,12,2,6,6,0
+unique_count_021.py,"import sys 
+b= []
+def main():
+	a=[]
+	for line in sys.stdin:
+		for letter in line:
+			if not(letter.isalpha() or letter.isdigit() or letter.isspace()):
+				line=line.replace(letter, """")		
+		b=line.strip().split()
+		for c in b:
+			a.append(c.lower())
+	#print (b)
+		#count(line)
+	
+	j= []		
+	#print (a)
+#	print (len(a))
+	
+	for letter in a:
+		#print (letter)
+		if letter not in j and (letter.isalpha() or letter.isdigit()):
+			j.append(letter)
+		#print (j)
+	#print (""____________________"")
+	#print (j)
+	print (len(j))
+
+
+def count(a):
+	a.append(b)
+	return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",True,"import sys 
+b= []
+def main():
+	a=[]
+	for line in sys.stdin:
+		for letter in line:
+			if not(letter.isalpha() or letter.isdigit() or letter.isspace()):
+				line=line.replace(letter, """")		
+		b=line.strip().split()
+		for c in b:
+			a.append(c.lower())
+	#print (b)
+		#count(line)
+	
+	j= []		
+	#print (a)
+#	print (len(a))
+	
+	for letter in a:
+		#print (letter)
+		if letter not in j and (letter.isalpha() or letter.isdigit()):
+			j.append(letter)
+		#print (j)
+	#print (""____________________"")
+	#print (j)
+	print((len(j)))
+
+
+def count(a):
+	a.append(b)
+	return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",8,0,4,3,0,0,1,0,0,0,6,0,1,4,0,0,5,2,1,1,3,0,3,4,3,47,13.5,0,31,2,8,16,8
+unique_count_021.py,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+           elif '-' in i and i[0].isalpha():
+              a[i.lower().strip('.,')] = ''
+       
+       
+       
+  
+                              
+   print (len(a))
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+           elif '-' in i and i[0].isalpha():
+              a[i.lower().strip('.,')] = ''
+       
+       
+       
+  
+                              
+   print((len(a)))
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",6,0,2,2,2,0,0,0,0,0,6,2,1,3,0,0,5,1,1,0,0,0,4,2,0,26,18.0,0,23,10,5,1,0
+unique_count_021.py,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+           elif '-' in i and i[0].isalpha():
+              a[i.lower().strip('.,')] = ''
+       
+       
+       
+  
+                              
+   print (len(a))
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",True,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+           elif '-' in i and i[0].isalpha():
+              a[i.lower().strip('.,')] = ''
+       
+       
+       
+  
+                              
+   print((len(a)))
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",6,0,2,2,2,0,0,0,0,0,6,2,1,3,0,0,5,1,1,0,0,0,4,2,0,26,18.0,0,23,10,5,1,0
+unique_count_021.py,"import sys
+
+
+def remove_punctuation(line):
+    list = ['.', ',', ':', '_', '-', ';', '?', '/', '@', '#', '&']
+    i = 0
+    while i < len(list):
+        line = line.replace(list[i], '')
+        i = i + 1
+    return line
+
+
+def unique_checker(words):
+    seen = []
+    total = 0
+    i = 0
+    while i < len(words):
+        if words[i].isdigit() or words[i].isalpha() and words[i] not in seen:
+            seen.append(words[i])
+            total = total + 1
+
+        i = i + 1
+
+    return total
+
+def main():
+    total = 0
+    for line in sys.stdin:
+        line = remove_punctuation(line)
+        tokens = line.strip().lower().split()
+        total = total + unique_checker(tokens)
+        print (total)
+
+if __name__ == '__main__':
+    main()
+",False,"import sys
+
+
+def remove_punctuation(line):
+    list = ['.', ',', ':', '_', '-', ';', '?', '/', '@', '#', '&']
+    i = 0
+    while i < len(list):
+        line = line.replace(list[i], '')
+        i = i + 1
+    return line
+
+
+def unique_checker(words):
+    seen = []
+    total = 0
+    i = 0
+    while i < len(words):
+        if words[i].isdigit() or words[i].isalpha() and words[i] not in seen:
+            seen.append(words[i])
+            total = total + 1
+
+        i = i + 1
+
+    return total
+
+def main():
+    total = 0
+    for line in sys.stdin:
+        line = remove_punctuation(line)
+        tokens = line.strip().lower().split()
+        total = total + unique_checker(tokens)
+        print (total)
+
+if __name__ == '__main__':
+    main()
+",5,2,1,2,0,0,2,0,0,0,14,6,3,2,1,0,2,3,3,0,2,0,2,3,2,35,8.666666666666666,0,43,20,9,8,1
+unique_count_021.py,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            if not check[-1].isalnum():
+                a[i] = a[i][:-1]
+            i += 1
+        a = """".join(a)
+        lines.append(a)
+
+    total = 0
+    for line in lines:
+        n = (line.lower().split())
+        total += n
+        print(n)
+
+if __name__==""__main__"":
+    main()",False,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            if not check[-1].isalnum():
+                a[i] = a[i][:-1]
+            i += 1
+        a = """".join(a)
+        lines.append(a)
+
+    total = 0
+    for line in lines:
+        n = (line.lower().split())
+        total += n
+        print(n)
+
+if __name__==""__main__"":
+    main()",5,1,3,3,0,0,0,0,0,0,14,8,2,1,0,0,4,2,1,0,1,0,3,4,1,30,12.5,0,39,10,11,3,0
+unique_count_021.py,"import sys
+
+count = []
+punc = "",.?!""
+
+def main():
+
+    for line in sys.stdin:
+        line = line.strip().split()
+        for char in line:
+            if char[-1] in punc:
+                char = char[:-1]
+                if char.lower() not in count and char.lower().isalnim():
+                    count.append(char.lower())
+            elif char.lower() not in count and char.lower().isalnum():
+                count.append(char.lower())
+
+    print (len(count)+1)
+
+if __name__ == '__main__':
+    main()
+",False,"import sys
+
+count = []
+punc = "",.?!""
+
+def main():
+
+    for line in sys.stdin:
+        line = line.strip().split()
+        for char in line:
+            if char[-1] in punc:
+                char = char[:-1]
+                if char.lower() not in count and char.lower().isalnim():
+                    count.append(char.lower())
+            elif char.lower() not in count and char.lower().isalnum():
+                count.append(char.lower())
+
+    print((len(count)+1))
+
+if __name__ == '__main__':
+    main()
+",5,0,2,3,1,0,0,0,0,0,5,3,1,2,0,0,5,1,1,2,1,0,4,2,1,21,13.0,0,24,5,6,5,0
+unique_count_021.py,"import sys
+import string
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+		a = sorted(a)
+		d = []
+		for char in string.punctuation:
+			d.append(char)
+		c = []
+		for word in a:
+			if word[-1] in d:
+				new_word = word[:-1]
+				c.append(new_word.lower())
+			elif len(word) == 1:
+				c.append(word.lower())
+			elif word[-2] in d:
+				pass
+			else:
+				c.append(word.lower())
+
+		b = []
+		for word in c:
+			if word not in b:
+				b.append(word)
+			else:
+				pass
+		b = sorted(b)
+
+	print(b)
+
+if __name__ == ""__main__"":
+	main()",False,"import sys
+import string
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+		a = sorted(a)
+		d = []
+		for char in string.punctuation:
+			d.append(char)
+		c = []
+		for word in a:
+			if word[-1] in d:
+				new_word = word[:-1]
+				c.append(new_word.lower())
+			elif len(word) == 1:
+				c.append(word.lower())
+			elif word[-2] in d:
+				pass
+			else:
+				c.append(word.lower())
+
+		b = []
+		for word in c:
+			if word not in b:
+				b.append(word)
+			else:
+				pass
+		b = sorted(b)
+
+	print(b)
+
+if __name__ == ""__main__"":
+	main()",5,0,4,3,2,2,1,0,0,2,11,4,2,0,0,0,7,2,2,0,4,0,7,4,4,38,16.0,0,43,5,13,4,0
+unique_count_021.py,"import sys
+import string
+
+def remove_punc(s):
+	stripped = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total  = 0
+	unique = [ ]
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total
+",False,"import sys
+import string
+
+def remove_punc(s):
+	stripped = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total  = 0
+	unique = [ ]
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total
+",5,0,3,3,0,0,2,0,0,0,7,4,0,1,0,0,5,2,1,0,1,0,3,3,1,22,9.0,0,27,2,9,2,0
+unique_count_021.py,"import sys
+
+def main():
+    count = []
+    punct = "",.!:?""
+    for line in sys.stdin:
+        words = line.strip().split()
+        for c in words:
+            if c[-1] in punct:
+                c = c[:-1]
+                p = c.lower()
+                if p not in count and p.isalpha():
+                    count.append(p)
+            elif c.lower not in count and c.lower().isalpha():
+                count.append(c.lower())
+    print(len(count))
+
+
+if __name__ == '__main__':
+    main()
+",False,"import sys
+
+def main():
+    count = []
+    punct = "",.!:?""
+    for line in sys.stdin:
+        words = line.strip().split()
+        for c in words:
+            if c[-1] in punct:
+                c = c[:-1]
+                p = c.lower()
+                if p not in count and p.isalpha():
+                    count.append(p)
+            elif c.lower not in count and c.lower().isalpha():
+                count.append(c.lower())
+    print((len(count)))
+
+
+if __name__ == '__main__':
+    main()
+",5,0,2,3,1,0,0,0,0,0,6,2,1,2,0,0,5,1,1,0,1,0,4,2,1,20,14.0,0,26,4,8,3,0
+unique_count_021.py,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            if not check[-1].isalnum():
+                a[i] = a[i][:-1]
+            i += 1
+        a = """".join(a)
+        lines.append(a)
+
+    total = 0
+    for line in lines:
+        n = unique(line.lower().split())
+        total += n
+        print(n)
+
+if __name__==""__main__"":
+    main()",False,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            if not check[-1].isalnum():
+                a[i] = a[i][:-1]
+            i += 1
+        a = """".join(a)
+        lines.append(a)
+
+    total = 0
+    for line in lines:
+        n = unique(line.lower().split())
+        total += n
+        print(n)
+
+if __name__==""__main__"":
+    main()",5,1,3,3,0,0,1,0,0,0,14,8,2,1,0,0,4,2,2,0,1,0,3,4,1,31,13.0,0,40,10,11,3,0
+unique_count_021.py,"import sys
+import string
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+		a = sorted(a)
+		d = []
+		for char in string.punctuation:
+			d.append(char)
+		c = []
+		for word in a:
+			for char in word:
+				if char in d:
+					new_word = word[:-1]
+					c.append(new_word)
+				else:
+					c.append(word)
+		b = []
+		for word in c:
+			if word not in b:
+				b.append(word)
+			else:
+				pass
+	print(len(b))
+
+if __name__ == ""__main__"":
+	main()",False,"import sys
+import string
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+		a = sorted(a)
+		d = []
+		for char in string.punctuation:
+			d.append(char)
+		c = []
+		for word in a:
+			for char in word:
+				if char in d:
+					new_word = word[:-1]
+					c.append(new_word)
+				else:
+					c.append(word)
+		b = []
+		for word in c:
+			if word not in b:
+				b.append(word)
+			else:
+				pass
+	print((len(b)))
+
+if __name__ == ""__main__"":
+	main()",5,0,5,3,0,2,1,0,0,1,9,2,1,0,0,0,7,2,2,0,4,0,5,5,4,32,13.0,0,38,2,13,2,0
+unique_count_021.py,"import sys
+
+def main():
+    check = []
+    count = []
+    for line in sys.stdin:
+        for c in line:
+            if not(c.isalpha() or c.isdigit() or c.isspace()):
+                    line = line.replace(c, """")
+        cs= line.strip().split()
+        for l in cs:
+            check.append(l.lower())
+    for w in check:
+        if w not in count and (w.alpha() or w.isdigit()):
+            count.append(w)
+
+    print(len(count))
+
+
+if __name__ == '__main__':
+    main()
+",False,"import sys
+
+def main():
+    check = []
+    count = []
+    for line in sys.stdin:
+        for c in line:
+            if not(c.isalpha() or c.isdigit() or c.isspace()):
+                    line = line.replace(c, """")
+        cs= line.strip().split()
+        for l in cs:
+            check.append(l.lower())
+    for w in check:
+        if w not in count and (w.alpha() or w.isdigit()):
+            count.append(w)
+
+    print((len(count)))
+
+
+if __name__ == '__main__':
+    main()
+",5,0,4,3,0,0,0,0,0,0,5,0,1,4,0,0,5,1,1,0,2,0,3,4,2,21,15.0,0,28,2,9,4,0
+unique_count_021.py,"import sys
+import string
+
+def main():
+	unique_words = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for w in line:
+			w = w.strip()
+			print (w)
+			for c in w:
+				if c.isalnum():
+					pass
+				elif c in string.punctuation:
+					w = w.replace(c, '')
+				else:
+					w = w.replace(c, '')
+		if w in unique_words:
+			pass
+		else:
+			unique_words.append(w)
+	print (len(unique_words))
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def main():
+	unique_words = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for w in line:
+			w = w.strip()
+			print (w)
+			for c in w:
+				if c.isalnum():
+					pass
+				elif c in string.punctuation:
+					w = w.replace(c, '')
+				else:
+					w = w.replace(c, '')
+		if w in unique_words:
+			pass
+		else:
+			unique_words.append(w)
+	print((len(unique_words)))
+
+if __name__ == '__main__':
+	main()",5,0,3,3,1,2,0,0,0,2,6,0,1,0,0,0,5,1,1,0,1,0,6,3,1,25,19.0,0,27,3,7,2,0
+unique_count_021.py,"import sys
+import string
+
+def countunique(s):
+	for s in string.punctuation:
+		s = s.replace(s, """")
+	s = s.strip().lower().split()
+	unique = []
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def countunique(s):
+	for s in string.punctuation:
+		s = s.replace(s, """")
+	s = s.strip().lower().split()
+	unique = []
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",4,0,3,2,0,0,1,0,0,0,7,1,1,1,0,0,4,2,2,0,1,0,2,3,1,22,7.5,0,26,3,7,3,0
+unique_count_021.py,"import sys
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+	print(sorted(a))
+
+if __name__ == ""__main__"":
+	main()",False,"import sys
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a = a + tokcount
+	print((sorted(a)))
+
+if __name__ == ""__main__"":
+	main()",4,0,1,1,0,0,1,0,0,0,4,1,1,0,0,0,1,2,2,0,1,0,1,1,1,13,4.0,0,11,1,6,2,0
+unique_count_021.py,"import sys
+import string
+
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+for i in content:
+   if i in string.punctuation:
+      content.pop(i)
+   if i == ""--"":
+      content.pop(i)
+
+print (content)",False,"import sys
+import string
+
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+for i in content:
+   if i in string.punctuation:
+      content.pop(i)
+   if i == ""--"":
+      content.pop(i)
+
+print (content)",4,0,1,2,0,0,0,0,0,0,4,1,1,0,0,0,2,0,0,3,0,0,2,1,0,14,0.0,0,16,2,4,2,0
+unique_count_021.py,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                for c in line[i]:
+                    while c not in string.punctuation:
+                        word += c
+                    if word not in seen:
+                        seen.append(word)
+            i = i + 1
+            
+    print(len(seen))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",False,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                for c in line[i]:
+                    while c not in string.punctuation:
+                        word += c
+                    if word not in seen:
+                        seen.append(word)
+            i = i + 1
+            
+    print((len(seen)))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",4,2,2,3,0,0,0,0,0,1,7,3,2,0,0,0,4,2,1,0,1,0,3,4,1,28,9.0,0,26,4,8,2,1
+unique_count_021.py,"import sys
+from string import punctuation
+
+def main():
+	unique = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for char in word:
+				if char in punctuation:
+					word = word.replace(char, """")
+			unique.append(word)
+	unique = set(unique)
+	unique = len(unique) - 1
+	print(unique)
+
+if __name__ == '__main__':
+	main()
+#import sys
+
+#def countunique(s):
+#	unique = []
+#	s = s.lower().split()
+#	for line in s:
+#		if line.isalnum() and line not in unique:
+#			unique.append(line)
+#	return len(unique)
+#
+#def main():
+#	total = 0
+#	for line in sys.stdin:
+#		line = countunique(line)
+#		total = total + line
+#	total = total - 16
+#	print(total)
+#
+#if __name__ == '__main__':
+	main()",False,"import sys
+from string import punctuation
+
+def main():
+	unique = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for char in word:
+				if char in punctuation:
+					word = word.replace(char, """")
+			unique.append(word)
+	unique = set(unique)
+	unique = len(unique) - 1
+	print(unique)
+
+if __name__ == '__main__':
+	main()
+#import sys
+
+#def countunique(s):
+#	unique = []
+#	s = s.lower().split()
+#	for line in s:
+#		if line.isalnum() and line not in unique:
+#			unique.append(line)
+#	return len(unique)
+#
+#def main():
+#	total = 0
+#	for line in sys.stdin:
+#		line = countunique(line)
+#		total = total + line
+#	total = total - 16
+#	print(total)
+#
+#if __name__ == '__main__':
+	main()",4,0,5,3,0,0,1,0,0,0,13,3,2,1,0,0,7,1,2,0,1,0,3,5,1,38,12.0,0,22,3,7,3,18
+unique_count_021.py,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            b = [char for char in check if i.isalnum()]
+            a[i] = """".join(b)
+            i += 1
+        a = "" "".join(a)
+        lines.append(a)
+    lines = "" "".join(lines)
+    n = unique(lines.lower().split())
+    print(n)
+
+if __name__==""__main__"":
+    main()",False,"import sys
+def unique(a):
+    d = {}
+    total = 0
+    for word in a:
+        if word not in d:
+            d[word] = None
+            total += 1
+    return total
+
+def main():
+    lines = []
+    for line in sys.stdin:
+        i = 0
+        a = line.split()
+        while i<len(a):
+            check = a[i]
+            b = [char for char in check if i.isalnum()]
+            a[i] = """".join(b)
+            i += 1
+        a = "" "".join(a)
+        lines.append(a)
+    lines = "" "".join(lines)
+    n = unique(lines.lower().split())
+    print(n)
+
+if __name__==""__main__"":
+    main()",4,1,3,3,0,0,1,0,0,0,14,4,2,0,0,0,4,2,2,0,2,0,3,4,2,28,11.5,0,40,9,13,2,0
+unique_count_021.py,"import sys
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a.append(tokcount)
+		sorted(a)
+	print(a)
+if __name__ == ""__main__"":
+	main()",False,"import sys
+
+def count(file):
+	return file
+def main():
+	a = []
+	for line in sys.stdin:
+		tokcount = count(line.strip().split())
+		a.append(tokcount)
+		sorted(a)
+	print(a)
+if __name__ == ""__main__"":
+	main()",4,0,1,1,0,0,1,0,0,0,3,0,1,0,0,0,1,2,2,0,1,0,1,1,1,13,4.5,0,11,1,6,1,0
+unique_count_021.py,"#!/usr/bin/env python
+
+import sys
+import string
+
+s = sys.stdin.readlines()
+
+def main():
+   a = []
+   for line in s:  
+      line = line.lower()
+      for word in line:
+         word = word.strip(string.punctuation)
+         if word not in a and word.isalnum():
+            a.append(word)
+   print (len(a))
+
+if __name__ == '__main__':
+   main()",False,"#!/usr/bin/env python
+
+import sys
+import string
+
+s = sys.stdin.readlines()
+
+def main():
+   a = []
+   for line in s:  
+      line = line.lower()
+      for word in line:
+         word = word.strip(string.punctuation)
+         if word not in a and word.isalnum():
+            a.append(word)
+   print((len(a)))
+
+if __name__ == '__main__':
+   main()",4,0,2,2,0,0,0,0,0,0,5,1,1,1,0,0,3,1,1,1,1,0,2,2,1,19,9.0,0,19,1,7,4,0
+unique_count_021.py,"from sys import stdin
+
+def tokenise_input():
+    words = []
+    for line in stdin:
+        for word in line.split():
+            words.append("""".join([c for c in word if c.isalnum()])) 
+    print(len(set(words)))
+
+def main():
+    tokenise_input()
+
+if __name__ == '__main__':
+    main()",False,"from sys import stdin
+
+def tokenise_input():
+    words = []
+    for line in stdin:
+        for word in line.split():
+            words.append("""".join([c for c in word if c.isalnum()])) 
+    print((len(set(words))))
+
+def main():
+    tokenise_input()
+
+if __name__ == '__main__':
+    main()",4,0,3,2,0,0,0,0,0,0,2,0,1,0,0,0,3,2,2,0,2,0,2,3,2,14,4.0,0,12,2,6,3,0
+unique_count_021.py,"import sys
+def count(s):
+	a =[]
+	i = 0
+	for c in s:
+		c = c.strip(""."")
+		c = c.lower()
+		
+		if c not in a:
+			i = i + 1
+		a.append(c)
+	return i
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = line.strip()
+		line = line.split()
+		k = count(line)
+		total = total + k
+	print (total)
+if __name__ == '__main__':
+	main()",False,"import sys
+def count(s):
+	a =[]
+	i = 0
+	for c in s:
+		c = c.strip(""."")
+		c = c.lower()
+		
+		if c not in a:
+			i = i + 1
+		a.append(c)
+	return i
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = line.strip()
+		line = line.split()
+		k = count(line)
+		total = total + k
+	print (total)
+if __name__ == '__main__':
+	main()",4,0,2,2,0,0,1,0,0,0,11,2,1,0,0,0,3,2,2,0,1,0,2,2,1,22,9.5,0,29,5,9,0,0
+unique_count_021.py,"import sys
+
+import string
+
+def main():
+   tokens = sys.stdin.read().strip().split()
+   print(count(tokens))
+
+def punc(word):
+   for letters in word:
+      if letters == string.punctuation:
+         word = word.replace(letters, '')
+   return word        
+
+def count(tokens):
+   a = []
+   for word in tokens:
+      word = punc(word)
+      if word not in a and word.isalnum() == True:
+         a.append(word)
+   return len(a)
+
+
+if __name__ == '__main__':
+   main()
+
+",False,"import sys
+
+import string
+
+def main():
+   tokens = sys.stdin.read().strip().split()
+   print((count(tokens)))
+
+def punc(word):
+   for letters in word:
+      if letters == string.punctuation:
+         word = word.replace(letters, '')
+   return word        
+
+def count(tokens):
+   a = []
+   for word in tokens:
+      word = punc(word)
+      if word not in a and word.isalnum() == True:
+         a.append(word)
+   return len(a)
+
+
+if __name__ == '__main__':
+   main()
+
+",4,0,2,3,0,0,2,0,0,0,7,0,3,1,0,0,3,3,3,0,1,0,3,2,1,26,5.0,0,23,3,7,7,0
+unique_count_021.py,"import sys
+
+
+
+
+
+def main():
+  s = sys.stdin.read()
+  s = s.strip().split().lowercase()
+  words = []
+  for word in s:
+  	if word not in words:
+  		words.append(word)
+  print(len(words))
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()",False,"import sys
+
+
+
+
+
+def main():
+  s = sys.stdin.read()
+  s = s.strip().split().lowercase()
+  words = []
+  for word in s:
+  	if word not in words:
+  		words.append(word)
+  print((len(words)))
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()",4,0,1,2,0,0,0,0,0,0,4,0,1,0,0,0,2,1,1,0,1,0,2,1,1,27,8.0,0,13,1,5,16,0
+unique_count_021.py,"import sys
+import string
+
+def remove_punc(s):
+	stripped = ''
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+		total += len(unique)
+		return total
+
+def main():
+	print(word_count())
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def remove_punc(s):
+	stripped = ''
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+		total += len(unique)
+		return total
+
+def main():
+	print((word_count()))
+
+if __name__ == '__main__':
+	main()",4,0,3,4,0,0,2,0,0,0,8,4,1,1,0,0,5,3,3,0,1,0,4,3,1,28,6.666666666666668,0,28,3,10,4,0
+unique_count_021.py,"import sys
+
+def count (s):
+	a = s.split() #a is a list of words
+	seen = []
+	for token in a:
+		if token not in seen:
+			seen.append(token)	
+	return len(seen)
+
+def main():
+	s = sys.stdin.read()
+	len = count(s)
+	print (len)
+
+if __name__ in ""__main__"":
+	main()",False,"import sys
+
+def count (s):
+	a = s.split() #a is a list of words
+	seen = []
+	for token in a:
+		if token not in seen:
+			seen.append(token)	
+	return len(seen)
+
+def main():
+	s = sys.stdin.read()
+	len = count(s)
+	print (len)
+
+if __name__ in ""__main__"":
+	main()",4,0,1,2,0,0,1,0,0,0,4,0,0,0,0,1,3,2,2,0,1,0,2,1,1,17,5.5,0,14,1,6,3,1
+unique_count_021.py,"import sys
+
+
+def count_unique(s):
+    b = []
+    for char in s:
+        if not char.isalnum():
+            s.replace(char, "" "")
+    
+    a = s.split()
+    
+    for word in a:
+        if word not in b:
+            b.append(word)
+    return len(b)
+
+
+def main():
+    s = sys.stdin.read()
+    s = s.lower()
+    print(count_unique(s))
+
+
+if __name__ == ""__main__"":
+    main()
+
+",False,"import sys
+
+
+def count_unique(s):
+    b = []
+    for char in s:
+        if not char.isalnum():
+            s.replace(char, "" "")
+    
+    a = s.split()
+    
+    for word in a:
+        if word not in b:
+            b.append(word)
+    return len(b)
+
+
+def main():
+    s = sys.stdin.read()
+    s = s.lower()
+    print((count_unique(s)))
+
+
+if __name__ == ""__main__"":
+    main()
+
+",4,0,2,3,0,0,1,0,0,0,5,0,1,1,0,0,3,2,2,0,1,0,3,2,1,26,8.0,0,21,2,7,7,0
+unique_count_021.py,"import sys
+
+def main():
+    for line in sys.stdin:
+        line = line.lower()
+        line = line.split()
+        print (line)
+
+if __name__ == ""__main__"":
+      main()
+",False,"import sys
+
+def main():
+    for line in sys.stdin:
+        line = line.lower()
+        line = line.split()
+        print (line)
+
+if __name__ == ""__main__"":
+      main()
+",4,0,1,1,0,0,0,0,0,0,3,0,1,0,0,0,1,1,1,0,0,0,1,1,0,10,5.0,0,8,1,3,2,0
+unique_count_021.py,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	s = s.strip()
+	for line in s:
+		if line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",False,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	s = s.strip()
+	for line in s:
+		if line not in unique:
+			unique.append(line)
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",4,0,2,2,0,0,1,0,0,0,7,1,1,0,0,0,3,2,2,0,1,0,2,2,1,20,7.0,0,22,2,6,3,0
+unique_count_021.py,"#!/usr/bin/env python
+
+import sys
+
+def main():
+	s = sys.stdin.read()
+	l = s.strip().split()
+	alnum = [c for c in l if c.isalnum()]
+	print(len(list(set(alnum))))
+
+if __name__ == ""__main__"":
+	main()
+",False,"#!/usr/bin/env python
+
+import sys
+
+def main():
+	s = sys.stdin.read()
+	l = s.strip().split()
+	alnum = [c for c in l if c.isalnum()]
+	print((len(list(set(alnum)))))
+
+if __name__ == ""__main__"":
+	main()
+",4,0,1,2,0,0,0,0,0,0,4,1,1,0,0,0,1,1,1,0,1,0,2,1,1,12,5.0,0,11,1,6,3,0
+unique_count_021.py,"import sys, string
+
+def count (s):
+	a = s.split() #a is a list of words
+	seen = []
+	for token in a:
+		if not token.isalnum():
+			a.pop(token)
+		for char in token:
+			if char in string.punctuation:
+				token = token.replace(char,'')
+		if token not in seen:
+			seen.append(token)	
+	return len(seen)
+
+def main():
+	s = sys.stdin.read()
+	len = count(s)
+	print (len)
+
+if __name__ in ""__main__"":
+	main()",False,"import sys, string
+
+def count (s):
+	a = s.split() #a is a list of words
+	seen = []
+	for token in a:
+		if not token.isalnum():
+			a.pop(token)
+		for char in token:
+			if char in string.punctuation:
+				token = token.replace(char,'')
+		if token not in seen:
+			seen.append(token)	
+	return len(seen)
+
+def main():
+	s = sys.stdin.read()
+	len = count(s)
+	print (len)
+
+if __name__ in ""__main__"":
+	main()",4,0,2,4,0,0,1,0,0,0,5,0,0,1,0,1,5,2,2,0,1,0,4,2,1,22,8.0,0,24,2,8,3,1
+unique_count_021.py,"import sys
+import string
+
+def unique(text):
+    u = ["""".join([letter for letter in word if letter not in string.punctuation]) for word in text]
+    return len([word for word in u if u.count(word) == 1])
+
+def main():
+    print(unique(sys.stdin.read().lower().split()))
+
+if __name__ == ""__main__"":
+    main()
+",False,"import sys
+import string
+
+def unique(text):
+    u = ["""".join([letter for letter in word if letter not in string.punctuation]) for word in text]
+    return len([word for word in u if u.count(word) == 1])
+
+def main():
+    print((unique(sys.stdin.read().lower().split())))
+
+if __name__ == ""__main__"":
+    main()
+",4,0,3,3,0,0,1,0,0,0,3,0,2,0,0,0,4,2,2,0,3,0,3,3,3,12,2.5,0,15,3,7,3,0
+unique_count_021.py,"import sys
+
+def main():
+	tokens = []
+	check = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		for word in line:
+			if word[0].isalnum():
+				tokens.append(word.lower().rstrip("".""))
+	for word in tokens:
+		if word in check:
+			word = word.replace(word, """")
+		else:
+			check.append(word)
+	print(len(check))
+
+if __name__ == ""__main__"":
+	main()",False,"import sys
+
+def main():
+	tokens = []
+	check = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		for word in line:
+			if word[0].isalnum():
+				tokens.append(word.lower().rstrip("".""))
+	for word in tokens:
+		if word in check:
+			word = word.replace(word, """")
+		else:
+			check.append(word)
+	print((len(check)))
+
+if __name__ == ""__main__"":
+	main()",4,0,3,3,0,1,0,0,0,0,5,0,1,0,0,0,4,1,1,0,2,0,4,3,2,19,14.0,0,22,4,6,2,0
+unique_count_021.py,"import sys
+import string
+
+
+
+def remove_punc(s):
+	stripped = """"
+	for c in s:
+		if c not in string.punctuation:
+			stripped = stripped + c
+		if stripped:
+			return stripped.lower()
+
+
+
+def main():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+		total += len(unique)
+	
+		print(total)
+
+
+if __name__ == '__main__':
+    main()
+
+",False,"import sys
+import string
+
+
+
+def remove_punc(s):
+	stripped = """"
+	for c in s:
+		if c not in string.punctuation:
+			stripped = stripped + c
+		if stripped:
+			return stripped.lower()
+
+
+
+def main():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+		total += len(unique)
+	
+		print(total)
+
+
+if __name__ == '__main__':
+    main()
+
+",4,0,3,4,0,0,1,0,0,0,8,3,1,1,0,0,5,2,2,0,1,0,4,3,1,32,9.5,0,29,3,10,9,0
+unique_count_021.py,"import sys
+import string
+
+def word_count(words):
+	for i in string.punctuation:
+		words.replace("""",i)
+		a = words.lower()
+		b = set(a)
+		print(b)
+	total = len(b) 
+	print(total)
+
+def main():
+	word_count(sys.stdin.read().strip())
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def word_count(words):
+	for i in string.punctuation:
+		words.replace("""",i)
+		a = words.lower()
+		b = set(a)
+		print(b)
+	total = len(b) 
+	print(total)
+
+def main():
+	word_count(sys.stdin.read().strip())
+
+if __name__ == '__main__':
+	main()",4,0,1,1,0,0,0,0,0,0,4,0,1,0,0,0,1,2,2,0,0,0,1,1,0,17,5.0,0,14,2,8,3,0
+unique_count_021.py,"import sys
+import string
+
+def remove_punc(s):
+	stripped = ''
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total",False,"import sys
+import string
+
+def remove_punc(s):
+	stripped = ''
+	for c in s:
+		if c not in string.punctuation:
+			stripped += c
+	if stripped:
+		return stripped.lower()
+
+def word_count():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_punc(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total",4,0,3,3,0,0,2,0,0,0,7,4,0,1,0,0,5,2,1,0,1,0,3,3,1,22,9.0,0,27,2,9,2,0
+unique_count_021.py,"import sys
+import string 
+
+def punctuation(s):
+	strip = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			strip = strip + c
+	if strip:
+			return strip.lower()
+
+
+
+
+def count():
+	total = 0
+	a = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		for word in line:
+			word = punctuation(word)
+			if word not in a and word:
+				a.append(word)
+	total = total + len(a)
+	print (total)",False,"import sys
+import string 
+
+def punctuation(s):
+	strip = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			strip = strip + c
+	if strip:
+			return strip.lower()
+
+
+
+
+def count():
+	total = 0
+	a = []
+	for line in sys.stdin:
+		line = line.strip().split()
+		for word in line:
+			word = punctuation(word)
+			if word not in a and word:
+				a.append(word)
+	total = total + len(a)
+	print (total)",4,0,3,3,0,0,1,0,0,0,7,2,0,1,0,0,5,2,1,0,1,0,3,3,1,25,9.0,0,29,2,9,5,0
+unique_count_021.py,"import sys
+import string
+a = []
+def word_count(words):
+	x = string.punctuation
+	for word in words:
+		for i in word:
+			if i in x:
+				word = word.replace(i,"""")
+				a.append(word)
+			b = set(a)
+			print(b)
+
+def main():
+	word_count(sys.stdin.read().strip().split())
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+a = []
+def word_count(words):
+	x = string.punctuation
+	for word in words:
+		for i in word:
+			if i in x:
+				word = word.replace(i,"""")
+				a.append(word)
+			b = set(a)
+			print(b)
+
+def main():
+	word_count(sys.stdin.read().strip().split())
+
+if __name__ == '__main__':
+	main()",4,0,2,2,0,0,0,0,0,0,5,0,1,0,0,0,3,2,2,1,1,0,2,2,1,18,5.5,0,19,2,9,2,0
+unique_count_021.py,"import sys
+import string
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	s = s.strip(string.punctuation)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print(len(a))
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",False,"import sys
+import string
+
+def main():
+	s = sys.stdin.read().strip().lower()
+	s = s.strip(string.punctuation)
+	s = s.split()
+	a = []
+	for c in s:
+		if c not in a:
+			a.append(c)
+		else:
+			pass
+	print((len(a)))
+
+
+
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",4,0,1,2,0,1,0,0,0,1,5,0,1,0,0,0,2,1,1,0,1,0,3,1,1,26,11.0,0,16,1,6,9,0
+unique_count_021.py,"import sys
+
+count = []
+puncuation = "",.!?;:""
+
+
+def main():
+	for line in sys.stdin:
+		a = line.split()
+		for w in a:
+			if w[-1] in puncuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w)
+
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w)
+
+
+	print(len(count))
+
+if __name__ == '__main__':
+	main()",False,"import sys
+
+count = []
+puncuation = "",.!?;:""
+
+
+def main():
+	for line in sys.stdin:
+		a = line.split()
+		for w in a:
+			if w[-1] in puncuation:
+				w = w[:-1]
+				if w.lower() not in count and w.lower().isalnum():
+					count.append(w)
+
+			elif w.lower() not in count and w.lower().isalnum():
+				count.append(w)
+
+
+	print((len(count)))
+
+if __name__ == '__main__':
+	main()",4,0,2,3,1,0,0,0,0,0,5,2,1,2,0,0,5,1,1,2,1,0,4,2,1,23,14.0,0,24,4,7,7,0
+unique_count_021.py,"import sys
+
+
+import string
+
+def remove_p(s):
+	stripp = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripp += c
+	if stripp:
+		return stripp.lower()
+
+def main():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_p(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total
+
+
+if __name__ == '__main__':
+	main()",False,"import sys
+
+
+import string
+
+def remove_p(s):
+	stripp = "" ""
+	for c in s:
+		if c not in string.punctuation:
+			stripp += c
+	if stripp:
+		return stripp.lower()
+
+def main():
+	total = 0
+	unique = []
+	for line in sys.stdin:
+		line = line.split()
+		for word in line:
+			word = remove_p(word)
+			if word not in unique and word:
+				unique.append(word)
+	total += len(unique)
+	return total
+
+
+if __name__ == '__main__':
+	main()",4,0,3,4,0,0,2,0,0,0,8,4,1,1,0,0,5,2,2,0,1,0,4,3,1,28,9.0,0,28,3,10,6,0
+unique_count_021.py,"import sys
+import string
+
+def unique():
+    pass
+    
+def main():
+    for line in sys.stdin:
+        line = line.split().lower()
+        for token in line:
+            print(token)
+            ",False,"import sys
+import string
+
+def unique():
+    pass
+    
+def main():
+    for line in sys.stdin:
+        line = line.split().lower()
+        for token in line:
+            print(token)
+            ",3,0,2,0,0,0,0,0,0,1,1,0,0,0,0,0,2,2,0,0,0,0,0,2,0,12,3.5,0,7,0,3,1,0
+unique_count_021.py,"import sys
+import string
+
+
+def unique(s):
+	seen = []
+	for t in s:
+		s = t.split()
+		for word in s:
+			word = word.lower()
+			for g in word:
+				if g in string.punctuation:
+					word = word.replace(g, """")
+			if word not in seen:
+				seen.append(word)
+
+	return len(seen) - 1
+	
+
+
+
+def main():
+	c = 0
+	for lines in sys.stdin:
+		j = lines.strip()
+		c = c + token(j)
+	print (c)
+
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+
+def unique(s):
+	seen = []
+	for t in s:
+		s = t.split()
+		for word in s:
+			word = word.lower()
+			for g in word:
+				if g in string.punctuation:
+					word = word.replace(g, """")
+			if word not in seen:
+				seen.append(word)
+
+	return len(seen) - 1
+	
+
+
+
+def main():
+	c = 0
+	for lines in sys.stdin:
+		j = lines.strip()
+		c = c + token(j)
+	print (c)
+
+
+if __name__ == '__main__':
+	main()",3,0,4,3,0,0,1,0,0,0,8,2,1,0,0,0,6,2,1,0,1,0,3,4,1,31,9.5,0,31,4,11,8,0
+unique_count_021.py,"import sys 
+b= []
+def main():
+	a=[]
+	for line in sys.stdin:
+		b=line.strip().split()
+		for c in b:
+			a.append(c)
+	#print (b)
+		#count(line)
+	
+	j= []		
+	#print (a)
+#	print (len(a))
+	for letter in a:
+		if letter not in j:
+			j.append(letter)
+	print (len(j))
+
+
+def count(a):
+	a.append(b)
+	return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",False,"import sys 
+b= []
+def main():
+	a=[]
+	for line in sys.stdin:
+		b=line.strip().split()
+		for c in b:
+			a.append(c)
+	#print (b)
+		#count(line)
+	
+	j= []		
+	#print (a)
+#	print (len(a))
+	for letter in a:
+		if letter not in j:
+			j.append(letter)
+	print((len(j)))
+
+
+def count(a):
+	a.append(b)
+	return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",3,0,3,2,0,0,1,0,0,0,5,0,1,0,0,0,4,2,1,1,3,0,2,3,3,41,9.5,0,21,1,8,18,4
+unique_count_021.py,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	unique = unique.split("","")
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",False,"import sys
+
+def countunique(s):
+	unique = []
+	s = s.lower().split()
+	for line in s:
+		if line.isalnum() and line not in unique:
+			unique.append(line)
+	unique = unique.split("","")
+	return len(unique)
+
+def main():
+	total = 0
+	for line in sys.stdin:
+		line = countunique(line)
+		total = total + line
+	print(total)
+
+if __name__ == '__main__':
+	main()",3,0,2,2,0,0,1,0,0,0,7,1,1,1,0,0,3,2,2,0,1,0,2,2,1,20,7.0,0,23,3,6,3,0
+unique_count_021.py,"import sys
+
+def main():
+	a = []
+	for line in sys.stdin:
+		for char in ""-_,.\n"":
+			line = line.replace(char,"" "")
+		line = line.lower().strip().split()
+		print(line[1])
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",False,"import sys
+
+def main():
+	a = []
+	for line in sys.stdin:
+		for char in ""-_,.\n"":
+			line = line.replace(char,"" "")
+		line = line.lower().strip().split()
+		print((line[1]))
+		
+		
+
+
+
+
+
+if __name__ == ""__main__"":
+	main()
+",3,0,2,1,0,0,0,0,0,0,4,1,1,0,0,0,2,1,1,0,1,0,1,2,1,18,7.0,0,11,4,5,6,0
+unique_count_021.py,"import sys
+import string
+
+def main():
+	for line in sys.stdin:
+		line = line.strip().lower()
+		print (line)
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def main():
+	for line in sys.stdin:
+		line = line.strip().lower()
+		print (line)
+
+if __name__ == '__main__':
+	main()",3,0,1,1,0,0,0,0,0,0,2,0,1,0,0,0,1,1,1,0,0,0,1,1,0,10,4.0,0,6,1,3,2,0
+unique_count_021.py,"import sys
+import string
+
+def unique(filename):
+        count = 0
+        seen = []
+        txt = """"
+        with open(filename, ""r"") as f:
+            lines = f.read().lower()
+            #lines = lines.split()
+            for c in lines:
+                if c not in string.punctuation:
+                    txt += c
+                    txt = str(txt)
+                    txt = txt.split()
+                    for word in txt:
+                        if not(word in seen) and word.isalnum():
+                            seen.append(word)
+                            count += 1
+        return count     
+    
+    #except FileNotFoundError:
+           # print(""Could not open file: {}"".format(filename))  
+            
+            
+def main():
+    unicount = unique(""gettysburg.txt"")
+    print(unicount)
+    
+    
+if __name__ == ""__main__"":
+    main()     ",False,"import sys
+import string
+
+def unique(filename):
+        count = 0
+        seen = []
+        txt = """"
+        with open(filename, ""r"") as f:
+            lines = f.read().lower()
+            #lines = lines.split()
+            for c in lines:
+                if c not in string.punctuation:
+                    txt += c
+                    txt = str(txt)
+                    txt = txt.split()
+                    for word in txt:
+                        if not(word in seen) and word.isalnum():
+                            seen.append(word)
+                            count += 1
+        return count     
+    
+    #except FileNotFoundError:
+           # print(""Could not open file: {}"".format(filename))  
+            
+            
+def main():
+    unicount = unique(""gettysburg.txt"")
+    print(unicount)
+    
+    
+if __name__ == ""__main__"":
+    main()     ",3,0,2,3,0,0,1,0,0,0,11,4,1,2,0,0,4,2,2,0,1,0,3,2,1,32,10.0,0,29,6,11,1,3
+unique_count_021.py,"import sys
+import string
+
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+for i in content:
+   if i in string.punctuation:
+      content.pop(i)
+   if i.isalnum() == False:
+      i = i[:-1]
+
+print (content)",False,"import sys
+import string
+
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+for i in content:
+   if i in string.punctuation:
+      content.pop(i)
+   if i.isalnum() == False:
+      i = i[:-1]
+
+print (content)",3,0,1,2,0,0,0,0,0,0,5,1,1,0,0,0,2,0,0,3,0,0,2,1,0,14,0.0,0,16,3,4,2,0
+unique_count_021.py,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += """"
+                    j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print(len(seen))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",False,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += """"
+                    j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print((len(seen)))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",3,2,1,3,0,0,0,0,0,1,10,6,3,0,0,0,5,2,1,0,1,0,3,3,1,34,12.0,0,27,7,8,2,6
+unique_count_021.py,"import sys
+
+
+def unique(text):
+   seen = []
+   tokens = ' '.join(e for e in text if e.isalnum()).lower().split()
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   return len(seen)  
+        
+
+
+def main():
+   text=sys.stdin.read()
+   print (unique(text))
+
+
+if __name__ == '__main__':
+   main()",False,"import sys
+
+
+def unique(text):
+   seen = []
+   tokens = ' '.join(e for e in text if e.isalnum()).lower().split()
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   return len(seen)  
+        
+
+
+def main():
+   text=sys.stdin.read()
+   print((unique(text)))
+
+
+if __name__ == '__main__':
+   main()",3,0,2,3,0,0,1,0,0,0,4,0,1,0,0,0,3,2,2,0,1,0,3,2,1,20,5.0,0,17,2,7,6,0
+unique_count_021.py,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                    j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print(len(seen))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",False,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                    j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print((len(seen)))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",3,2,1,3,0,0,0,0,0,1,10,6,3,0,0,0,5,2,1,0,1,0,3,3,1,34,12.0,0,30,6,8,2,6
+unique_count_021.py,"import sys
+import string
+
+def remove_punc(s):
+    stripped = ''
+    for c in s:
+        if c not in string.punctuation:
+            stripped += c.lower()
+    
+def word_count():
+    total = 0
+    unique = []
+    for line in sys.stdin:
+       line = line.split()
+       for word in line:
+           word = remove_punc(word)
+           if word not in unique :
+               unique.append(word)
+    total += len(unique)
+    return total
+
+
+          
+",False,"import sys
+import string
+
+def remove_punc(s):
+    stripped = ''
+    for c in s:
+        if c not in string.punctuation:
+            stripped += c.lower()
+    
+def word_count():
+    total = 0
+    unique = []
+    for line in sys.stdin:
+       line = line.split()
+       for word in line:
+           word = remove_punc(word)
+           if word not in unique :
+               unique.append(word)
+    total += len(unique)
+    return total
+
+
+          
+",3,0,3,2,0,0,1,0,0,0,7,4,0,0,0,0,5,2,1,0,1,0,2,3,1,23,8.0,0,24,2,9,3,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def unique(text):
+   seen = []
+   tokens = ''.join(e for e in text if e not in punctuation).lower().split("" "")
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   print (seen)         
+   return len(seen)
+   
+
+
+
+def main():
+   text = sys.stdin.read()
+   text=text.replace('\n', ' ')
+   print (unique(text))   
+
+
+if __name__ == '__main__':
+   main()",False,"import sys
+from string import punctuation
+
+def unique(text):
+   seen = []
+   tokens = ''.join(e for e in text if e not in punctuation).lower().split("" "")
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   print (seen)         
+   return len(seen)
+   
+
+
+
+def main():
+   text = sys.stdin.read()
+   text=text.replace('\n', ' ')
+   print((unique(text)))   
+
+
+if __name__ == '__main__':
+   main()",3,0,2,3,0,0,1,0,0,0,5,0,1,0,0,0,4,2,2,0,1,0,3,2,1,23,6.0,0,21,5,8,6,0
+unique_count_021.py,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                    #j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                    j = j + 1
+                    print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print(len(seen))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",False,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                    #j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                    j = j + 1
+                    print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print((len(seen)))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",3,2,1,3,0,0,0,0,0,1,11,7,3,0,0,0,5,2,1,0,1,0,3,3,1,35,12.5,0,30,6,8,2,7
+unique_count_021.py,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                        print(word)
+                        
+                    else:
+                        word += line[i][j]
+                    #j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                    j = j + 1
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print(len(seen))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",False,"import sys
+import string
+
+def unique(s):
+    pass
+    
+def main():
+    seen = []
+    for line in sys.stdin:
+        line = line.strip().lower().split()
+        i = 0
+        while i < len(line):
+            if line[i].isalnum():
+                word = """"
+                j = 0
+                while j < len(line[i]):
+                    if not(line[i][j] in string.punctuation):
+                        word += line[i][j]
+                        print(word)
+                        
+                    else:
+                        word += line[i][j]
+                    #j = j + 1
+                #for c in line[i]:
+                    #if c not in string.punctuation:
+                        #word += c
+                    j = j + 1
+                print(word)
+                #if word not in seen:
+                    #seen.append(word)
+            i = i + 1
+            
+    print((len(seen)))
+    #print(seen)
+
+if __name__ == ""__main__"":
+    main()                
+        
+            ",3,2,1,3,0,1,0,0,0,1,12,9,3,0,0,0,5,2,1,0,1,0,4,3,1,39,14.5,0,35,6,8,2,7
+unique_count_021.py,"import sys
+import string
+
+def main():
+	unique_words = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c.isalnum():
+					c = c.replace(c, '')
+				else:
+					c = c.replace(c, '')
+					print(word)
+		
+			
+#		if w in unique_words:
+#			pass
+#		else:
+#			unique_words.append(w)
+#	print (len(unique_words))
+
+if __name__ == '__main__':
+	main()",False,"import sys
+import string
+
+def main():
+	unique_words = []
+	for line in sys.stdin:
+		line = line.strip().lower().split()
+		for word in line:
+			for c in word:
+				if c.isalnum():
+					c = c.replace(c, '')
+				else:
+					c = c.replace(c, '')
+					print(word)
+		
+			
+#		if w in unique_words:
+#			pass
+#		else:
+#			unique_words.append(w)
+#	print (len(unique_words))
+
+if __name__ == '__main__':
+	main()",3,0,3,3,0,2,0,0,0,1,5,0,1,0,0,0,4,1,1,0,1,0,5,3,1,24,11.0,0,18,3,6,2,5
+unique_count_021.py,"import sys
+import string
+
+total = 0
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+print (content)",False,"import sys
+import string
+
+total = 0
+content = sys.stdin.read()
+content = content.strip(""\n"")
+content = sorted(content.split())
+ 
+print (content)",2,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0,0,0,9,0.0,0,8,2,3,1,0
+unique_count_021.py,"import sys
+from string import punctuation
+
+def unique(text):
+   seen = []
+   tokens = ''.join(e for e in a if e not in punctuation).lower().split("" "")
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   return len(seen)  
+        
+
+
+def main():
+   text = sys.stdin.read()
+   print (unique(text))
+
+
+if __name__ == '__main__':
+   main()",False,"import sys
+from string import punctuation
+
+def unique(text):
+   seen = []
+   tokens = ''.join(e for e in a if e not in punctuation).lower().split("" "")
+   for i in tokens:
+      if i not in seen:
+         seen.append(i)
+   return len(seen)  
+        
+
+
+def main():
+   text = sys.stdin.read()
+   print((unique(text)))
+
+
+if __name__ == '__main__':
+   main()",1,0,2,3,0,0,1,0,0,0,4,0,1,0,0,0,4,2,2,0,1,0,3,2,1,20,5.0,0,18,3,9,5,0
+unique_count_021.py,"import sys
+import string
+
+def remove(a):
+   return a.translate(string.punctuation)
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().lower().split()
+      if word in line not in unique:
+         unique.append(word)
+   total = total + len(unique)
+
+if __name__ == ""__main__"":
+   main()
+",False,"import sys
+import string
+
+def remove(a):
+   return a.translate(string.punctuation)
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().lower().split()
+      if word in line not in unique:
+         unique.append(word)
+   total = total + len(unique)
+
+if __name__ == ""__main__"":
+   main()
+",1,0,1,2,0,0,1,0,0,0,6,1,1,0,0,0,3,2,2,0,1,0,2,1,1,18,5.5,0,19,2,8,3,0
+unique_count_021.py,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+       
+       
+       
+  
+                              
+   print (a)
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",False,"import sys
+
+def main():
+   a = {}
+   
+   for line in sys.stdin:
+       line = line.split()
+       for i in line:
+           if i.lower().strip('.,-').isalpha() and i not in a:
+              a[i.lower().strip('.,')] = ''
+           elif i[0].isdigit() and i not in a:
+              a[i] = ''
+       
+       
+       
+  
+                              
+   print (a)
+                                
+       
+       
+        
+if __name__ == ""__main__"":
+    main()",0,0,2,2,1,0,0,0,0,0,5,1,1,2,0,0,4,1,1,0,0,0,3,2,0,24,16.0,0,19,6,5,1,0
+unique_count_021.py,"import sys
+import string
+
+def remove(a):
+   return a.translate(string.makestrans("""",""""), string.punctuation)
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().split().lower()
+      if word in line not in unique:
+         unique.append(word)
+   total = total + len(unique)
+
+if __name__ == ""__main__"":
+   main()
+",False,"import sys
+import string
+
+def remove(a):
+   return a.translate(string.makestrans("""",""""), string.punctuation)
+
+def main():
+   unique = []
+   total = 0
+   for line in sys.stdin:
+      line = remove(line)
+      line = line.strip().split().lower()
+      if word in line not in unique:
+         unique.append(word)
+   total = total + len(unique)
+
+if __name__ == ""__main__"":
+   main()
+",0,0,1,2,0,0,1,0,0,0,6,1,1,0,0,0,3,2,2,0,1,0,2,1,1,18,5.5,0,20,4,8,3,0

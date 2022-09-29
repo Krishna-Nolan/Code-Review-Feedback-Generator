@@ -1,0 +1,3111 @@
+task,upload,correct,new_upload,score,while,for,if,elif,else,return,break,continue,pass,assign,arith,comp,log,bit,iden,mem,#fun,#fcall,globals,#list,#tuple,cond,loop,#lst,#lines,avg_lines_per_func,#class,#var_uses,#con_uses,#var,#emptylines,#comments
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i
+   i = i + 1
+print largest, ""@"", position + 1
+ ",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i
+   i = i + 1
+print(largest, ""@"", position + 1)
+ ",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+
+print largest, ""@"", position + 1
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+
+print(largest, ""@"", position + 1)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,2,0
+02largest.py,"#!/usr/bin/env python
+
+values = raw_input(""Enter a list of numbers:\n"").split()
+
+l = []
+
+for number in values:
+   l.append(int(number))
+
+i = 0
+largest = l[0]
+largest_position = 1
+
+while i < len(l):
+   if l[i] > largest:
+      largest_position = i + 1
+      largest = l[i]
+   i = i + 1
+
+print largest, ""@"", largest_position
+",True,"#!/usr/bin/env python
+
+values = input(""Enter a list of numbers:\n"").split()
+
+l = []
+
+for number in values:
+   l.append(int(number))
+
+i = 0
+largest = l[0]
+largest_position = 1
+
+while i < len(l):
+   if l[i] > largest:
+      largest_position = i + 1
+      largest = l[i]
+   i = i + 1
+
+print(largest, ""@"", largest_position)
+",9,1,1,1,0,0,0,0,0,0,8,3,2,0,0,0,1,0,0,5,1,0,1,2,1,20,0,0,24,7,6,6,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+m = -1000000000
+i = 0
+j = 0
+
+while i < len(vals):
+   if int(m) < int(vals[i]):
+      m = vals[i]
+      j = i + 1
+   i =  i + 1
+print m,""@"", j
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+m = -1000000000
+i = 0
+j = 0
+
+while i < len(vals):
+   if int(m) < int(vals[i]):
+      m = vals[i]
+      j = i + 1
+   i =  i + 1
+print(m,""@"", j)
+",9,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,18,7,4,2,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+i=0
+largest=vals[i]
+largest_str=str(vals[i])+ "" @ ""+ str(i+1)
+while i!=len(vals):
+   if vals[i]<largest:
+      largest=vals[i]
+      largest_str=str(vals[i])+ "" @ ""+ str(i+1)
+   i=i+1
+print largest_str
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+i=0
+largest=vals[i]
+largest_str=str(vals[i])+ "" @ ""+ str(i+1)
+while i!=len(vals):
+   if vals[i]<largest:
+      largest=vals[i]
+      largest_str=str(vals[i])+ "" @ ""+ str(i+1)
+   i=i+1
+print(largest_str)
+",8,1,0,1,0,0,0,0,0,0,4,7,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,24,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+m = -2000
+i = 0
+j = 0
+
+while i < len(vals):
+   if int(m) < int(vals[i]):
+      m = vals[i]
+      j = i + 1
+   i =  i + 1
+print m,""@"", j
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+m = -2000
+i = 0
+j = 0
+
+while i < len(vals):
+   if int(m) < int(vals[i]):
+      m = vals[i]
+      j = i + 1
+   i =  i + 1
+print(m,""@"", j)
+",9,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,18,7,4,2,0
+02largest.py,"raw_values = raw_input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+   value = int(values[i])
+   if value > largest:
+      largest = value
+      largest_i = i
+   i = i + 1
+print largest,""@"", largest_i + 1
+",True,"raw_values = input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+   value = int(values[i])
+   if value > largest:
+      largest = value
+      largest_i = i
+   i = i + 1
+print(largest,""@"", largest_i + 1)
+",9,1,0,1,0,0,0,0,0,0,9,2,2,0,0,0,0,0,0,5,0,0,1,1,0,15,0,0,22,7,6,3,0
+02largest.py,"#!/usr/bin/env python
+
+values = raw_input(""Enter a list of numbers:\n"").split()
+
+l = []
+
+for number in values:
+   l.append(int(number))
+
+i = 0
+largest = l[0]
+largest_position = 1
+
+while i < len(l):
+   if l[i] > largest:
+      largest_position = i + 1
+      largest = l[i]
+   i = i + 1
+
+print largest, ""@"", largest_position
+",True,"#!/usr/bin/env python
+
+values = input(""Enter a list of numbers:\n"").split()
+
+l = []
+
+for number in values:
+   l.append(int(number))
+
+i = 0
+largest = l[0]
+largest_position = 1
+
+while i < len(l):
+   if l[i] > largest:
+      largest_position = i + 1
+      largest = l[i]
+   i = i + 1
+
+print(largest, ""@"", largest_position)
+",9,1,1,1,0,0,0,0,0,0,8,3,2,0,0,0,1,0,0,5,1,0,1,2,1,20,0,0,24,7,6,6,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[0]
+p = 1
+
+while i < len(vals):
+  if int(vals[i]) > int(longest):
+    longest = vals[i]
+    p = p + 1
+  i = i + 1
+print str(longest) + ' @ ' + str(p)
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[0]
+p = 1
+
+while i < len(vals):
+  if int(vals[i]) > int(longest):
+    longest = vals[i]
+    p = p + 1
+  i = i + 1
+print(str(longest) + ' @ ' + str(p))
+",10,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+maxi= vals[0]
+index = 1
+while i < len(vals):
+	if int(maxi) < int(vals[i]):
+		maxi = vals[i]
+		index = i + 1
+	i = i + 1
+print maxi,""@"",index
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+maxi= vals[0]
+index = 1
+while i < len(vals):
+	if int(maxi) < int(vals[i]):
+		maxi = vals[i]
+		index = i + 1
+	i = i + 1
+print(maxi,""@"",index)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,19,7,4,0,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i  
+	i = i + 1
+print largest, ""@"", position+1
+",True,"my_list = input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i  
+	i = i + 1
+print(largest, ""@"", position+1)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,6,4,2,0
+02largest.py,"raw_values = raw_input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print largest, ""@"", largest_i+1
+
+",True,"raw_values = input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print(largest, ""@"", largest_i+1)
+
+",9,1,0,1,0,0,0,0,0,0,9,2,2,0,0,0,0,0,0,5,0,0,1,1,0,17,0,0,22,7,6,4,0
+02largest.py,"values = raw_input(""Enter a list of numbers:\n"").split()
+
+largest_number = int(values[0])
+position = 1
+
+i = 0
+while i < len(values):
+  if int(values[i]) > largest_number:
+    largest_number = int(values[i])
+    position = i + 1
+  i = i + 1
+
+print largest_number, ""@"", position
+
+  
+",True,"values = input(""Enter a list of numbers:\n"").split()
+
+largest_number = int(values[0])
+position = 1
+
+i = 0
+while i < len(values):
+  if int(values[i]) > largest_number:
+    largest_number = int(values[i])
+    position = i + 1
+  i = i + 1
+
+print(largest_number, ""@"", position)
+
+  
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,15,0,0,19,7,4,4,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split() 
+
+i = 0
+position = 0
+largest = int(vals[0])
+while i < len(vals):
+ if int(vals[i]) > largest:
+  largest = int(vals[i])
+  position = i
+ i = i + 1
+
+print largest, ""@"", position + 1
+",True,"vals = input(""Enter a list of numbers:\n"").split() 
+
+i = 0
+position = 0
+largest = int(vals[0])
+while i < len(vals):
+ if int(vals[i]) > largest:
+  largest = int(vals[i])
+  position = i
+ i = i + 1
+
+print(largest, ""@"", position + 1)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,2,0
+02largest.py,"x = []
+x = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+
+print str(largest), ""@"", str(position)		
+",True,"x = []
+x = input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+
+print(str(largest), ""@"", str(position))		
+",8,1,0,2,0,0,0,0,0,0,10,2,3,0,0,0,0,0,0,5,1,0,2,1,1,17,0,0,22,9,4,4,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i=0
+position = 0
+largest = int(vals[0])
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i 
+   i = i + 1
+print largest , ""@"", position + 1
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+i=0
+position = 0
+largest = int(vals[0])
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i 
+   i = i + 1
+print(largest , ""@"", position + 1)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,19,7,4,0,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+total = -100
+i = 0
+while i < len(vals):
+	if int(vals[i]) > total:
+		total = int(vals[i])
+		place = i + 1
+	i = i + 1
+print str(total) + "" @ "" + str(place)
+
+
+
+	
+	",True,"vals = input(""Enter a list of numbers:\n"").split()
+total = -100
+i = 0
+while i < len(vals):
+	if int(vals[i]) > total:
+		total = int(vals[i])
+		place = i + 1
+	i = i + 1
+print(str(total) + "" @ "" + str(place))
+
+
+
+	
+	",9,1,0,1,0,0,0,0,0,0,6,5,2,0,0,0,0,0,0,3,0,0,1,1,0,14,0,0,17,6,4,3,0
+02largest.py,"s = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+j = 1
+largest = s[0]
+
+while i < len(s):
+   if int(s[i]) > int(largest):
+      largest = s[i]
+      j = i + 1
+   i += 1
+print str(largest) + "" @ "" + str(j)",True,"s = input(""Enter a list of numbers:\n"").split()
+i = 0
+j = 1
+largest = s[0]
+
+while i < len(s):
+   if int(s[i]) > int(largest):
+      largest = s[i]
+      j = i + 1
+   i += 1
+print(str(largest) + "" @ "" + str(j))",10,1,0,1,0,0,0,0,0,0,7,5,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,18,7,4,1,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i  
+	i = i + 1
+print largest, ""@"", position+1
+",True,"my_list = input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i  
+	i = i + 1
+print(largest, ""@"", position+1)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,6,4,2,0
+02largest.py,"#!/usr/bin/env python
+
+vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+largest = int(vals[i])
+position = 1
+while i <len(vals):
+ if int(vals[i]) > largest:
+  largest = int(vals[i])
+
+  position += 1
+ i = i + 1
+print largest, ""@"" , position 
+
+ 
+",True,"#!/usr/bin/env python
+
+vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+largest = int(vals[i])
+position = 1
+while i <len(vals):
+ if int(vals[i]) > largest:
+  largest = int(vals[i])
+
+  position += 1
+ i = i + 1
+print(largest, ""@"" , position) 
+
+ 
+",10,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,15,0,0,19,6,4,3,0
+02largest.py,"n = raw_input(""Enter a list of numbers:\n"").split(' ')
+i = 0
+j = 1 
+largest = n[0]
+
+while i < len(n):
+	if int(n[i]) > int(largest):
+		largest = n[i]
+		j = i + 1
+	i = i + 1
+print str(largest) + ' @ ' + str(j)		",True,"n = input(""Enter a list of numbers:\n"").split(' ')
+i = 0
+j = 1 
+largest = n[0]
+
+while i < len(n):
+	if int(n[i]) > int(largest):
+		largest = n[i]
+		j = i + 1
+	i = i + 1
+print(str(largest) + ' @ ' + str(j))		",10,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,8,4,1,0
+02largest.py,"x = []
+x = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+
+print str(largest), ""@"", str(position)		
+",True,"x = []
+x = input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+
+print(str(largest), ""@"", str(position))		
+",8,1,0,2,0,0,0,0,0,0,10,2,3,0,0,0,0,0,0,5,1,0,2,1,1,17,0,0,22,9,4,4,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = vals[0]
+while i < len(vals):
+	if int(vals[i]) > int(largest):
+		largest = vals[i]
+		j = i + 1
+	i = i + 1
+print str(largest), '@', str(j)",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = vals[0]
+while i < len(vals):
+	if int(vals[i]) > int(largest):
+		largest = vals[i]
+		j = i + 1
+	i = i + 1
+print(str(largest), '@', str(j))",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(vals[0])
+pos_1 = 1
+
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      pos_1 = pos_1 + 1
+   i = i + 1
+print largest, ""@"", pos_1",True,"vals = input(""Enter a list of numbers:\n"").split()
+largest = int(vals[0])
+pos_1 = 1
+
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      pos_1 = pos_1 + 1
+   i = i + 1
+print(largest, ""@"", pos_1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(vals[0])
+pos_1 = 1
+
+i = 0
+while i < len(vals):
+    if int(vals[i]) > largest:
+        largest = int(vals[i])
+        pos_1 = pos_1 + 1
+    i = i + 1
+print largest, ""@"", pos_1",True,"vals = input(""Enter a list of numbers:\n"").split()
+largest = int(vals[0])
+pos_1 = 1
+
+i = 0
+while i < len(vals):
+    if int(vals[i]) > largest:
+        largest = int(vals[i])
+        pos_1 = pos_1 + 1
+    i = i + 1
+print(largest, ""@"", pos_1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"import sys
+
+line = sys.stdin.readline()
+
+print 'Enter a list of numbers:'
+
+pos = 0
+
+parse = line.split(' ')
+
+biggest = int(parse[0])
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		biggest = int(parse[i])
+		pos = i
+	i = i + 1
+
+print str(parse[pos]).strip('\n'), '@', str(pos + 1)",True,"import sys
+
+line = sys.stdin.readline()
+
+print('Enter a list of numbers:')
+
+pos = 0
+
+parse = line.split(' ')
+
+biggest = int(parse[0])
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		biggest = int(parse[i])
+		pos = i
+	i = i + 1
+
+print(str(parse[pos]).strip('\n'), '@', str(pos + 1))",8,1,0,1,0,0,0,0,0,0,9,2,2,0,0,0,0,0,0,5,0,0,1,1,0,20,0,0,23,9,6,7,0
+02largest.py,"val = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(val[0])
+pos1 = 1
+
+i = 0
+while i < len(val):
+    if int(val[i]) > largest:
+        largest = int(val[i])
+        pos1 = pos1 + 1
+    i = i + 1
+print largest, ""@"", pos1",True,"val = input(""Enter a list of numbers:\n"").split()
+largest = int(val[0])
+pos1 = 1
+
+i = 0
+while i < len(val):
+    if int(val[i]) > largest:
+        largest = int(val[i])
+        pos1 = pos1 + 1
+    i = i + 1
+print(largest, ""@"", pos1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i])  > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print largest, ""@"", position + 1",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i])  > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print(largest, ""@"", position + 1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"n = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print largest, '@', j",True,"n = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print(largest, '@', j)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,1,0
+02largest.py,"n = raw_input('Enter a list of numbers:\n').split()
+i = 0
+m = 1
+largest = int(n[0])
+while i < len(n):
+  if largest < int(n[i]):
+     largest = int(n[i])
+     m = i + 1
+  i = i + 1  
+print largest, '@' , m
+
+",True,"n = input('Enter a list of numbers:\n').split()
+i = 0
+m = 1
+largest = int(n[0])
+while i < len(n):
+  if largest < int(n[i]):
+     largest = int(n[i])
+     m = i + 1
+  i = i + 1  
+print(largest, '@' , m)
+
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"items = raw_input(""Enter a list of numbers:"" + ""\n"").split()
+total = -100
+position = 0
+
+
+i = 0
+while i < len(items):
+   if int(items[i]) > total:
+      total = int(items[i])
+      position = i + 1
+   i = i + 1
+
+print str(total) + "" @ "" + str(position)",True,"items = input(""Enter a list of numbers:"" + ""\n"").split()
+total = -100
+position = 0
+
+
+i = 0
+while i < len(items):
+   if int(items[i]) > total:
+      total = int(items[i])
+      position = i + 1
+   i = i + 1
+
+print(str(total) + "" @ "" + str(position))",9,1,0,1,0,0,0,0,0,0,7,6,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,18,8,4,3,0
+02largest.py,"numbers = raw_input(""Enter a list of numbers:\n"").split()
+maximum = numbers[0]
+index = 1
+i = 0
+while i <len(numbers):
+	if int(maximum) < int(numbers[i]):
+		maximum = numbers[i]
+		index = i + 1
+	i = i + 1
+
+print maximum, ""@"" , index",True,"numbers = input(""Enter a list of numbers:\n"").split()
+maximum = numbers[0]
+index = 1
+i = 0
+while i <len(numbers):
+	if int(maximum) < int(numbers[i]):
+		maximum = numbers[i]
+		index = i + 1
+	i = i + 1
+
+print(maximum, ""@"" , index)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+total = -100
+i = 0
+while i < len(vals):
+	if int(vals[i]) > total:
+		total = int(vals[i])
+		place = i + 1
+	i = i + 1
+print str(total) + "" @ "" + str(place)
+
+
+
+	
+	",True,"vals = input(""Enter a list of numbers:\n"").split()
+total = -100
+i = 0
+while i < len(vals):
+	if int(vals[i]) > total:
+		total = int(vals[i])
+		place = i + 1
+	i = i + 1
+print(str(total) + "" @ "" + str(place))
+
+
+
+	
+	",9,1,0,1,0,0,0,0,0,0,6,5,2,0,0,0,0,0,0,3,0,0,1,1,0,14,0,0,17,6,4,3,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+maximum = vals[0]
+index = 1
+i = 0                        
+while i < len(vals):
+   if int(maximum) < int(vals[i]):
+      maximum = vals[i]
+      index = i + 1
+   i = i + 1
+ 
+print maximum, ""@"", index
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+maximum = vals[0]
+index = 1
+i = 0                        
+while i < len(vals):
+   if int(maximum) < int(vals[i]):
+      maximum = vals[i]
+      index = i + 1
+   i = i + 1
+ 
+print(maximum, ""@"", index)
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,0,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = vals[0]
+while i < len(vals):
+	if int(vals[i]) > int(largest):
+		largest = vals[i]
+		j = i + 1
+	i = i + 1
+print str(largest), '@', str(j)",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = vals[0]
+while i < len(vals):
+	if int(vals[i]) > int(largest):
+		largest = vals[i]
+		j = i + 1
+	i = i + 1
+print(str(largest), '@', str(j))",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"a = raw_input(""Enter a list of numbers:\n"").split()
+
+large = int(a[0])
+position = 0
+
+if len(a) == 1:
+   position = 1
+
+i = 0
+while i < len(a):
+   if int(a[i]) > large:
+      large = int(a[i])
+      position = i + 1
+   i = i + 1
+
+print str(large) + "" @ "" + str(position)",True,"a = input(""Enter a list of numbers:\n"").split()
+
+large = int(a[0])
+position = 0
+
+if len(a) == 1:
+   position = 1
+
+i = 0
+while i < len(a):
+   if int(a[i]) > large:
+      large = int(a[i])
+      position = i + 1
+   i = i + 1
+
+print(str(large) + "" @ "" + str(position))",8,1,0,2,0,0,0,0,0,0,9,4,3,0,0,0,0,0,0,4,0,0,2,1,0,16,0,0,21,9,4,4,0
+02largest.py,"a = raw_input(""Enter a list of numbers:\n"").split()
+position = -5
+i = 0
+
+while i < len(a):
+	if int(a[i]) > position:
+		position = int(a[i])
+		largest = i + 1
+	i = i + 1
+print str(position) + "" @ "" + str(largest) 
+    #i = i + 1
+",True,"a = input(""Enter a list of numbers:\n"").split()
+position = -5
+i = 0
+
+while i < len(a):
+	if int(a[i]) > position:
+		position = int(a[i])
+		largest = i + 1
+	i = i + 1
+print(str(position) + "" @ "" + str(largest)) 
+    #i = i + 1
+",8,1,0,1,0,0,0,0,0,0,7,6,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,17,6,4,1,1
+02largest.py,"#!/usr/bin/env python
+
+s = raw_input(""Enter a list of numbers:\n"").split()
+
+l = s[0]
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i
+	i = i + 1
+print l, ""@"", l_pos + 1",True,"#!/usr/bin/env python
+
+s = input(""Enter a list of numbers:\n"").split()
+
+l = s[0]
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i
+	i = i + 1
+print(l, ""@"", l_pos + 1)",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,19,7,4,2,0
+02largest.py,"#!/usr/bin/env python
+
+s = raw_input(""Enter a list of numbers:\n"").split()
+
+l = s[0]
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i
+	i = i + 1
+print l, ""@"", l_pos + 1",True,"#!/usr/bin/env python
+
+s = input(""Enter a list of numbers:\n"").split()
+
+l = s[0]
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i
+	i = i + 1
+print(l, ""@"", l_pos + 1)",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,19,7,4,2,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+maximum = vals[0]
+index = 1
+i = 0
+while i < len(vals):
+	if int(maximum) < int(vals[i]):
+		maximum = vals[i]
+		index = i + 1
+	i = i + 1
+print maximum, ""@"", index",True,"vals = input(""Enter a list of numbers:\n"").split()
+maximum = vals[0]
+index = 1
+i = 0
+while i < len(vals):
+	if int(maximum) < int(vals[i]):
+		maximum = vals[i]
+		index = i + 1
+	i = i + 1
+print(maximum, ""@"", index)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,19,7,4,0,0
+02largest.py,"n = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print largest, '@', j",True,"n = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 1
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print(largest, '@', j)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i])  > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print largest, ""@"", position + 1",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = 0
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+	if int(vals[i])  > largest:
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print(largest, ""@"", position + 1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,19,7,4,1,0
+02largest.py,"#!/usr/bin/env pyrhon
+
+numbers = raw_input(""Enter a list of numbers:"")
+a = []
+
+values = numbers.split()
+for value in values:
+	a.append(int(value))
+print 
+
+largest = 0 or -1
+location = 0 or 3
+i = 0
+while i < len(a):
+	if a[i] > largest:
+		location = i + 1
+		largest = a[i]
+	i = i + 1
+
+
+print largest , ""@"" , location
+
+
+
+",True,"#!/usr/bin/env pyrhon
+
+numbers = input(""Enter a list of numbers:"")
+a = []
+
+values = numbers.split()
+for value in values:
+	a.append(int(value))
+print() 
+
+largest = 0 or -1
+location = 0 or 3
+i = 0
+while i < len(a):
+	if a[i] > largest:
+		location = i + 1
+		largest = a[i]
+	i = i + 1
+
+
+print(largest , ""@"" , location)
+
+
+
+",7,1,1,1,0,0,0,0,0,0,9,4,2,2,0,0,1,0,0,6,1,0,1,2,1,24,0,0,25,9,7,8,0
+02largest.py,"raw_values = raw_input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print largest, ""@"", largest_i+1
+
+",True,"raw_values = input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+largest_i = 0
+
+i = 1
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print(largest, ""@"", largest_i+1)
+
+",9,1,0,1,0,0,0,0,0,0,9,2,2,0,0,0,0,0,0,5,0,0,1,1,0,17,0,0,22,7,6,4,0
+02largest.py,"a = raw_input(""Enter a list of numbers:\n"").split()
+
+large = int(a[0])
+position = 0
+
+if len(a) == 1:
+   position = 1
+
+i = 0
+while i < len(a):
+   if int(a[i]) > large:
+      large = int(a[i])
+      position = i + 1
+   i = i + 1
+
+print str(large) + "" @ "" + str(position)",True,"a = input(""Enter a list of numbers:\n"").split()
+
+large = int(a[0])
+position = 0
+
+if len(a) == 1:
+   position = 1
+
+i = 0
+while i < len(a):
+   if int(a[i]) > large:
+      large = int(a[i])
+      position = i + 1
+   i = i + 1
+
+print(str(large) + "" @ "" + str(position))",8,1,0,2,0,0,0,0,0,0,9,4,3,0,0,0,0,0,0,4,0,0,2,1,0,16,0,0,21,9,4,4,0
+02largest.py,"a = raw_input(""Enter a list of numbers:\n"").split()
+position = -5
+i = 0
+
+while i < len(a):
+	if int(a[i]) > position:
+		position = int(a[i])
+		largest = i + 1
+	i = i + 1
+print str(position) + "" @ "" + str(largest) 
+    #i = i + 1
+",True,"a = input(""Enter a list of numbers:\n"").split()
+position = -5
+i = 0
+
+while i < len(a):
+	if int(a[i]) > position:
+		position = int(a[i])
+		largest = i + 1
+	i = i + 1
+print(str(position) + "" @ "" + str(largest)) 
+    #i = i + 1
+",8,1,0,1,0,0,0,0,0,0,7,6,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,17,6,4,1,1
+02largest.py,"vals = raw_input('Enter a list of numbers:\n').split()
+
+largest = int(vals[0])
+i, position = 1, 1
+
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i + 1
+	i = i + 1
+print largest, '@', position
+",True,"vals = input('Enter a list of numbers:\n').split()
+
+largest = int(vals[0])
+i, position = 1, 1
+
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i + 1
+	i = i + 1
+print(largest, '@', position)
+",10,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,3,0,2,1,1,2,11,0,0,19,7,4,2,0
+02largest.py,"raw_values = raw_input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+#largest = 0
+largest_i = 0
+
+i = 0
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print largest, ""@"", largest_i+1
+
+",True,"raw_values = input(""Enter a list of numbers:\n"")
+
+values = raw_values.split()
+    
+largest = int(values[0])
+#largest = 0
+largest_i = 0
+
+i = 0
+while i < len(values):
+    value = int(values[i])
+    if value > largest:
+        largest = value
+        largest_i = i
+    i = i + 1
+
+print(largest, ""@"", largest_i+1)
+
+",9,1,0,1,0,0,0,0,0,0,10,2,2,0,0,0,0,0,0,5,0,0,1,1,0,18,0,0,22,7,6,4,1
+02largest.py,"import sys
+
+line = sys.stdin.readline()
+
+print 'Enter a list of numbers:'
+
+pos = 0
+
+parse = line.split(' ')
+
+biggest = int(parse[0])
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		biggest = int(parse[i])
+		pos = i
+	i = i + 1
+
+print str(parse[pos]).strip('\n'), '@', str(pos + 1)",True,"import sys
+
+line = sys.stdin.readline()
+
+print('Enter a list of numbers:')
+
+pos = 0
+
+parse = line.split(' ')
+
+biggest = int(parse[0])
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		biggest = int(parse[i])
+		pos = i
+	i = i + 1
+
+print(str(parse[pos]).strip('\n'), '@', str(pos + 1))",8,1,0,1,0,0,0,0,0,0,9,2,2,0,0,0,0,0,0,5,0,0,1,1,0,20,0,0,23,9,6,7,0
+02largest.py,"#!usr/bin/env python
+vals = raw_input('Enter a list of numbers:\n').split()
+
+position = 0
+largest = int(vals[0])
+
+i = 0 
+while i < len(vals):
+	if int(vals[i]) > largest :
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print largest,'@',position + 1",True,"#!usr/bin/env python
+vals = input('Enter a list of numbers:\n').split()
+
+position = 0
+largest = int(vals[0])
+
+i = 0 
+while i < len(vals):
+	if int(vals[i]) > largest :
+		largest = int(vals[i])
+		position = i
+	i = i + 1
+print(largest,'@',position + 1)",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,19,7,4,2,0
+02largest.py,"values=raw_input(""Enter a list of numbers:\n"").split()
+
+position=0
+largest=int(values[0])
+
+i=0
+while i < len(values):
+	if int(values[i]) > largest:
+		largest = int(values[i])
+		position= i
+	i = i + 1
+
+print largest, ""@"", position + 1",True,"values=input(""Enter a list of numbers:\n"").split()
+
+position=0
+largest=int(values[0])
+
+i=0
+while i < len(values):
+	if int(values[i]) > largest:
+		largest = int(values[i])
+		position= i
+	i = i + 1
+
+print(largest, ""@"", position + 1)",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,19,7,4,3,0
+02largest.py,"list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+k = 0
+max = int(list[i])
+
+
+while i < len(list):
+  if int(list[i]) > max:
+    max = int(list[i])
+    k = i
+  i += 1
+
+print max, '@', k + 1     
+",True,"list = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+k = 0
+max = int(list[i])
+
+
+while i < len(list):
+  if int(list[i]) > max:
+    max = int(list[i])
+    k = i
+  i += 1
+
+print(max, '@', k + 1)     
+",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,14,0,0,19,6,4,4,0
+02largest.py,"#
+
+numbers = raw_input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = m[0]
+maximum_pos = 1
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print maximum, ""@"", maximum_pos
+",True,"#
+
+numbers = input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = m[0]
+maximum_pos = 1
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print(maximum, ""@"", maximum_pos)
+",9,1,1,1,0,0,0,0,0,0,8,2,2,0,0,0,1,0,0,5,1,0,1,2,1,19,0,0,24,7,6,5,1
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = 1 
+
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1 
+	i = i + 1 
+
+print largest, ""@"", position 
+",True,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = 1 
+
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1 
+	i = i + 1 
+
+print(largest, ""@"", position) 
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,20,6,4,3,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = 1
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i + 1
+   i = i + 1 
+print largest, ""@"", position     
+
+",True,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = 1
+largest = int(vals[0])
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      position = i + 1
+   i = i + 1 
+print(largest, ""@"", position)     
+
+",10,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,2,0
+02largest.py,"#!usr/bin/env python
+vals = raw_input('Enter a list of numbers:\n').split()
+
+position = 0
+largest = int(vals[0])
+
+i = 0 
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i 
+	i = i + 1
+print largest,'@',position + 1",True,"#!usr/bin/env python
+vals = input('Enter a list of numbers:\n').split()
+
+position = 0
+largest = int(vals[0])
+
+i = 0 
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i 
+	i = i + 1
+print(largest,'@',position + 1)",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,19,7,4,2,0
+02largest.py,"#
+
+numbers = raw_input(""Enter a list of numbers:"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+print 
+
+i = 0 
+maximum = 0 or -1 
+maximum_pos = 0 or 3 
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print maximum, ""@"", maximum_pos
+",True,"#
+
+numbers = input(""Enter a list of numbers:"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+print() 
+
+i = 0 
+maximum = 0 or -1 
+maximum_pos = 0 or 3 
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print(maximum, ""@"", maximum_pos)
+",7,1,1,1,0,0,0,0,0,0,8,3,2,2,0,0,1,0,0,5,1,0,1,2,1,20,0,0,23,9,6,5,1
+02largest.py,"list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+k = 0
+max = int(list[i])
+
+
+while i < len(list):
+  if int(list[i]) > max:
+    max = int(list[i])
+    k = i
+  i += 1
+
+print max, '@', k + 1     
+",True,"list = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+k = 0
+max = int(list[i])
+
+
+while i < len(list):
+  if int(list[i]) > max:
+    max = int(list[i])
+    k = i
+  i += 1
+
+print(max, '@', k + 1)     
+",10,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,14,0,0,19,6,4,4,0
+02largest.py,"#!/usr/bin/env python
+vals = raw_input(""Enter a list of numbers:\n"")
+
+
+
+n = []
+
+num = vals.split()	
+for numbers in num:
+		
+	n.append(int(numbers))
+
+print max(n),""@"",n.index(max(n))+1",True,"#!/usr/bin/env python
+vals = input(""Enter a list of numbers:\n"")
+
+
+
+n = []
+
+num = vals.split()	
+for numbers in num:
+		
+	n.append(int(numbers))
+
+print(max(n),""@"",n.index(max(n))+1)",6,0,1,0,0,0,0,0,0,0,3,2,0,0,0,0,1,0,0,3,1,0,0,1,1,13,0,0,11,3,4,5,0
+02largest.py,"num = raw_input(""Enter a list of numbers:\n"").split()
+p = 1 
+i = 0 
+largestnum = num[0]
+while i < len(num):
+  if int(num[i]) > int(largestnum):
+    largestnum = num[i]
+    p = i + 1 
+  i = i + 1 
+print str(largestnum) + "" @ "" + str(p)  ",True,"num = input(""Enter a list of numbers:\n"").split()
+p = 1 
+i = 0 
+largestnum = num[0]
+while i < len(num):
+  if int(num[i]) > int(largestnum):
+    largestnum = num[i]
+    p = i + 1 
+  i = i + 1 
+print(str(largestnum) + "" @ "" + str(p))  ",10,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,19,7,4,0,0
+02largest.py,"nums = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(nums[0])
+largest_pos = 0
+i = 0
+while i < len(nums):
+   if int(nums[i]) > largest:
+      largest = int(nums[i])
+      largest_pos = i
+   i = i + 1
+print largest, ""@"", largest_pos
+",False,"nums = input(""Enter a list of numbers:\n"").split()
+largest = int(nums[0])
+largest_pos = 0
+i = 0
+while i < len(nums):
+   if int(nums[i]) > largest:
+      largest = int(nums[i])
+      largest_pos = i
+   i = i + 1
+print(largest, ""@"", largest_pos)
+",8,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,19,6,4,0,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+largest = int(vals[i])
+largest_pos = 0
+
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      largest_pos = i + 1
+      if largest_pos == 0:
+         largest_pos = 1
+   i = i + 1
+
+print largest, ""@"", largest_pos
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+largest = int(vals[i])
+largest_pos = 0
+
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+      largest_pos = i + 1
+      if largest_pos == 0:
+         largest_pos = 1
+   i = i + 1
+
+print(largest, ""@"", largest_pos)
+",7,1,0,2,0,0,0,0,0,0,9,2,3,0,0,0,0,0,0,4,0,0,2,1,0,14,0,0,22,8,4,2,0
+02largest.py,"#!/usr/bin/env pyrhon
+
+numbers = raw_input(""Enter a list of numbers:\n"")
+a = []
+
+values = numbers.split()
+for value in values:
+	a.append(int(value))
+print max(a),""@"",a.index(max(a))
+
+largest = 0
+location = 0
+i = 0
+while i < len(a):
+	if a[i] > largest:
+		location = i + 1
+		largest = n[i]
+	i = i + 1
+
+print largest + ""@"" + location
+",False,"#!/usr/bin/env pyrhon
+
+numbers = input(""Enter a list of numbers:\n"")
+a = []
+
+values = numbers.split()
+for value in values:
+	a.append(int(value))
+print(max(a),""@"",a.index(max(a)))
+
+largest = 0
+location = 0
+i = 0
+while i < len(a):
+	if a[i] > largest:
+		location = i + 1
+		largest = n[i]
+	i = i + 1
+
+print(largest + ""@"" + location)
+",6,1,1,1,0,0,0,0,0,0,9,5,2,0,0,0,1,0,0,6,1,0,1,2,1,20,0,0,28,8,8,4,0
+02largest.py,"x = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+y = 0
+
+largest = x[0]
+
+while i < len(x):
+   if int(x[i]) > int(largest):
+      largest = x[i]
+      y = i + 1
+   i = i + 1
+print str(largest) + "" @ "" + str(y)
+",False,"x = input(""Enter a list of numbers:\n"").split()
+i = 0
+y = 0
+
+largest = x[0]
+
+while i < len(x):
+   if int(x[i]) > int(largest):
+      largest = x[i]
+      y = i + 1
+   i = i + 1
+print(str(largest) + "" @ "" + str(y))
+",8,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,2,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[i+1]
+previous = vals[i]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print longest
+  i = i + 1
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[i+1]
+previous = vals[i]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print(longest)
+  i = i + 1
+",3,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,17,4,4,1,0
+02largest.py,"import sys
+n = sys.stdin.readlines()
+i = 0
+s = n
+
+while i > len(n):
+	if int(n[i]) < s:
+		s = int(n[i])
+	i = i + 1
+print s",False,"import sys
+n = sys.stdin.readlines()
+i = 0
+s = n
+
+while i > len(n):
+	if int(n[i]) < s:
+		s = int(n[i])
+	i = i + 1
+print(s)",3,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,10,0,0,16,2,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 1
+max = vals[0]
+while i < len(vals):
+   if vals[i] > max:
+      max = vals[i]
+   i = i + 1
+print max, ""@"", i
+  ",False,"vals = input(""Enter a list of numbers:\n"").split()
+i = 1
+max = vals[0]
+while i < len(vals):
+   if vals[i] > max:
+      max = vals[i]
+   i = i + 1
+print(max, ""@"", i)
+  ",8,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,9,0,0,16,5,3,0,0
+02largest.py,"#!/usr/bin/env python
+a = []
+numbers = raw_input(""Enter a list of numbers:"")
+x = 0
+y = 0
+
+
+
+while y != len(a):
+    a.append(numbers)
+    if x < a[y]:
+        x = a[y]
+    y += 1
+
+print x
+
+
+
+",False,"#!/usr/bin/env python
+a = []
+numbers = input(""Enter a list of numbers:"")
+x = 0
+y = 0
+
+
+
+while y != len(a):
+    a.append(numbers)
+    if x < a[y]:
+        x = a[y]
+    y += 1
+
+print(x)
+
+
+
+",2,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,1,0,1,1,1,18,0,0,16,4,4,7,0
+02largest.py,"n = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 0
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print largest, '@', j",False,"n = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 0
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = i + 1
+	i = i + 1
+ 
+print(largest, '@', j)",8,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,1,0
+02largest.py,"vals = raw_input('Enter a list of numbers:\n').split()
+
+largest = int(vals[0])
+i, position = 1, 1
+
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i + 1
+	i = i + 1
+print largest, ' @ ', position
+",False,"vals = input('Enter a list of numbers:\n').split()
+
+largest = int(vals[0])
+i, position = 1, 1
+
+while i < len(vals):
+	if int(vals[i]) > largest:
+		largest = int(vals[i])
+		position = i + 1
+	i = i + 1
+print(largest, ' @ ', position)
+",10,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,3,0,2,1,1,2,11,0,0,19,7,4,2,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i + 1 
+	i = i + 1
+print largest, ""@"", position + 1 ",False,"my_list = input(""Enter a list of numbers:\n"").split("" "")
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+
+		position = i + 1 
+	i = i + 1
+print(largest, ""@"", position + 1) ",7,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,7,4,2,0
+02largest.py,"x = []
+x = raw_input(""Enter a list of numbers:\n"").xplt()
+largest = ()
+position = ()
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+	print str(largest), ""@"", string(position)		
+",False,"x = []
+x = input(""Enter a list of numbers:\n"").xplt()
+largest = ()
+position = ()
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+	print(str(largest), ""@"", string(position))		
+",4,1,0,2,0,0,0,0,0,0,10,2,3,0,0,0,0,0,0,5,1,2,2,1,3,16,0,0,21,7,4,3,0
+02largest.py,"import sys
+
+line = sys.stdin.readline()
+
+print 'Enter a list of numbers:'
+
+pos = 0
+biggest = 0
+
+parse = line.split(' ')
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		pos = i + 1
+	i = i + 1
+
+print parse[pos], '@', pos",False,"import sys
+
+line = sys.stdin.readline()
+
+print('Enter a list of numbers:')
+
+pos = 0
+biggest = 0
+
+parse = line.split(' ')
+
+i = 0
+while i < len(parse):
+	if int(parse[i]) >= biggest:
+		pos = i + 1
+	i = i + 1
+
+print(parse[pos], '@', pos)",4,1,0,1,0,0,0,0,0,0,8,2,2,0,0,0,0,0,0,5,0,0,1,1,0,18,0,0,19,8,6,6,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"")
+
+i = 0
+while i < len(vals):
+   maximum = int(vals[i])
+   if maximum < int(vals[i]):
+      vals = maximum
+   i = i + 1
+print maximum,""@"",
+",False,"vals = input(""Enter a list of numbers:\n"")
+
+i = 0
+while i < len(vals):
+   maximum = int(vals[i])
+   if maximum < int(vals[i]):
+      vals = maximum
+   i = i + 1
+print(maximum,""@"", end=' ')
+",4,1,0,1,0,0,0,0,0,0,6,1,2,0,0,0,0,0,0,2,0,0,1,1,0,9,0,0,15,5,3,1,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list)
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1
+	i = i + 1
+print largest, ""@"", position ",False,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list)
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1
+	i = i + 1
+print(largest, ""@"", position) ",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,20,5,4,1,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1
+	i = i + 1
+print largest, ""@"", len(position)",False,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1
+	i = i + 1
+print(largest, ""@"", len(position))",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,5,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of values:\n"").split()
+i = 0
+largest = 0
+
+while i < len(vals):
+   if vals[i] > largest:
+      largest = vals[i]
+      largest_pos = i + 1
+   i = i + 1
+
+print largest, ""@"", largest_pos
+",False,"vals = input(""Enter a list of values:\n"").split()
+i = 0
+largest = 0
+
+while i < len(vals):
+   if vals[i] > largest:
+      largest = vals[i]
+      largest_pos = i + 1
+   i = i + 1
+
+print(largest, ""@"", largest_pos)
+",4,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,17,6,4,2,0
+02largest.py,"numbers = raw_input('Enter a list of numbers:\n').split()
+i = 0
+largest = int(numbers[0])
+
+while i < len(numbers):
+  if int(numbers[i]) > largest:
+    largest = int(numbers[i])
+  i = i + 1
+
+print largest,'@',list[largest]
+",False,"numbers = input('Enter a list of numbers:\n').split()
+i = 0
+largest = int(numbers[0])
+
+while i < len(numbers):
+  if int(numbers[i]) > largest:
+    largest = int(numbers[i])
+  i = i + 1
+
+print(largest,'@',list[largest])
+",4,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,10,0,0,17,5,4,2,0
+02largest.py,"vals = raw_input(""Enter a list of values:\n"").split()
+
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) < largest:
+      largest = int(vals[i])
+      postion = i
+   i = i + 1
+print largest, ""@"", postion + 1
+ ",False,"vals = input(""Enter a list of values:\n"").split()
+
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) < largest:
+      largest = int(vals[i])
+      postion = i
+   i = i + 1
+print(largest, ""@"", postion + 1)
+ ",4,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,17,6,4,1,0
+02largest.py,"vals = raw_input('Enter a list of values:\n').split()
+largest = vals[0]
+i = 1
+pos = 0
+while i <= len(vals):
+    if vals[i] > vals[0]:
+        largest = vals[i]
+        pos = i
+    i += 1
+print '{} @ {}'.format(largest, pos)",False,"vals = input('Enter a list of values:\n').split()
+largest = vals[0]
+i = 1
+pos = 0
+while i <= len(vals):
+    if vals[i] > vals[0]:
+        largest = vals[i]
+        pos = i
+    i += 1
+print('{} @ {}'.format(largest, pos))",4,1,0,1,0,0,0,0,0,0,8,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,18,7,4,0,0
+02largest.py,"values = raw_input(""Enter a list of numbers:\n"").split()
+
+largest_number = int(values[1])
+position = 1
+
+i = 0
+while i < len(values):
+  if int(values[i]) > largest_number:
+    largest_number = int(values[i])
+    position = i + 1
+  i = i + 1
+
+print largest_number, ""@"", position
+
+  
+",False,"values = input(""Enter a list of numbers:\n"").split()
+
+largest_number = int(values[1])
+position = 1
+
+i = 0
+while i < len(values):
+  if int(values[i]) > largest_number:
+    largest_number = int(values[i])
+    position = i + 1
+  i = i + 1
+
+print(largest_number, ""@"", position)
+
+  
+",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,15,0,0,19,7,4,4,0
+02largest.py,"n = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 0
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = j + 1
+	i = i + 1
+ 
+print largest, '@', j",False,"n = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+j = 0
+largest = int(n[0])
+while i < len(n):
+	if largest < int(n[i]):
+		largest = int(n[i])
+		j = j + 1
+	i = i + 1
+ 
+print(largest, '@', j)",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,7,4,1,0
+02largest.py,"#!/usr/bin/env python
+
+s = raw_input(""Enter a list of numbers:\n"").split()
+
+l = -1
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i + 1
+	i = i + 1
+print l, ""@"", l_pos",False,"#!/usr/bin/env python
+
+s = input(""Enter a list of numbers:\n"").split()
+
+l = -1
+i = 0
+l_pos = 0
+while i < len(s):
+	if int(l) < int(s[i]):
+		l = s[i]
+		l_pos = i + 1
+	i = i + 1
+print(l, ""@"", l_pos)",4,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,13,0,0,18,7,4,2,0
+02largest.py,"x = []
+x = raw_input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+	print str(largest), ""@"", string(position)		
+",False,"x = []
+x = input(""Enter a list of numbers:\n"").split()
+largest = int(x[0])
+position = 0
+
+
+if len(x) == 1:
+	position = 1
+
+i = 0 
+while i < len(x):
+	if int(x[i]) > largest:
+		largest = int(x[i])
+		position = i + 1
+	i = i + 1
+	print(str(largest), ""@"", string(position))		
+",4,1,0,2,0,0,0,0,0,0,10,2,3,0,0,0,0,0,0,5,1,0,2,1,1,16,0,0,22,9,4,3,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+m = 0
+i = 0
+j = 0
+
+while i < len(vals):
+   if m < vals[i]:
+      m = vals[i]
+      j = i 
+   i =  i + 1
+print m,""@"", j
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+m = 0
+i = 0
+j = 0
+
+while i < len(vals):
+   if m < vals[i]:
+      m = vals[i]
+      j = i 
+   i =  i + 1
+print(m,""@"", j)
+",4,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,18,6,4,2,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1
+	i = i + 1
+print largest, ""@"", len(my_list)",False,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1
+	i = i + 1
+print(largest, ""@"", len(my_list))",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,5,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+curr = 0
+prev = 0
+
+i = 0
+while i < len(vals):
+	prev = vals[i]
+	if int(curr) > int(prev):
+		prev = curr
+	i = i + 1
+print prev
+
+
+ 
+
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+curr = 0
+prev = 0
+
+i = 0
+while i < len(vals):
+	prev = vals[i]
+	if int(curr) > int(prev):
+		prev = curr
+	i = i + 1
+print(prev)
+
+
+ 
+
+",4,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,0,0,4,0,0,1,1,0,16,0,0,16,5,4,5,0
+02largest.py,"my_list = raw_input('Enter a list of numbers:\n').split(' ')
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1
+	i = i + 1
+print largest, '@', position",False,"my_list = input('Enter a list of numbers:\n').split(' ')
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		position = i + 1
+	i = i + 1
+print(largest, '@', position)",4,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,21,6,4,1,0
+02largest.py,"n = raw_input(""Enter a list of values:\n"").split()
+i = 0 
+j = 0
+
+largest = 0
+while i < len(n):
+   if int(n[i]) > int(largest):
+      largest = n[i]
+      j = j + 1
+   i = i + 1
+print str(largest) + ""@"" + str(j)
+",False,"n = input(""Enter a list of values:\n"").split()
+i = 0 
+j = 0
+
+largest = 0
+while i < len(n):
+   if int(n[i]) > int(largest):
+      largest = n[i]
+      j = j + 1
+   i = i + 1
+print(str(largest) + ""@"" + str(j))
+",4,1,0,1,0,0,0,0,0,0,7,4,2,0,0,0,0,0,0,4,0,0,1,1,0,11,0,0,18,7,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+curr = 0
+prev = 0
+
+i = 0
+while i < len(vals):
+	prev = vals[i]
+	if int(curr) > int(prev):
+		prev = curr
+		place = i + 1
+	i = i + 1
+print prev, ""@"", place
+
+
+ 
+
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+curr = 0
+prev = 0
+
+i = 0
+while i < len(vals):
+	prev = vals[i]
+	if int(curr) > int(prev):
+		prev = curr
+		place = i + 1
+	i = i + 1
+print(prev, ""@"", place)
+
+
+ 
+
+",4,1,0,1,0,0,0,0,0,0,8,2,2,0,0,0,0,0,0,4,0,0,1,1,0,17,0,0,19,7,5,5,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+	for item in my_list:
+		position = i + 1
+	i = i + 1
+print largest, ""@"", position ",False,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+	for item in my_list:
+		position = i + 1
+	i = i + 1
+print(largest, ""@"", position) ",4,1,1,1,0,0,0,0,0,0,7,2,2,0,0,0,1,0,0,4,0,0,1,2,0,12,0,0,23,5,5,1,0
+02largest.py,"#!/usr/bin/env python
+
+values = raw_input(""Enter a list of numbers:"")
+
+i = 0
+largest = 0
+largest_pos = 0
+
+while i < len(values):
+   if values[i] > largest:
+      largest_pos = i + 1
+      largest = values[i]
+   i = i + 1
+   
+print largest, ""@"", largest_pos",False,"#!/usr/bin/env python
+
+values = input(""Enter a list of numbers:"")
+
+i = 0
+largest = 0
+largest_pos = 0
+
+while i < len(values):
+   if values[i] > largest:
+      largest_pos = i + 1
+      largest = values[i]
+   i = i + 1
+   
+print(largest, ""@"", largest_pos)",4,1,0,1,0,0,0,0,0,0,7,3,2,0,0,0,0,0,0,4,0,0,1,1,0,15,0,0,18,7,4,3,0
+02largest.py,"vals = raw_input(""Enter a list of values:\n"").split()
+i = 0
+longest = vals[i+1]
+previous = vals[i]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print longest
+  i = i + 1
+",False,"vals = input(""Enter a list of values:\n"").split()
+i = 0
+longest = vals[i+1]
+previous = vals[i]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print(longest)
+  i = i + 1
+",4,1,0,1,0,0,0,0,0,0,6,2,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,17,4,4,1,0
+02largest.py,"vals = raw_input(""Enter a list of values:\n"").split()
+i=0
+largest=0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   i = i + 1
+print largest , ""@"", i
+",False,"vals = input(""Enter a list of values:\n"").split()
+i=0
+largest=0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   i = i + 1
+print(largest , ""@"", i)
+",4,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,8,0,0,15,5,3,0,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[i]
+previous = vals[0]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print longest
+  i = i + 1
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+longest = vals[i]
+previous = vals[0]
+
+while i < len(vals):
+  if longest < previous:
+    previous = longest
+    print(longest)
+  i = i + 1
+",4,1,0,1,0,0,0,0,0,0,6,1,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,16,4,4,1,0
+02largest.py,"my_list = raw_input('Enter a list of numbers:\n').split(' ')
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+	i = i + 1
+print largest, '@', largest[i]",False,"my_list = input('Enter a list of numbers:\n').split(' ')
+
+i = 0
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+	i = i + 1
+print(largest, '@', largest[i])",4,1,0,1,0,0,0,0,0,0,6,1,2,0,0,0,0,0,0,4,0,0,1,1,0,10,0,0,20,5,4,1,0
+02largest.py,"import sys
+
+lines=raw_input()
+a=[]
+i=0
+while i!=len(lines):
+   a.append(int(lines[i]))
+   i=i+1
+#a break to make work look falsely organised
+
+i=0
+largest=a[i]
+while i!=len(a):
+   if a[i]<largest:
+      largest=a[i]
+      largest_str=str(a[i])+""@""+str(i+1)
+   i=i+1
+print largest_str
+",False,"import sys
+
+lines=input()
+a=[]
+i=0
+while i!=len(lines):
+   a.append(int(lines[i]))
+   i=i+1
+#a break to make work look falsely organised
+
+i=0
+largest=a[i]
+while i!=len(a):
+   if a[i]<largest:
+      largest=a[i]
+      largest_str=str(a[i])+""@""+str(i+1)
+   i=i+1
+print(largest_str)
+",4,2,0,1,0,0,0,1,0,0,6,3,3,0,0,0,0,0,0,5,1,0,1,2,1,18,0,0,29,6,5,2,1
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = vals[0]
+largest_pos = vals[i]
+while i < len(vals):
+	if largest < vals[i] :
+	   largest = vals[i]
+	i = i + 1
+
+print largest,""@"",largest_pos
+	",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+largest = vals[0]
+largest_pos = vals[i]
+while i < len(vals):
+	if largest < vals[i] :
+	   largest = vals[i]
+	i = i + 1
+
+print(largest,""@"",largest_pos)
+	",4,1,0,1,0,0,0,0,0,0,6,1,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,19,5,4,2,0
+02largest.py,"
+vals = raw_input(""Enter a list of numbers:\n"").split()
+l=0
+i=0
+while i < len(vals):
+   if int(vals[i])>int(l):
+      l=int(vals[i])
+   i= i + 1
+print l, ""@"", i
+",False,"
+vals = input(""Enter a list of numbers:\n"").split()
+l=0
+i=0
+while i < len(vals):
+   if int(vals[i])>int(l):
+      l=int(vals[i])
+   i= i + 1
+print(l, ""@"", i)
+",4,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,9,0,0,15,5,3,1,0
+02largest.py,"#!/usr/bin/env python
+vals = raw_input(""Enter a list of numbers:"").split()
+
+n = []
+
+n.append(vals)
+
+largest = max(n)
+
+print largest",False,"#!/usr/bin/env python
+vals = input(""Enter a list of numbers:"").split()
+
+n = []
+
+n.append(vals)
+
+largest = max(n)
+
+print(largest)",3,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,3,1,0,0,0,1,10,0,0,7,1,3,4,0
+02largest.py,"vals = int(raw_input(""Enter a list of numbers:\n"")).split()
+maximum = vals[0]
+ 
+i = 0                        
+while i < len(vals):
+   if maximum < vals[i]:
+      maximum = vals[i]
+      index = i
+   i = i + 1
+ 
+print maximum, ""@"", index
+",False,"vals = int(input(""Enter a list of numbers:\n"")).split()
+maximum = vals[0]
+ 
+i = 0                        
+while i < len(vals):
+   if maximum < vals[i]:
+      maximum = vals[i]
+      index = i
+   i = i + 1
+ 
+print(maximum, ""@"", index)
+",3,1,0,1,0,0,0,0,0,0,6,1,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,18,5,4,0,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   i = i + 1 
+print largest, ""@"", vals[i] 
+
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   i = i + 1 
+print(largest, ""@"", vals[i]) 
+
+",3,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,10,0,0,16,5,3,2,0
+02largest.py,"vals = raw_input().split()
+print ""Enter a list of numbers:""
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print largest + '@' + [i]
+
+",False,"vals = input().split()
+print(""Enter a list of numbers:"")
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print(largest + '@' + [i])
+
+",3,1,0,1,0,0,0,0,0,0,5,3,2,0,0,0,0,0,0,3,1,0,1,1,1,11,0,0,15,5,3,2,0
+02largest.py,"#!/usr/bin/env python
+import sys
+a = []
+numbers = sys.argv(""Enter a list of numbers:"")
+for a in numbers:
+        a.append(numbers)
+print max(a)
+
+",False,"#!/usr/bin/env python
+import sys
+a = []
+numbers = sys.argv(""Enter a list of numbers:"")
+for a in numbers:
+        a.append(numbers)
+print(max(a))
+
+",3,0,1,0,0,0,0,0,0,0,2,1,0,0,0,0,1,0,0,2,1,0,0,1,1,8,0,0,8,1,3,1,0
+02largest.py,"vals = raw_input().split()
+print ""Enter a list of numbers:""
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print largest + '@' + [i]
+
+",False,"vals = input().split()
+print(""Enter a list of numbers:"")
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print(largest + '@' + [i])
+
+",3,1,0,1,0,0,0,0,0,0,5,3,2,0,0,0,0,0,0,3,1,0,1,1,1,11,0,0,15,5,3,2,0
+02largest.py,"
+i = 0
+vals = int(raw_input(""Enter a list of numbers:\n"").split())
+
+largest = 0
+
+while i < len(vals): 
+  if vals[i] > largest:
+  	largest = vals[i]
+  i = i + 1 
+
+print largest,""@"",i",False,"
+i = 0
+vals = int(input(""Enter a list of numbers:\n"").split())
+
+largest = 0
+
+while i < len(vals): 
+  if vals[i] > largest:
+  	largest = vals[i]
+  i = i + 1 
+
+print(largest,""@"",i)",3,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,12,0,0,15,5,3,4,0
+02largest.py,"#
+
+numbers = raw_input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = 0 
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print maximum, ""@"", maximum_pos
+",False,"#
+
+numbers = input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = 0 
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print(maximum, ""@"", maximum_pos)
+",3,1,1,1,0,0,0,0,0,0,8,2,2,0,0,0,1,0,0,5,1,0,1,2,1,19,0,0,23,7,6,5,1
+02largest.py,"#
+
+numbers = raw_input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = m[0]
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print maximum, ""@"", maximum_pos
+",False,"#
+
+numbers = input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = m[0]
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print(maximum, ""@"", maximum_pos)
+",3,1,1,1,0,0,0,0,0,0,8,2,2,0,0,0,1,0,0,5,1,0,1,2,1,19,0,0,24,7,6,5,1
+02largest.py,"vals = raw_input().split()
+print ""Enter a list of numbers:""
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print largest + (""@"" * vals[i])
+
+",False,"vals = input().split()
+print(""Enter a list of numbers:"")
+largest = 0
+
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i])
+	i = i + 1
+print(largest + (""@"" * vals[i]))
+
+",3,1,0,1,0,0,0,0,0,0,5,3,2,0,0,0,0,0,0,3,0,0,1,1,0,11,0,0,16,5,3,2,0
+02largest.py,"#!/usr/bin/env python
+vals = raw_input(""Enter a list of numbers:\n"")
+
+n = []
+n.append(vals)
+als = raw_input(""Enter a list of numbers:\n"")
+i = 1 
+while i < len(vals):
+	print, len(n),n[i]
+	i = i + 1",False,"#!/usr/bin/env python
+vals = raw_input(""Enter a list of numbers:\n"")
+
+n = []
+n.append(vals)
+als = raw_input(""Enter a list of numbers:\n"")
+i = 1 
+while i < len(vals):
+	print, len(n),n[i]
+	i = i + 1",3,1,0,0,0,0,0,0,0,0,5,2,1,0,0,0,0,0,0,4,1,1,0,1,2,10,0,0,14,4,5,1,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+position = vals[0]
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   position = vals[largest] 
+   i = i + 1 
+print largest, ""@"", position 
+
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+position = vals[0]
+largest = 0
+i = 0
+while i < len(vals):
+   if int(vals[i]) > largest:
+      largest = int(vals[i])
+   position = vals[largest] 
+   i = i + 1 
+print(largest, ""@"", position) 
+
+",3,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,20,6,4,2,0
+02largest.py,"vals = raw_input().split()
+x = 0
+
+
+print ""Enter a list of numbers:"" 
+i = 0
+while i < len(vals):
+	
+	if int(x) > y:
+		x = int(x[i])
+	i = i + 1
+print x 		",False,"vals = input().split()
+x = 0
+
+
+print(""Enter a list of numbers:"") 
+i = 0
+while i < len(vals):
+	
+	if int(x) > y:
+		x = int(x[i])
+	i = i + 1
+print(x) 		",3,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,12,0,0,13,4,4,2,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+maximum = a[0]
+
+i = 0                      
+while i < len(vals):
+   if maximum < vals[i]:
+      maximum = vals[i]
+   i = i + 1
+
+print maximum",False,"vals = input(""Enter a list of numbers:\n"").split()
+maximum = a[0]
+
+i = 0                      
+while i < len(vals):
+   if maximum < vals[i]:
+      maximum = vals[i]
+   i = i + 1
+
+print(maximum)",3,1,0,1,0,0,0,0,0,0,5,1,2,0,0,0,0,0,0,3,0,0,1,1,0,10,0,0,15,4,4,2,0
+02largest.py,"vals = raw_input().split()
+print ""Enter a list of numbers:""
+largest = 0
+largestp = 1
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i]) 
+		largestp = largest[i]
+	i = i + 1
+print largest , ""@""  , largest[i]
+
+",False,"vals = input().split()
+print(""Enter a list of numbers:"")
+largest = 0
+largestp = 1
+i = 0 
+while i < len(vals):
+	if largest < int(vals[i]):
+		largest = int(vals[i]) 
+		largestp = largest[i]
+	i = i + 1
+print(largest , ""@""  , largest[i])
+
+",3,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,20,6,4,1,0
+02largest.py,"my_list = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1 
+	i = i + 1
+print largest, ""@"", len(my_list)",False,"my_list = input(""Enter a list of numbers:\n"").split()
+
+i = 1
+largest = int(my_list[i])
+position = i
+while i < len(my_list):
+	if largest < int(my_list[i]):
+		largest = int(my_list[i])
+		
+		position = i + 1 
+	i = i + 1
+print(largest, ""@"", len(my_list))",3,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,0,0,4,0,0,1,1,0,12,0,0,21,5,4,1,0
+02largest.py,"#!/usr/bin/env python
+vals = raw_input(""Enter a list of numbers:\n"")
+
+a = []
+
+while vals < len(vals):
+	a.append(vals)
+	vals = raw_input()
+
+i = 0 
+while i < len(a):
+	print i , len(a), a[i]
+	i = i + 1 ",False,"#!/usr/bin/env python
+vals = input(""Enter a list of numbers:\n"")
+
+a = []
+
+while vals < len(vals):
+	a.append(vals)
+	vals = input()
+
+i = 0 
+while i < len(a):
+	print(i , len(a), a[i])
+	i = i + 1 ",3,2,0,0,0,0,0,0,0,0,5,2,2,0,0,0,0,0,0,3,1,0,0,2,1,13,0,0,16,3,3,3,0
+02largest.py,"#
+
+numbers = raw_input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = 0 
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print maximum, ""@"", maximum_pos
+",False,"#
+
+numbers = input(""Enter a list of numbers:\n"").split()
+
+m = []
+
+for number in numbers:
+   m.append(int(number))
+
+i = 0 
+maximum = 0 
+maximum_pos = 0
+
+while i < len(m):
+   if maximum < m[i]:
+      maximum_pos = i + 1 
+      maximum = m[i]
+   i = i + 1 
+print(maximum, ""@"", maximum_pos)
+",3,1,1,1,0,0,0,0,0,0,8,2,2,0,0,0,1,0,0,5,1,0,1,2,1,19,0,0,23,7,6,5,1
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+
+i = 0
+while i < len(vals):
+	if int(vals[i]) > i:
+		largest = int(vals[i])
+		i = i + 1
+print largest , ""@"" , i 
+
+
+
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+
+i = 0
+while i < len(vals):
+	if int(vals[i]) > i:
+		largest = int(vals[i])
+		i = i + 1
+print(largest , ""@"" , i) 
+
+
+
+",3,1,0,1,0,0,0,0,0,0,4,1,2,0,0,0,0,0,0,2,0,0,1,1,0,11,0,0,14,4,3,4,0
+02largest.py,"vals = raw_input(""Enter a list of numbers:\n"").split()
+i = 0
+max = vals[i]
+while max < vals[i + 1]:
+   vals[i + 1] = max
+   i = i + 1
+",False,"vals = input(""Enter a list of numbers:\n"").split()
+i = 0
+max = vals[i]
+while max < vals[i + 1]:
+   vals[i + 1] = max
+   i = i + 1
+",3,1,0,0,0,0,0,0,0,0,5,3,1,0,0,0,0,0,0,3,0,0,0,1,0,6,0,0,13,5,3,0,0
+02largest.py,"list = raw_input(""Enter a list of numbers:\n"").split()
+
+maxVal = int(list[0])
+
+for i in list[1:]:
+   if int(maxVal) < int(list[i]):
+     maxVal = int(list[i])
+
+
+print maxVal, '@', i     
+",False,"list = input(""Enter a list of numbers:\n"").split()
+
+maxVal = int(list[0])
+
+for i in list[1:]:
+   if int(maxVal) < int(list[i]):
+     maxVal = int(list[i])
+
+
+print(maxVal, '@', i)     
+",2,0,1,1,0,0,0,0,0,0,3,0,1,0,0,0,1,0,0,2,0,0,1,1,0,10,0,0,13,4,3,4,0

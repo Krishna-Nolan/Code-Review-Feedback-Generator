@@ -1,0 +1,4995 @@
+task,upload,correct,new_upload,score,while,for,if,elif,else,return,break,continue,pass,assign,arith,comp,log,bit,iden,mem,#fun,#fcall,globals,#list,#tuple,cond,loop,#lst,#lines,avg_lines_per_func,#class,#var_uses,#con_uses,#var,#emptylines,#comments
+selection_sort.py,"def swap(a, i, j):
+   temp = a[i]
+   a[i] = a[j]
+   a[j] = temp
+
+def find_position_of_smallest(a, i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   j = 0
+   while j < len(a):
+       p = find_position_of_smallest(a,j)
+       swap(a,j,p)
+       j = j + 1
+",True,"def swap(a, i, j):
+   temp = a[i]
+   a[i] = a[j]
+   a[j] = temp
+
+def find_position_of_smallest(a, i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   j = 0
+   while j < len(a):
+       p = find_position_of_smallest(a,j)
+       swap(a,j,p)
+       j = j + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+	p = i
+	while i < len(a):
+		if a[i] < a[p]:
+			p = i
+		i = i + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i <len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",True,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+	p = i
+	while i < len(a):
+		if a[i] < a[p]:
+			p = i
+		i = i + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i <len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",8,3,0,2,0,0,1,0,0,0,15,4,5,0,0,0,0,3,0,0,0,0,2,3,0,28,8.66666666666667,0,52,5,5,4,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+",True,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a, i)
+    swap (a, i, k)
+    i = i + 1
+",True,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a, i)
+    swap (a, i, k)
+    i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a, i)
+    swap (a, i, k)
+    i = i + 1
+",True,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a, i)
+    swap (a, i, k)
+    i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j]= tmp
+
+def find_position_of_smallest(a, i):
+   j = i
+   while i < len(a):
+      if a[i] < a[j]:
+         j = i
+      i = i + 1
+   return j
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      k = find_position_of_smallest(a, i)
+      swap(a, i, k)
+      i = i + 1
+",True,"def swap(a, i, j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j]= tmp
+
+def find_position_of_smallest(a, i):
+   j = i
+   while i < len(a):
+      if a[i] < a[j]:
+         j = i
+      i = i + 1
+   return j
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      k = find_position_of_smallest(a, i)
+      swap(a, i, k)
+      i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   smallest = i
+   while i < len(a):
+      if a[i] < a[smallest]:
+         smallest = i
+      i = i + 1
+   return smallest
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+",True,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   smallest = i
+   while i < len(a):
+      if a[i] < a[smallest]:
+         smallest = i
+      i = i + 1
+   return smallest
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,6,2,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+      i = i + 1
+
+",True,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+      i = i + 1
+
+",8,3,0,2,0,0,1,0,0,0,15,4,5,0,0,0,0,3,0,0,0,0,2,3,0,27,8,0,52,5,5,3,0
+selection_sort.py,"a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, p, i)
+		i = i + 1
+
+
+
+",True,"a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, p, i)
+		i = i + 1
+
+
+
+",9,2,0,1,0,0,1,0,0,0,11,2,3,0,0,0,0,3,2,1,1,0,1,2,1,23,6,0,37,7,5,4,0
+selection_sort.py,"def swap(a,i,j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+    
+def find_position_of_smallest(a,i):
+    p = i
+    while i < len(a):
+        if a[i] < a[p]:
+            p = i
+        i = i + 1
+    return p
+
+def sort(a):
+    j = 0
+    while j < len(a):
+        p = find_position_of_smallest(a,j)
+        swap(a, j, p)
+        j = j + 1",True,"def swap(a,i,j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+    
+def find_position_of_smallest(a,i):
+    p = i
+    while i < len(a):
+        if a[i] < a[p]:
+            p = i
+        i = i + 1
+    return p
+
+def sort(a):
+    j = 0
+    while j < len(a):
+        p = find_position_of_smallest(a,j)
+        swap(a, j, p)
+        j = j + 1",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,1,0
+selection_sort.py,"#attempt #1(too complicated)
+#def swap(a,i,j):
+#   track=0
+#   templist=[]
+#   while track!=len(a):
+#      if track == i:
+#         templist.append(a[j])
+#      elif track == j:
+#         templist.append(a[i])
+#      else:
+#         templist.append(a[track])
+#      track=track+1
+#   a=templist
+#   return a
+#<><><><><><><>
+
+#Swap()
+def swap(a,i,j):
+    temp=a[i]
+    a[i]=a[j]
+    a[j]=temp
+
+#find_position_of_smallest()
+def find_position_of_smallest(a,i):
+   tempnum=i
+   while i!=len(a):
+      if a[i] < a[tempnum]:
+         tempnum=i
+      i=i+1
+   return tempnum
+
+#sort()
+def sort(a):
+   i=0
+   j=0
+   while i !=len(a):
+      j=find_position_of_smallest(a,i)
+      swap(a,i,j)
+      i=i+1
+
+
+",True,"#attempt #1(too complicated)
+#def swap(a,i,j):
+#   track=0
+#   templist=[]
+#   while track!=len(a):
+#      if track == i:
+#         templist.append(a[j])
+#      elif track == j:
+#         templist.append(a[i])
+#      else:
+#         templist.append(a[track])
+#      track=track+1
+#   a=templist
+#   return a
+#<><><><><><><>
+
+#Swap()
+def swap(a,i,j):
+    temp=a[i]
+    a[i]=a[j]
+    a[j]=temp
+
+#find_position_of_smallest()
+def find_position_of_smallest(a,i):
+   tempnum=i
+   while i!=len(a):
+      if a[i] < a[tempnum]:
+         tempnum=i
+      i=i+1
+   return tempnum
+
+#sort()
+def sort(a):
+   i=0
+   j=0
+   while i !=len(a):
+      j=find_position_of_smallest(a,i)
+      swap(a,i,j)
+      i=i+1
+
+
+",9,3,0,2,1,1,2,0,0,0,13,3,7,0,0,0,0,3,2,0,0,0,4,3,0,41,6,0,35,4,5,5,18
+selection_sort.py,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+
+",True,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,23,6,0,36,4,5,5,0
+selection_sort.py,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i 
+    i = i + 1
+  return p
+
+def sort(a):
+
+  i = 0
+  while i < len(a):
+    p = i 
+    j = i + 1
+    while j < len(a):
+     if a[j] < a[p]:
+       p = j
+     j = j + 1
+  
+    tmp = a[p]
+    a[p] = a[i]
+    a[i] = tmp
+
+    i = i + 1
+
+    
+",True,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i 
+    i = i + 1
+  return p
+
+def sort(a):
+
+  i = 0
+  while i < len(a):
+    p = i 
+    j = i + 1
+    while j < len(a):
+     if a[j] < a[p]:
+       p = j
+     j = j + 1
+  
+    tmp = a[p]
+    a[p] = a[i]
+    a[i] = tmp
+
+    i = i + 1
+
+    
+",8,3,0,2,0,0,1,0,0,0,15,4,5,0,0,0,0,3,0,0,0,0,2,3,0,33,9,0,52,5,5,7,0
+selection_sort.py,"def swap (a, i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	p = i
+	while i < len(a):
+		if a[i] < a[p]:
+			p = i
+		i = i + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, i, p)
+		i = i + 1",True,"def swap (a, i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	p = i
+	while i < len(a):
+		if a[i] < a[p]:
+			p = i
+		i = i + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, i, p)
+		i = i + 1",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+
+",True,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,23,6,0,36,4,5,5,0
+selection_sort.py,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, i, p)
+      i = i + 1
+
+
+",True,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, i, p)
+      i = i + 1
+
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,36,4,5,4,0
+selection_sort.py,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",True,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,36,4,5,4,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+   
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0 
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i += 1
+
+   
+",True,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+   
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0 
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i += 1
+
+   
+",10,2,0,1,0,0,1,0,0,0,10,4,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,35,4,5,2,0
+selection_sort.py,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",True,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,36,4,5,4,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   l = 0
+   while l < len(a):
+      p = find_position_of_smallest(a,l)
+      swap(a,l,p)
+      l = l + 1
+ 
+
+",True,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   l = 0
+   while l < len(a):
+      p = find_position_of_smallest(a,l)
+      swap(a,l,p)
+      l = l + 1
+ 
+
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,21,5.66666666666667,0,34,3,6,3,0
+selection_sort.py,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",True,"
+def swap (a,i,j):
+  tmp= a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j 
+    j = j + 1
+  return p 
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,36,4,5,4,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,11,5,5,0
+selection_sort.py,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i): #can do j=1 then while and leave out p
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p) #reverses smallest for increasing
+      i = i + 1
+   return p
+      
+
+
+
+",True,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i): #can do j=1 then while and leave out p
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p) #reverses smallest for increasing
+      i = i + 1
+   return p
+      
+
+
+
+",10,3,1,1,0,0,2,0,0,0,11,3,3,1,0,0,0,3,2,0,0,0,1,4,0,25,6.33333333333333,0,37,4,5,5,3
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a,i,j):
+
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i 
+    while i < len(a):
+    	if a[i] < a[p]:
+    		p = i
+    	i = i + 1
+    return p 
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a,i)
+		swap(a,i,p)
+		i += 1
+
+
+
+
+
+",True,"#!/usr/bin/env python
+
+def swap(a,i,j):
+
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i 
+    while i < len(a):
+    	if a[i] < a[p]:
+    		p = i
+    	i = i + 1
+    return p 
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a,i)
+		swap(a,i,p)
+		i += 1
+
+
+
+
+
+",10,2,0,1,0,0,1,0,0,0,9,4,3,0,0,0,0,3,2,0,0,0,1,2,0,27,6,0,33,3,5,9,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",8,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,11,5,5,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = i
+		j = i + 1
+		while j < len(a):
+			if a[j] < a[p]:
+				p = j
+			j = j + 1
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,11,5,5,0
+selection_sort.py,"
+# a = [0,1,2,3,4]
+
+# swap(a,0,1)
+
+def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+
+# a = [0,1,2,3]
+# find(a,0)
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+   if a[i] < a[j]:
+     j = i
+   i = i + 1
+  return j
+
+
+def sort(a):
+  i = 0
+  while i < len(a):
+   j = i
+   k = i + 1
+   while k < len(a):
+      if a[k] < a[j]:
+        j = k
+      k = k + 1
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+   i = i + 1
+
+
+
+  
+   
+  
+ 
+   
+",True,"
+# a = [0,1,2,3,4]
+
+# swap(a,0,1)
+
+def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+
+# a = [0,1,2,3]
+# find(a,0)
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+   if a[i] < a[j]:
+     j = i
+   i = i + 1
+  return j
+
+
+def sort(a):
+  i = 0
+  while i < len(a):
+   j = i
+   k = i + 1
+   while k < len(a):
+      if a[k] < a[j]:
+        j = k
+      k = k + 1
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+   i = i + 1
+
+
+
+  
+   
+  
+ 
+   
+",8,3,0,2,0,0,1,0,0,0,17,4,5,0,0,0,0,3,0,0,0,0,2,3,0,45,8.33333333333333,0,52,5,5,12,4
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   tmp = i
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i
+      i = i + 1
+   return tmp 
+
+def sort(a):
+  j = 0
+  while j < len(a):
+    p = find_position_of_smallest(a, j)
+    swap(a, j, p)
+    j = j + 1
+
+
+
+
+
+",True,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   tmp = i
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i
+      i = i + 1
+   return tmp 
+
+def sort(a):
+  j = 0
+  while j < len(a):
+    p = find_position_of_smallest(a, j)
+    swap(a, j, p)
+    j = j + 1
+
+
+
+
+
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,24,5.66666666666667,0,34,3,5,7,0
+selection_sort.py,"a = []
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j
+    j = j + 1
+  return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",True,"a = []
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  j = i + 1
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j
+    j = j + 1
+  return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a,i)
+    swap(a,p,i)
+    i = i + 1
+
+",9,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,22,6,0,37,4,5,3,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+       p =  find_position_of_smallest(a, i)
+       swap(a, i , p)
+       i = i + 1
+",True,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+       p =  find_position_of_smallest(a, i)
+       swap(a, i , p)
+       i = i + 1
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,20,5.66666666666667,0,34,3,5,3,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,11,5,5,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1   
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+
+
+",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1   
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+
+
+",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,33,9,0,55,11,5,7,0
+selection_sort.py,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, i, p)
+      i = i + 1
+
+
+",True,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, i, p)
+      i = i + 1
+
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,36,4,5,4,0
+selection_sort.py,"a = []
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+",True,"a = []
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+",9,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,22,6,0,37,4,5,3,0
+selection_sort.py,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+ 
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+     p = find_position_of_smallest(a,i)
+     swap(a, i , p)
+     i = i + 1
+
+",True,"def swap (a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+ 
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+     p = find_position_of_smallest(a,i)
+     swap(a, i , p)
+     i = i + 1
+
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,21,6,0,36,4,5,2,0
+selection_sort.py,"def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a, i):
+  p = i
+  while i <len(a):
+   if a[i] < a[p]:
+    p = i
+   i = i + 1
+  return p
+
+def sort(a):
+  j = 0
+  while j < len(a):
+    p = find_position_of_smallest(a, j)
+    swap(a, j, p)
+    j = j + 1
+
+
+   
+
+",True,"def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a, i):
+  p = i
+  while i <len(a):
+   if a[i] < a[p]:
+    p = i
+   i = i + 1
+  return p
+
+def sort(a):
+  j = 0
+  while j < len(a):
+    p = find_position_of_smallest(a, j)
+    swap(a, j, p)
+    j = j + 1
+
+
+   
+
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,23,5.66666666666667,0,34,3,5,5,0
+selection_sort.py,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i): #can do y=1 then while and leave out x
+   s = i #s for selection sort/smallest
+   while i < len(a):
+      if a[i] < a[s]:
+         s = i
+      i = i + 1
+   return s
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      s = find_position_of_smallest(a,i)
+      swap(a,i,s) #reverses smallest for increasing
+      i = i + 1
+   return s
+      
+
+
+
+",True,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i): #can do y=1 then while and leave out x
+   s = i #s for selection sort/smallest
+   while i < len(a):
+      if a[i] < a[s]:
+         s = i
+      i = i + 1
+   return s
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      s = find_position_of_smallest(a,i)
+      swap(a,i,s) #reverses smallest for increasing
+      i = i + 1
+   return s
+      
+
+
+
+",10,3,2,1,0,0,2,0,0,0,10,3,3,1,0,0,0,3,2,0,0,0,1,5,0,24,6,0,35,3,5,5,4
+selection_sort.py,"def swap(a,i,j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+        if a[j] < a[p]:
+            p = j
+        j = j + 1
+    return p
+
+def sort(a):
+    i = 0
+    while i < len(a):
+        p = find_position_of_smallest(a,i)
+        swap(a,i,p)
+        i = i + 1
+        
+",True,"def swap(a,i,j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+        if a[j] < a[p]:
+            p = j
+        j = j + 1
+    return p
+
+def sort(a):
+    i = 0
+    while i < len(a):
+        p = find_position_of_smallest(a,i)
+        swap(a,i,p)
+        i = i + 1
+        
+",10,2,0,1,0,0,1,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,21,6,0,36,4,5,2,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",True,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,11,5,5,0
+selection_sort.py,"a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+	   p = i
+	   j = i + 1
+	   while j < len(a):
+	      if a [j] < a[p]:
+	         p = j
+	      j = j + 1
+
+	   temp = a[p]
+	   a[p] = a[i]
+	   a[i] = temp
+
+	   i = i + 1
+
+	    
+
+",True,"a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+	   p = i
+	   j = i + 1
+	   while j < len(a):
+	      if a [j] < a[p]:
+	         p = j
+	      j = j + 1
+
+	   temp = a[p]
+	   a[p] = a[i]
+	   a[i] = temp
+
+	   i = i + 1
+
+	    
+
+",7,3,0,2,0,0,1,0,0,0,17,4,5,0,0,0,0,3,0,1,1,0,2,3,1,32,9,0,55,9,5,5,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = i
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i
+      i = i + 1
+   return tmp
+
+def sort(a):
+   j = 0
+   while j < len(a):
+      p = find_position_of_smallest(a,j)
+      swap(a,j,p)
+      j = j +1 
+
+   
+",True,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = i
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i
+      i = i + 1
+   return tmp
+
+def sort(a):
+   j = 0
+   while j < len(a):
+      p = find_position_of_smallest(a,j)
+      swap(a,j,p)
+      j = j +1 
+
+   
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,21,5.66666666666667,0,34,3,5,3,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i              
+      j = i + 1          
+      while j < len(a): 
+         if a[j] < a[p]: 
+            p = j        
+         j = j + 1       
+
+      tmp = a[p]        
+      a[p] = a[i]       
+      a[i] = tmp        
+
+      i = i + 1
+",True,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i              
+      j = i + 1          
+      while j < len(a): 
+         if a[j] < a[p]: 
+            p = j        
+         j = j + 1       
+
+      tmp = a[p]        
+      a[p] = a[i]       
+      a[i] = tmp        
+
+      i = i + 1
+",8,3,0,2,0,0,1,0,0,0,15,4,5,0,0,0,0,3,0,0,0,0,2,3,0,28,8.66666666666667,0,52,5,5,4,0
+selection_sort.py,"a=[]
+i=0
+j=0
+
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+
+",True,"a=[]
+i=0
+j=0
+
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+
+",7,3,0,2,0,0,1,0,0,0,19,5,5,0,0,0,0,3,0,3,1,0,2,3,1,34,9,0,57,8,5,6,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i): 
+   tmp = i  
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i 
+      i = i + 1 
+   return tmp  
+
+def sort(a):
+   j = 0
+   while j < len(a):
+      p = find_position_of_smallest(a,j)
+      swap(a,j,p)
+      j = j + 1 
+",True,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+
+def find_position_of_smallest(a,i): 
+   tmp = i  
+   while i < len(a):
+      if a[i] < a[tmp]:
+         tmp = i 
+      i = i + 1 
+   return tmp  
+
+def sort(a):
+   j = 0
+   while j < len(a):
+      p = find_position_of_smallest(a,j)
+      swap(a,j,p)
+      j = j + 1 
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,19,5.66666666666667,0,34,3,5,2,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1     
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+
+",True,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1     
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+
+",9,2,0,1,0,0,1,0,0,0,12,3,3,0,0,0,0,3,2,2,1,0,1,2,1,24,6,0,38,5,5,4,0
+selection_sort.py,"import selection_sort
+a = [ 1 , 2 , 3 , 4]
+def swap(a , i , j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1			
+",True,"import selection_sort
+a = [ 1 , 2 , 3 , 4]
+def swap(a , i , j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1			
+",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,31,9,0,55,10,5,4,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1 
+   while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+",True,"a = []
+i = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1 
+   while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,p,i)
+      i = i + 1
+",9,2,0,1,0,0,1,0,0,0,12,3,3,0,0,0,0,3,2,2,1,0,1,2,1,24,6.33333333333333,0,38,5,5,4,0
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",True,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",8,3,0,2,0,0,1,0,0,0,16,6,5,0,0,0,0,3,0,0,0,0,2,3,0,31,9.33333333333333,0,54,6,6,4,0
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",True,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",8,3,0,2,0,0,1,0,0,0,16,6,5,0,0,0,0,3,0,0,0,0,2,3,0,31,9.33333333333333,0,54,6,6,4,0
+selection_sort.py,"def swap(a, i, j):
+
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a, i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a,i)
+    swap(a,i,k)
+    i = i + 1
+
+
+ 
+   
+  
+      
+  
+
+
+ 
+
+    
+",True,"def swap(a, i, j):
+
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a, i):
+  j = i
+  while i < len(a):
+    if a[i] < a[j]:
+      j = i
+    i = i + 1
+
+  return j
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    k = find_position_of_smallest(a,i)
+    swap(a,i,k)
+    i = i + 1
+
+
+ 
+   
+  
+      
+  
+
+
+ 
+
+    
+",10,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,33,6.33333333333333,0,34,3,5,9,0
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",True,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = i
+	i = i + 1
+	while i < len(a):
+		if a[i] < a[n]:
+			n = i 
+		i = i + 1
+	return n
+def sort(a):
+	
+	i = 0 
+	while i < len(a):
+		p = i 
+		j = i + 1 
+		while j < len(a):
+			if a [j] < a [p]:
+				p = j 
+			j = j + 1 
+
+		tmp = a[p]
+		a[p] = a[i]
+		a[i] = tmp
+
+		i = i + 1 ",8,3,0,2,0,0,1,0,0,0,16,6,5,0,0,0,0,3,0,0,0,0,2,3,0,31,9.33333333333333,0,54,6,6,4,0
+selection_sort.py,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = i + 1
+
+
+",True,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = i + 1
+
+
+",9,2,0,1,0,0,1,0,0,0,12,3,3,0,0,0,0,3,2,3,1,0,1,2,1,25,5.66666666666667,0,37,5,5,4,0
+selection_sort.py,"#!/usr/bin/env python
+def swap (a,i,j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1 
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+     p = find_position_of_smallest(a,i)
+     swap(a,i,p)
+     i += 1
+ 
+
+
+
+  
+
+",True,"#!/usr/bin/env python
+def swap (a,i,j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1 
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+     p = find_position_of_smallest(a,i)
+     swap(a,i,p)
+     i += 1
+ 
+
+
+
+  
+
+",10,2,0,1,0,0,1,0,0,0,10,5,3,0,0,0,0,3,2,0,0,0,1,2,0,27,6,0,35,4,5,6,0
+selection_sort.py,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+    return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, p, i)
+      i = i + 1
+      
+      
+
+   
+",True,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+    return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, p, i)
+      i = i + 1
+      
+      
+
+   
+",8,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,26,6,0,37,8,5,3,0
+selection_sort.py,"import selection_sort
+a = [ 1 , 2 , 3 , 4]
+def swap(a , i , j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, p, i)
+      i = i + 1		
+",True,"import selection_sort
+a = [ 1 , 2 , 3 , 4]
+def swap(a , i , j):
+    tmp = a[i]
+    a[i] = a[j]
+    a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j 
+      j = j + 1
+   return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a, p, i)
+      i = i + 1		
+",8,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,22,6,0,37,8,5,2,0
+selection_sort.py,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+      
+",True,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a, i)
+      swap(a, i, p)
+      i = i + 1
+      
+",9,2,0,1,0,0,1,0,0,0,13,3,3,0,0,0,0,3,2,3,1,0,1,2,1,26,6.33333333333333,0,39,6,5,3,0
+selection_sort.py,"def swap(a,i,j):
+	# Swap the items at index i and j in the list a 
+	a[i], a[j] = a[j], a[i]
+	
+def find_position_of_smallest(a,i):
+	# Find the position of the smallest item in list a
+	# Starting from index i to the end of the list 
+	l = a[i:]
+	s = 0 # Current smallest element 
+	j = 0 # Index
+	while j < len(l):
+		if l[j] < l[s]:
+			s = j 
+		j += 1
+	return s + len(a) - len(l)
+	
+def sort(a):
+	i = 0 
+	while i < len(a):
+		smallest = find_position_of_smallest(a,i)
+		swap(a, i, smallest)
+		i += 1
+		
+	",True,"def swap(a,i,j):
+	# Swap the items at index i and j in the list a 
+	a[i], a[j] = a[j], a[i]
+	
+def find_position_of_smallest(a,i):
+	# Find the position of the smallest item in list a
+	# Starting from index i to the end of the list 
+	l = a[i:]
+	s = 0 # Current smallest element 
+	j = 0 # Index
+	while j < len(l):
+		if l[j] < l[s]:
+			s = j 
+		j += 1
+	return s + len(a) - len(l)
+	
+def sort(a):
+	i = 0 
+	while i < len(a):
+		smallest = find_position_of_smallest(a,i)
+		swap(a, i, smallest)
+		i += 1
+		
+	",9,2,0,1,0,0,1,0,0,0,9,6,3,1,0,0,2,3,2,0,0,2,1,2,2,24,6.66666666666667,0,35,5,6,0,5
+selection_sort.py,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+    return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+      
+      
+
+   
+",True,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+    p = i
+    j = i + 1
+    while j < len(a):
+       if a[j] < a[p]:
+          p = j
+       j = j + 1
+    return p 
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+      
+      
+
+   
+",7,3,0,2,0,0,1,0,0,0,17,5,5,0,0,0,0,3,0,1,1,0,2,3,1,35,9,0,55,10,5,5,0
+selection_sort.py,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, p, i)
+		i = i + 1
+
+
+
+",True,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a,i,j):
+	temp = a[i]
+	a[i] = a[j]
+	a[j] = temp
+
+def find_position_of_smallest(a,i):
+	p = i
+	j = i + 1
+	while j < len(a):
+		if a[j] < a[p]:
+			p = j
+		j = j + 1
+	return p
+def sort(a):
+	i = 0
+	while i < len(a):
+		p = find_position_of_smallest(a, i)
+		swap(a, p, i)
+		i = i + 1
+
+
+
+",8,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,24,6,0,37,8,5,4,0
+selection_sort.py,"import selection_sort
+a = [0, 1, 2, 3, 4]
+def swap(a, i, j):    
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a, i)
+    swap(a, p, i)
+    i = i + 1
+
+
+
+
+	
+	
+
+                  
+                                
+",True,"import selection_sort
+a = [0, 1, 2, 3, 4]
+def swap(a, i, j):    
+	tmp = a[i]
+	a[i] = a[j]
+	a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    p = find_position_of_smallest(a, i)
+    swap(a, p, i)
+    i = i + 1
+
+
+
+
+	
+	
+
+                  
+                                
+",8,2,0,1,0,0,1,0,0,0,11,3,3,0,0,0,0,3,2,1,1,0,1,2,1,31,6,0,37,9,5,7,0
+selection_sort.py,"def swap(a, i, j):
+   temp = a[i]
+   a[i] = a[j]
+   a[j] = temp
+
+def find_position_of_smallest(a, i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+",False,"def swap(a, i, j):
+   temp = a[i]
+   a[i] = a[j]
+   a[j] = temp
+
+def find_position_of_smallest(a, i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+",4,1,0,1,0,0,1,0,0,0,6,1,2,0,0,0,0,2,0,0,0,0,1,1,0,12,5.5,0,23,1,5,1,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,p):
+   p = 0
+   j = 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+",False,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,p):
+   p = 0
+   j = 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+",4,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,2,0,0,0,0,1,1,0,12,5.5,0,22,3,5,1,0
+selection_sort.py,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   x = int(a[0])
+   i = 0
+   while i < len(a) - 1:
+      if int(a[i]) > int(a[i+1]):
+         x = a[i]
+         a[i] = a[i + 1]
+         a[i+1] = x
+      i = i + 1
+
+   i = 0
+   while i < len(a):
+      i = i + 1
+
+
+",False,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   x = int(a[0])
+   i = 0
+   while i < len(a) - 1:
+      if int(a[i]) > int(a[i+1]):
+         x = a[i]
+         a[i] = a[i + 1]
+         a[i+1] = x
+      i = i + 1
+
+   i = 0
+   while i < len(a):
+      i = i + 1
+
+
+",6,3,0,2,0,0,1,0,0,0,16,8,5,0,0,0,0,3,0,0,0,0,2,3,0,31,8.33333333333333,0,51,11,6,6,1
+selection_sort.py,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+  return i
+",False,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+  return i
+",4,1,0,1,0,0,1,0,0,0,6,1,2,0,0,0,0,2,0,0,0,0,1,1,0,14,5.5,0,23,1,5,3,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while i < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+      i = i + 1
+
+",False,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while i < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+      i = i + 1
+
+",6,3,0,2,0,0,1,0,0,0,15,4,5,0,0,0,0,3,0,0,0,0,2,3,0,27,8,0,52,5,5,3,0
+selection_sort.py,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = 0
+  i = 0
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i 
+    i = i + 1
+  return p
+    
+",False,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = 0
+  i = 0
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i 
+    i = i + 1
+  return p
+    
+",4,1,0,1,0,0,1,0,0,0,7,1,2,0,0,0,0,2,0,0,0,0,1,1,0,16,6,0,23,3,5,3,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+",False,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+",2,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,4,0,10,0,4,0,0
+selection_sort.py,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[j] < a[i]:
+      j = i
+    i = i + 1
+  return i
+",False,"
+
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[j] < a[i]:
+      j = i
+    i = i + 1
+  return i
+",4,1,0,1,0,0,1,0,0,0,6,1,2,0,0,0,0,2,0,0,0,0,1,1,0,14,5.5,0,23,1,5,3,0
+selection_sort.py,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+",False,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+",2,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,4,0,10,0,4,0,0
+selection_sort.py,"def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+ s = i 
+ while i < len(a):
+  if a[i] < a[s]:
+   s = i
+  i = i + 1
+  return s
+
+def sort(a):
+ i = 0
+ while i < len(a):
+  x = find_position_of_smallest(a,i)
+  swap(a,i,x)
+  i = i + 1
+  return x
+
+",False,"def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+ s = i 
+ while i < len(a):
+  if a[i] < a[s]:
+   s = i
+  i = i + 1
+  return s
+
+def sort(a):
+ i = 0
+ while i < len(a):
+  x = find_position_of_smallest(a,i)
+  swap(a,i,x)
+  i = i + 1
+  return x
+
+",7,2,0,1,0,0,2,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,21,6,0,35,3,6,3,0
+selection_sort.py,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = p + 1
+   while i < len(a):
+      if a[j] < a[p]:
+         j = p
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = i + 1
+   return p
+      
+
+
+
+",False,"def swap(a, i, j):
+ tmp = a[i] #temporary storage
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = p + 1
+   while i < len(a):
+      if a[j] < a[p]:
+         j = p
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = i + 1
+   return p
+      
+
+
+
+",7,2,0,1,0,0,2,0,0,0,10,3,3,0,0,0,0,3,2,0,0,0,1,2,0,25,6.33333333333333,0,37,4,5,5,1
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = 1
+	i = 1
+	while i < len(a):
+		if a[i] > a[n]:
+			n = i 
+		i = i + 1
+	return n 
+",False,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = 1
+	i = 1
+	while i < len(a):
+		if a[i] > a[n]:
+			n = i 
+		i = i + 1
+	return n 
+",4,1,0,1,0,0,1,0,0,0,7,2,2,0,0,0,0,2,0,0,0,0,1,1,0,15,6,0,23,3,5,2,0
+selection_sort.py,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+",False,"def swap(a, i , j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+",2,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,4,0,10,0,4,0,0
+selection_sort.py,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+",False,"def swap(a, i, j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+",2,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,4,0,10,0,4,0,0
+selection_sort.py,"def swap (a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while i < len(a):
+      if a[i] < a[j]:
+         p = i
+      i = i + 1
+   return p
+
+",False,"def swap (a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while i < len(a):
+      if a[i] < a[j]:
+         p = i
+      i = i + 1
+   return p
+
+",4,1,0,1,0,0,1,0,0,0,7,2,2,0,0,0,0,2,0,0,0,0,1,1,0,14,6,0,25,2,5,2,0
+selection_sort.py,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+   
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0 
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = 1
+
+   
+",False,"def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j] 
+   a[j] = tmp
+   
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+
+def sort(a):
+   i = 0 
+   while i < len(a):
+      p = find_position_of_smallest(a,i)
+      swap(a,i,p)
+      i = 1
+
+   
+",7,2,0,1,0,0,1,0,0,0,10,2,3,0,0,0,0,3,2,0,0,0,1,2,0,22,6,0,35,4,5,2,0
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = 1
+	i = 1
+	while i < len(a):
+		if a[i] > a[i + 1]:
+			n = i 
+		i = i + 1
+	return n 
+",False,"#!/usr/bin/env python
+
+def swap(a , i, j):
+	tmp = a[j]
+	a[j] = a[i]
+	a[i] = tmp
+
+def find_position_of_smallest(a,i):
+	n = 1
+	i = 1
+	while i < len(a):
+		if a[i] > a[i + 1]:
+			n = i 
+		i = i + 1
+	return n 
+",4,1,0,1,0,0,1,0,0,0,7,3,2,0,0,0,0,2,0,0,0,0,1,1,0,15,6,0,23,4,5,2,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a(j) < a(p):
+         p = j
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",False,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a(j) < a(p):
+         p = j
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      p = i
+      j = i + 1
+      while j < len(a):
+         if a[j] < a[p]:
+            p = j
+         j = j + 1
+
+      tmp = a[p]
+      a[p] = a[i]
+      a[i] = tmp
+
+      i = i + 1
+",6,3,0,2,0,0,1,0,0,0,16,4,5,0,0,0,0,3,0,1,1,0,2,3,1,30,8.66666666666667,0,37,10,4,5,0
+selection_sort.py,"a = []
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  smallest = a[i]
+  while i < len(a):
+    if a[i] < smallest:
+      smallest = a[i]
+    return a[i]
+  i = i + 1
+",False,"a = []
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  smallest = a[i]
+  while i < len(a):
+    if a[i] < smallest:
+      smallest = a[i]
+    return a[i]
+  i = i + 1
+",3,1,0,1,0,0,1,0,0,0,7,1,2,0,0,0,0,2,0,1,1,0,1,1,1,13,5.5,0,26,1,5,1,0
+selection_sort.py,"def swap(a, i, j):
+    temp = a[i]
+    a[i] = a [j]
+    a[j] = temp
+
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+
+def sort(a):
+   b = a
+   b = 0
+   j = 1
+   while j < len(a):
+      if a[j] < a[b]:
+         p = j
+      j = j + 1
+
+   return b
+   
+",False,"def swap(a, i, j):
+    temp = a[i]
+    a[i] = a [j]
+    a[j] = temp
+
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i
+      i = i + 1
+   return p
+
+
+def sort(a):
+   b = a
+   b = 0
+   j = 1
+   while j < len(a):
+      if a[j] < a[b]:
+         p = j
+      j = j + 1
+
+   return b
+   
+",7,2,0,2,0,0,2,0,0,0,11,2,4,0,0,0,0,3,0,0,0,0,2,2,0,26,7,0,38,4,6,5,0
+selection_sort.py,"def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+ s = i 
+ while i < len(a):
+  if a[i] < a[s]:
+   i = s
+  i = i + 1
+ return s
+
+def sort(a):
+ i = 0
+ while i < len(a):
+  x = find_position_of_smallest(a,i)
+  swap(a,i,x)
+  i = i + 1
+ return x
+
+",False,"def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+def find_position_of_smallest(a,i):
+ s = i 
+ while i < len(a):
+  if a[i] < a[s]:
+   i = s
+  i = i + 1
+ return s
+
+def sort(a):
+ i = 0
+ while i < len(a):
+  x = find_position_of_smallest(a,i)
+  swap(a,i,x)
+  i = i + 1
+ return x
+
+",7,2,0,1,0,0,2,0,0,0,9,2,3,0,0,0,0,3,2,0,0,0,1,2,0,21,6,0,35,3,6,3,0
+selection_sort.py,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   return a(i)
+
+",False,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   return a(i)
+
+",2,0,0,0,0,0,1,0,0,0,4,0,0,0,0,0,0,2,0,0,0,0,0,0,0,10,3,0,7,0,3,3,1
+selection_sort.py,"
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+  return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    find_position_of_smallest(a,i)
+    swap(a,i,j)
+
+
+",False,"
+def swap(a,i,j):
+  tmp = a[j]
+  a[j] = a[i]
+  a[i] = tmp
+
+def find_position_of_smallest(a,i):
+  p = i
+  while i < len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+  return p
+
+def sort(a):
+  i = 0
+  while i < len(a):
+    find_position_of_smallest(a,i)
+    swap(a,i,j)
+
+
+",7,2,0,1,0,0,1,0,0,0,7,1,3,0,0,0,0,3,2,0,0,0,1,2,0,21,5.33333333333333,0,31,2,5,5,0
+selection_sort.py,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   j = i = 1
+   p = i
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+",False,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   j = i = 1
+   p = i
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return p
+",3,1,0,1,0,0,1,0,0,0,11,2,2,0,0,0,0,2,0,3,1,0,1,1,1,17,6,0,28,4,5,1,0
+selection_sort.py,"a = []
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      a[p] <a[i]
+   i = i + 1
+   return p
+",False,"a = []
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   i = i + 1
+   while i < len(a):
+      a[p] <a[i]
+   i = i + 1
+   return p
+",3,1,0,0,0,0,1,0,0,0,7,2,2,0,0,0,0,2,0,1,1,0,0,1,1,14,5.5,0,24,2,5,2,0
+selection_sort.py,"def swap(a,i,j):
+ a = []
+ tmp = a[i]
+ a[j] = a[i]
+ a[i] = tmp
+   
+",False,"def swap(a,i,j):
+ a = []
+ tmp = a[i]
+ a[j] = a[i]
+ a[i] = tmp
+   
+",1,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,0,0,1,0,0,0,1,6,5,0,11,0,4,0,0
+selection_sort.py,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[i]:
+         p = j
+      return p
+      i = i + 1     
+",False,"a = [""0"", ""1"", ""2"", ""3"", ""4""]
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[i]:
+         p = j
+      return p
+      i = i + 1     
+",3,1,0,1,0,0,1,0,0,0,8,2,2,0,0,0,0,2,0,1,1,0,1,1,1,15,6,0,26,7,5,2,0
+selection_sort.py,"a =[]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[p] < a[j]:
+         p = j  
+      j = j + 1
+   return p
+",False,"a =[]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[p] < a[j]:
+         p = j  
+      j = j + 1
+   return p
+",3,1,0,1,0,0,1,0,0,0,8,2,2,0,0,0,0,2,0,1,1,0,1,1,1,14,6,0,26,2,5,1,0
+selection_sort.py,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   j = i = 1
+   p = i
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return j
+",False,"#!/bin/usr/env python
+a = []
+i = 0
+j = 0
+def swap(a,i,j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   j = i = 1
+   p = i
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   return j
+",3,1,0,1,0,0,1,0,0,0,11,2,2,0,0,0,0,2,0,3,1,0,1,1,1,17,6,0,28,4,5,1,0
+selection_sort.py,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   return (a)
+
+",False,"
+# a = [""i"", ""j""]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   return (a)
+
+",2,0,0,0,0,0,1,0,0,0,4,0,0,0,0,0,0,2,0,0,0,0,0,0,0,10,3,0,11,0,4,3,1
+selection_sort.py,"def swap(a,i,j):
+	# Swap the items at index i and j in the list a 
+	a[i], a[j] = a[j], a[i]
+	
+def find_position_of_smallest(a,i):
+	# Find the position of the smallest item in list a
+	# Starting from index i to the end of the list 
+	l = a[i:]
+	s = 0 # Current smallest element 
+	j = 0 # Index
+	while j < len(l):
+		if l[j] < l[s]:
+			s = j 
+		j += 1
+	return s
+	",False,"def swap(a,i,j):
+	# Swap the items at index i and j in the list a 
+	a[i], a[j] = a[j], a[i]
+	
+def find_position_of_smallest(a,i):
+	# Find the position of the smallest item in list a
+	# Starting from index i to the end of the list 
+	l = a[i:]
+	s = 0 # Current smallest element 
+	j = 0 # Index
+	while j < len(l):
+		if l[j] < l[s]:
+			s = j 
+		j += 1
+	return s
+	",4,1,0,1,0,0,1,0,0,0,6,2,2,1,0,0,2,2,0,0,0,2,1,1,2,16,7,0,23,3,5,0,5
+selection_sort.py,"
+# a = [0,1,2,3,4]
+
+# swap(a,0,1)
+
+def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+
+# a = [0,1,2,3]
+# find(a,0)
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+   if a[i] < a[j]:
+     j = i
+   i = i + 1
+   return j
+
+
+
+  
+   
+  
+ 
+   
+",False,"
+# a = [0,1,2,3,4]
+
+# swap(a,0,1)
+
+def swap(a,i,j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+
+
+# a = [0,1,2,3]
+# find(a,0)
+
+def find_position_of_smallest(a,i):
+  j = i
+  while i < len(a):
+   if a[i] < a[j]:
+     j = i
+   i = i + 1
+   return j
+
+
+
+  
+   
+  
+ 
+   
+",4,1,0,1,0,0,1,0,0,0,8,1,2,0,0,0,0,2,0,0,0,0,1,1,0,29,5.5,0,23,1,4,9,4
+selection_sort.py,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+def sort(a):
+   while i < len(a):
+      p = i
+      j = i + 1
+      
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+         j = j + 1
+
+         tmp = a[p]
+         a[p] = a[i]
+         a[i] = tmp
+
+         i = i + 1
+",False,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+def sort(a):
+   while i < len(a):
+      p = i
+      j = i + 1
+      
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+         j = j + 1
+
+         tmp = a[p]
+         a[p] = a[i]
+         a[i] = tmp
+
+         i = i + 1
+",6,3,0,2,0,0,1,0,0,0,18,5,5,0,0,0,0,3,0,3,1,0,2,3,1,34,9.33333333333333,0,56,7,5,5,0
+selection_sort.py,"a=[]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1   
+   return p
+   
+def sort(a):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1 
+   
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+   i = i + 1
+
+
+
+
+  
+",False,"a=[]
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1   
+   return p
+   
+def sort(a):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1 
+   
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp 
+   i = i + 1
+
+
+
+
+  
+",6,2,0,2,0,0,1,0,0,0,16,5,4,0,0,0,0,3,0,1,1,0,2,2,1,32,8,0,52,5,5,5,0
+selection_sort.py,"
+a = [""i"", ""j""]
+tmp = "" ""
+
+
+def swap(a,i,j):
+  temp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = 0
+  i = 1
+  while i <len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+           
+              
+             
+
+",False,"
+a = [""i"", ""j""]
+tmp = "" ""
+
+
+def swap(a,i,j):
+  temp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  p = 0
+  i = 1
+  while i <len(a):
+    if a[i] < a[p]:
+      p = i
+    i = i + 1
+           
+              
+             
+
+",2,1,0,1,0,0,0,0,0,0,9,1,2,0,0,0,0,2,0,2,1,0,1,1,1,21,5.5,0,24,6,6,5,0
+selection_sort.py,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+   
+
+",False,"a = []
+i = 0
+j = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a, i):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+   
+   return p
+
+   
+
+",2,1,0,1,0,0,1,0,0,0,10,2,2,0,0,0,0,2,0,3,1,0,1,1,1,21,6.5,0,28,4,5,4,0
+selection_sort.py,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  i = 1
+  p = i + 1
+  while i < len(a):
+     if a[i] < a[p]:
+        p = i
+     i = i + 1
+  return p 
+
+
+   
+",False,"import selection_sort
+a = [1, 2, 3, 4]
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  i = 1
+  p = i + 1
+  while i < len(a):
+     if a[i] < a[p]:
+        p = i
+     i = i + 1
+  return p 
+
+
+   
+",2,1,0,1,0,0,1,0,0,0,8,2,2,0,0,0,0,2,0,1,1,0,1,1,1,18,6,0,25,7,5,3,0
+selection_sort.py,"a = [""a"", ""b"", ""c"", ""d""]
+
+def swap(a, i, j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+  
+
+",False,"a = [""a"", ""b"", ""c"", ""d""]
+
+def swap(a, i, j):
+ tmp = a[i]
+ a[i] = a[j]
+ a[j] = tmp
+  
+
+",1,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,0,1,1,0,0,0,1,8,4,0,11,4,4,2,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      find_position_of_smallest.sort(a)
+      swap.sort(a)
+   i = i + 1
+ 
+
+",False,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = i
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   i = 0
+   while i < len(a):
+      find_position_of_smallest.sort(a)
+      swap.sort(a)
+   i = i + 1
+ 
+
+",4,2,0,1,0,0,1,0,0,0,8,2,3,0,0,0,0,3,0,0,0,0,1,2,0,21,5.66666666666667,0,32,3,7,3,0
+selection_sort.py,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = 0
+   i = 0
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   while i < len(a):
+      p = find_position_of_smallest
+      swap(a,i,j)
+      i = i + 1
+",False,"def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = 0
+   i = 0
+   while i < len(a):
+      if a[i] < a[p]:
+         p = i 
+      i = i + 1
+   return p
+
+def sort(a):
+   while i < len(a):
+      p = find_position_of_smallest
+      swap(a,i,j)
+      i = i + 1
+",4,2,0,1,0,0,1,0,0,0,9,2,3,0,0,0,0,3,1,0,0,0,1,2,0,19,5.66666666666667,0,32,4,6,2,0
+selection_sort.py,"a = [a,i,j]
+
+swap(a,0,1)
+",False,"a = [a,i,j]
+
+swap(a,0,1)
+",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,3,0,0,5,2,3,1,0
+selection_sort.py,"#!/usr/bin/env python
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   i = 0
+while i < len(a):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+
+   tmp = a[p]
+   a[p] = a[i]
+   a[i] = tmp
+
+   i = i + 1
+
+
+
+
+   
+       
+
+
+",False,"#!/usr/bin/env python
+
+def swap(a, i, j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a, i):
+   i = 0
+while i < len(a):
+   p = i
+   j = i + 1
+   while j < len(a):
+      if a[j] < a[p]:
+         p = j
+      j = j + 1
+
+   tmp = a[p]
+   a[p] = a[i]
+   a[i] = tmp
+
+   i = i + 1
+
+
+
+
+   
+       
+
+
+",2,2,0,1,0,0,0,0,0,0,12,4,3,0,0,0,0,2,0,0,0,0,1,2,0,30,3,0,39,4,5,10,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   a[i]
+   
+
+
+",False,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   a[i]
+   
+
+
+",2,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,2,0,2,1,0,0,0,1,13,3,0,14,1,4,4,0
+selection_sort.py,"a = [""h"", ""i"", ""j"", ""k""]
+
+sort.swap(a,1,2)                    
+                         
+",False,"a = [""h"", ""i"", ""j"", ""k""]
+
+sort.swap(a,1,2)                    
+                         
+",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,4,0,0,3,6,2,1,0
+selection_sort.py,"a = [""c"", ""i"", ""j"", ""d""]
+
+swap(a,i,j)                    
+                         
+",False,"a = [""c"", ""i"", ""j"", ""d""]
+
+swap(a,i,j)                    
+                         
+",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,4,0,0,4,4,3,1,0
+selection_sort.py,"#!/usr/bin/env python
+def swap (a,i,j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = 0
+   j = 1
+while j < len(a):
+   if a[j] < a[p]:
+      p = j 
+   j = j + 1 
+  
+
+",False,"#!/usr/bin/env python
+def swap (a,i,j):
+   tmp = a[i]
+   a[i]= a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   p = 0
+   j = 1
+while j < len(a):
+   if a[j] < a[p]:
+      p = j 
+   j = j + 1 
+  
+
+",3,1,0,1,0,0,0,0,0,0,7,2,2,0,0,0,0,2,0,0,0,0,1,1,0,15,3.5,0,22,3,5,2,0
+selection_sort.py,"a=[]
+i=0
+
+def swap(a,i,j):
+   tmp=a[j]
+   a[j]=a[i]
+   a[i]=tmp
+   
+def find_position_of_smallest(a,i):
+   
+   while j < len(a):
+      if a[j] < a[p]:
+         p=j
+      j = j + 1
+   
+   
+",False,"a=[]
+i=0
+
+def swap(a,i,j):
+   tmp=a[j]
+   a[j]=a[i]
+   a[i]=tmp
+   
+def find_position_of_smallest(a,i):
+   
+   while j < len(a):
+      if a[j] < a[p]:
+         p=j
+      j = j + 1
+   
+   
+",2,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,2,0,2,1,0,1,1,1,16,5,0,22,2,5,1,0
+selection_sort.py,"import selection_sort
+
+a = [0, 1, 2, 3, 4]
+
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  
+  j = i + 1
+  p = i
+
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j
+    j = j + 1
+  return p 
+           
+              
+             
+
+",False,"import selection_sort
+
+a = [0, 1, 2, 3, 4]
+
+
+def swap(a,i,j):
+  tmp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+
+def find_position_of_smallest(a,i):
+  
+  j = i + 1
+  p = i
+
+  while j < len(a):
+    if a[j] < a[p]:
+      p = j
+    j = j + 1
+  return p 
+           
+              
+             
+
+",2,1,0,1,0,0,1,0,0,0,8,2,2,0,0,0,0,2,0,1,1,0,1,1,1,24,7,0,26,7,5,6,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   while i < len(a):
+      if a(i) < a(j):
+         i = j
+      i = i + 1
+        
+   
+   
+
+
+",False,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   while i < len(a):
+      if a(i) < a(j):
+         i = j
+      i = i + 1
+        
+   
+   
+
+
+",2,1,0,1,0,0,0,0,0,0,7,1,2,0,0,0,0,2,0,2,1,0,1,1,1,18,4.5,0,14,2,3,4,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+
+",False,"a = []
+i = 0
+
+def swap(a, i, j):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = a[j]
+   a[j] = a[i]
+   a[i] = tmp
+
+
+",2,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,2,0,2,1,0,0,0,1,14,4,0,22,1,4,4,0
+selection_sort.py,"def swap(a,i,j):
+ a = []
+ tmp = a[i]
+ a[p] = a[i]
+ a[i] = tmp
+   
+",False,"def swap(a,i,j):
+ a = []
+ tmp = a[i]
+ a[p] = a[i]
+ a[i] = tmp
+   
+",1,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,0,0,1,0,0,0,1,6,5,0,11,0,4,0,0
+selection_sort.py,"import selection_sort
+a = [0,1,2,3,4]
+i = a[1]
+j = a[4]
+def swap(a,i,j):
+   result = a[i:j]
+  
+
+
+
+",False,"import selection_sort
+a = [0,1,2,3,4]
+i = a[1]
+j = a[4]
+def swap(a,i,j):
+   result = a[i:j]
+  
+
+
+
+",0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,0,3,1,0,0,0,1,10,2,0,9,7,4,3,0
+selection_sort.py,"a = [""a"",""i"",""j""]
+swap (a,1,2)
+
+",False,"a = [""a"",""i"",""j""]
+swap (a,1,2)
+
+",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,3,0,0,2,5,1,1,0
+selection_sort.py,"a = [""i"", ""j""]
+tmp = "" ""
+
+
+def swap(a,i,j):
+  temp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+     
+                   
+              
+             
+
+",False,"a = [""i"", ""j""]
+tmp = "" ""
+
+
+def swap(a,i,j):
+  temp = a[i]
+  a[i] = a[j]
+  a[j] = tmp
+     
+                   
+              
+             
+
+",1,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,1,0,2,1,0,0,0,1,13,4,0,12,3,5,3,0
+selection_sort.py,"import selection_sort
+a = [0,1,2,3,4]
+i = a[1]
+j = a[4]
+def swap(a,i,j):
+   result = a[i:j]
+   return result
+
+
+
+",False,"import selection_sort
+a = [0,1,2,3,4]
+i = a[1]
+j = a[4]
+def swap(a,i,j):
+   result = a[i:j]
+   return result
+
+
+
+",0,0,0,0,0,0,1,0,0,0,4,0,0,0,0,0,0,1,0,3,1,0,0,0,1,10,3,0,10,7,4,3,0
+selection_sort.py,"#!/usr/bin/env python
+
+a = [ ""g"", ""h"", ""i"", ""j"",]
+
+swap(a,2,3)
+",False,"#!/usr/bin/env python
+
+a = [ ""g"", ""h"", ""i"", ""j"",]
+
+swap(a,2,3)
+",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,5,0,0,2,6,1,2,0
+selection_sort.py,"a = [""a"", ""i"", ""j"", ""k""]
+
+sort.swap(a,1,2)                    
+                         
+",False,"a = [""a"", ""i"", ""j"", ""k""]
+
+sort.swap(a,1,2)                    
+                         
+",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,4,0,0,3,6,2,1,0
+selection_sort.py,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = a[i]
+   
+
+
+",False,"a = []
+i = 0
+
+def swap(a,i,j):
+   tmp = a[i]
+   a[i] = a[j]
+   a[j] = tmp
+
+def find_position_of_smallest(a,i):
+   tmp = a[i]
+   
+
+
+",1,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,2,0,2,1,0,0,0,1,13,3,0,15,1,4,4,0
+selection_sort.py,"def swap(a, i, j):
+    temp = a[i]
+    a[i] = a [j]
+    
+
+",False,"def swap(a, i, j):
+    temp = a[i]
+    a[i] = a [j]
+    
+
+",1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,5,3,0,7,0,4,1,0
+selection_sort.py,"a = [""a"", ""b"", ""c"", ""d""]
+
+def swap(n):
+   tmp == a()
+   a() == b()
+   b() == tmp
+",False,"a = [""a"", ""b"", ""c"", ""d""]
+
+def swap(n):
+   tmp == a()
+   a() == b()
+   b() == tmp
+",0,0,0,0,0,0,0,0,0,0,4,0,3,0,0,0,0,1,0,1,1,0,0,0,1,6,4,0,2,4,1,1,0
